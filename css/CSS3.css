@@ -461,11 +461,6 @@ textarea {
   transition: all 1s linear;
 }
 
-.xuanzhuan div:active {
-  -webkit-transform: scale3d(0.01, 0.01, 0.01);
-  transform: scale3d(0.01, 0.01, 0.01);
-}
-
 .div1 {
   -webkit-transform: rotateY(0deg) translateZ(360px);
   transform: rotateY(0deg) translateZ(360px);
