@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/biaodanyanzheng.css"/>
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js" ></script>
+		<script type="text/javascript">
+			
+			function checkUser(){
+				//用记名不能为空，且长度不能小于8;
+				var userName=$("[name='userName']").val();
+				if(userName==""){
+//					用户名不能为空校验
+					$("#userNameMsg").text("用户名不能为空");
+					return false;
+				}
+				var reguserName=/^\S{8,}$/;
+				if(!(reguserName.test(userName))){
+//					用户名长度不能小于8校验
+					$("#userNameMsg").text("用户名长度不能小于8")
+					return false;
+				}
+				for(var i=0;i<userName.length;i++){
+					var j=userName.substring(i,i+1)
+					if(isNaN(j)==false){
+//						用户名中不能包含数字校验
+						$("#userNameMsg").text("用户名中不能包含数字")
+						return false;
+					}
+				}
+				return true;
+			}
+			function passwords(){
+				var a=0,b=0,c=0;
+				//用记名不能为空，且长度不能小于8;
+				var passwords=$("#userpassword").val();
+				//6-16位校验
+				if(passwords.length<6||passwords.length>16){
+						$(".spanclass").css("background-position","0 -38px");
+						a=1;
+						
+				}
+				else {
+						$(".spanclass").css("background-position","0 0");
+						a=0;
+					
+				}
+				for(var i=0;i<passwords.length;i++)
+				{
+					var n=passwords.substring(i,i+1);
+					
+					//9位以上纯数校验
+					if(isNaN(n)||passwords.length>8)
+					{
+						$(".spanclass1").css("background-position","0 0");
+						b=0;break;
+					}else{
+						$(".spanclass1").css("background-position","0 -38px");
+						b=1;
+					}
+					
+				}
+				//空格校验
+				var j=0;
+				for(var i=0;i<passwords.length;i++){
+					var n=passwords[i];
+					if(n==" "){
+						$(".spanclass2").css("background-position","0 -39px");
+						c=1;
+						j=j+1;
+					}
+				}
+				
+				if(j==0)
+				{
+					$(".spanclass2").css("background-position","0 0");
+					c=0;
+				}
+				if(passwords.length==0){
+					$(".spanclass2").css("background-position","0 -13px");
+					$(".spanclass1").css("background-position","0 -13px");
+					$(".spanclass").css("background-position","0 -13px");
+				}
+				//三种校验全trun返回ture
+				a=a+b+c;
+				if(a==0){
+					return true;
+				}else{
+					return false;
+				} 
+			}
+			
+			function passwordconfirm(){
+				var passwords=$("#userpassword").val();
+				var passwordsconfirm=$("#pwcf").val();
+				$("#pwcfspan").removeClass("pwcfclass1 pwcfclass2 pwcfclass3").addClass("pwcfclass").text("请再次输入密码"); 
+				
+				if((passwordsconfirm==passwords)&&passwordsconfirm.length!=0){
+					$("#pwcfspan").addClass("pwcfclass2").text("");
+				}
+			}
+			function passwordconfirmblur(){
+				var passwords=$("#userpassword").val();
+				var passwordsconfirm=$("#pwcf").val();
+				if((passwords!=passwordsconfirm)){
+						$("#pwcfspan").removeClass("pwcfclass pwcfclass2 pwcfclass3").addClass("pwcfclass1").text("两次密码不一致");
+						return false;
+						
+					}
+				if((passwords==passwordsconfirm)&&passwordsconfirm.length!=0){
+						$("#pwcfspan").addClass("pwcfclass2").text("");
+						$("#pwcf").removeClass("inputclass");
+						return true;
+					}
+				if(passwords==0&&passwordsconfirm==0){
+					$("#pwcfspan").removeClass("pwcfclass1 pwcfclass2").addClass("pwcfclass3").text("请再次输入密码");
+					return false;
+				}
+			
+			}
+			function checkTelphong(){
+				var userTelphon=$("#Telphone").val();
+				var reguserTelphon=/^1[0-9]{10}$/;
+				if(reguserTelphon.test(userTelphon)){
+					$(".shoujihaoma .Userpasswordright").show();
+					return true;
+				}else{
+					$(".shoujihaoma .Userpasswordright").show().css("background-position","0 13px").text("请输入正确的手机号码");
+					return false;
+				}
+			}
+			function checkuserEamil(){
+				var userEamil=$("#UserEmail").val();
+				var reguserEamil=/^\w+@\w+(\.[A-Za-z]{2,3}){1,2}$/;
+				if (reguserEamil.test(userEamil)){
+					$(".userEmail .Userpasswordright").show();
+					return true;
+				}else{
+					$(".userEmail .Userpasswordright").show().css("background-position","0 13px").text("请输入正确邮箱(XXX@XX.XXX)");
+					return false;
+				}
+			}
+			$(function(){
+				$("#form1").submit(function(){
+					if(checkUser()&&passwords()&&passwordconfirmblur()&&checkTelphong()&&checkuserEamil()){
+						return true;
+					}
+					else {
+						return false;
+					}
+				});
+				$("#userName").focus(function(){
+					$("#userNameMsg").removeClass("userNameclass").css("color","silver").text("输入用户名..");
+					$(this).removeClass("inputclass");
+					
+				});
+				$("#userName").blur(function(){
+					$("#userNameMsg").css("color","red").text("");
+					if(checkUser()==false){
+						$(this).addClass("inputclass");
+					}else {
+						$("#userNameMsg").addClass("userNameclass").text("");
+					}
+				});
+				$("#userpassword").focus(function(){
+					$("#passwordMsg").show().siblings(".Userpasswordright").hide();
+					$(this).keyup(function(){
+						passwords();	
+					});
+					$(this).removeClass("inputclass");
+				});
+				$("#userpassword").blur(function(){
+					if(passwords()==false){
+						$(this).addClass("inputclass");
+					}else{
+						$("#passwordMsg").hide().siblings(".Userpasswordright").show();
+					}
+					if(passwordconfirmblur()==false){
+						$("#pwcf").addClass("inputclass");
+					}else{$("#pwcf").removeClass("inputclass");} 
+				});
+				$("#pwcf").focus(function(){
+					$(this).removeClass("inputclass");
+					passwordconfirm();
+				});
+				$("#pwcf").blur(function(){
+					if(passwordconfirmblur()==false){
+						$(this).addClass("inputclass");
+					}
+				});
+				$("#Telphone").focus(function(){
+					$(".shoujiyanzhengma").show();
+					$(".shoujihaoma .Userpasswordright").hide().css("background-position","0 0").text("");
+					
+				});
+				$("#Telphone").blur(function(){
+					checkTelphong();
+				});
+				$("#UserEmail").focus(function(){
+					$(".userEmail .Userpasswordright").hide().css("background-position","0 0").text("");
+					
+				});
+				$("#UserEmail").blur(function(){
+					checkuserEamil();
+				});
+			});
+			
+			
+		</script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<div class="bodys">
+			<div class="titils">
+				注册帐号
+			</div>
+			<hr />
+			<form id="form1" action="index.html" method="post" >
+				<div class="userNamediv">
+					<label for="userName">用户名:</label><input type="text" name="userName" id="userName" />
+					<div id="userNameMsg" class="userNameMsg">
+						
+					</div>
+				</div>
+				
+				<div class="userpassworddiv">
+					<label for="userpassword">密&nbsp;码:</label><input type="password" name="userpassword" id="userpassword"  />
+					<div id="passwordMsg">
+						<div class="spanclass">长度为6-16个字符</div>
+						<div class="spanclass1">不能是9位以下纯数字</div>
+						<div class="spanclass2">不能包含空格</div>
+					</div>
+					<div class="Userpasswordright">
+						
+					</div>
+				</div>
+				<div  class="passwordconfirm">
+					确认密码:<input type="password" name="pwcf" id="pwcf" value="" />
+					<span id="pwcfspan" class="pwcfspan"></span>
+				</div>
+				<div class="sexradio">
+					性别:<input type="radio" name="sex" id="man" value="" checked="checked" />男<input type="radio" name="sex" id="woman" value="" />女
+			
+				</div>
+				<div id="birthdayselect" class="birthdayselect">
+					生&nbsp;日:<select name="" style="margin: 0 -2px 0 2px;border-radius:3px;">
+						<option value="公历">公历</option>
+						<option value="农历">农历</option>
+					</select>
+					<select name="" style="margin: 0 -2px;
+				border-radius: 3px; width: 75px;">
+						<option value="公历">年</option>
+						<option value="农历">2016</option>
+					</select>
+					<select name="" style="margin: 0 -2px;
+				border-radius: 3px;">
+						<option value="公历">月</option>
+						<option value="农历">1</option>
+						<option value="农历">2</option>
+						<option value="农历">3</option>
+						<option value="农历">4</option>
+						<option value="农历">5</option>
+						<option value="农历">6</option>
+						<option value="农历">7</option>
+						<option value="农历">8</option>
+						<option value="农历">9</option>
+						<option value="农历">10</option>
+						<option value="农历">11</option>
+						<option value="农历">12</option>
+					</select>
+					<select name="" style="margin: 0 -2px;
+				border-radius: 3px;">
+						<option value="公历">日</option>
+						<option value="农历">7</option>
+					</select>
+				</div>
+				<div id="birthdayselect" class="birthdayselect birthdayselect2">
+					所在地:<select name="" style="margin: 0 -2px 0 2px;border-radius:3px;width: 69px">
+						<option value="公历">中国</option>
+						<option value="农历">美国</option>
+					</select>
+					<select name="" style="margin: 0 -2px;
+				border-radius: 3px;width:69px">
+						<option value="公历">广东</option>
+					</select>
+					<select name="" style="margin: 0 -2px;
+				border-radius: 3px;width:68px">
+						<option value="公历">深圳</option>
+						
+					</select>
+				</div>
+				<div class="userEmail">
+					邮&nbsp;箱:<input type="text" name="UserEmail" id="UserEmail" value="" />
+					<div class="Userpasswordright">
+						
+					</div>
+				</div>
+				<div class="shoujihaoma">
+					手机号码:<input type="text" name="Telphone" id="Telphone" value="" />
+					<div class="Userpasswordright">
+						
+					</div>
+				</div>
+				<p style="color: silver;font-size: 12px;">可通过该手机号码快速找回密码<br />
+				中国大陆地区以外手机号码<span class="dianjizheli">点击这里</span></p>
+				<div class="shoujiyanzhengma">
+					<input type="text" name="yanzhengma" id="yanzhengma" value="" /><span class="yanzhengmaspan">获取验证码</span>
+				</div>
+				<input type="submit" value="立即注册"/>
+			</form>
+		</div>
+	</body>
+</html>

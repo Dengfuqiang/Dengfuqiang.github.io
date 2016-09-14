@@ -1,0 +1,200 @@
+form{
+				text-align: center;
+			}
+			.bodys{
+				width: 500px;
+				height: 1000px;
+				max-height: 1000px;
+				margin: 0 auto;
+			}
+			.inputclass{
+				border: 1px solid red;
+			}
+			.titils{
+				text-align:left;
+			}
+			.userNamediv input,.userpassworddiv input,.passwordconfirm  input,.shoujihaoma input,.userEmail input{
+				width: 212px;
+				height:25px;
+				border-radius: 3px;
+			}
+			
+			
+			.userName span{
+				width: 120px;
+				height: 10px;
+			}
+			
+			.userNamediv{
+				overflow: visible;
+				width:100%;
+				height: 30px;
+				margin: 10px auto;
+				
+			}
+			.userpassworddiv{
+				overflow: visible;
+				width: 100%;
+				height: 30px;
+				margin: 10px auto;
+			}
+			.passwordconfirm{
+				width:100%;
+				height: 30px;
+				margin:10px -1.5%;
+				overflow: visible;
+			}
+			.sexradio{
+				width:100%;
+				height: 30px;
+				margin:10px -12.5%;
+			}
+			.birthdayselect{
+				width:100%;
+				height: 30px;
+				margin:10px auto;
+			}
+			.shoujihaoma{
+				width:100%;
+				height: 30px;
+				margin: 10px -1.5%;
+			}
+			.shoujiyanzhengma{
+				display: none;
+				width:100%;
+				height: 50px;
+				margin: 10px 6.1%;
+			}
+			.userEmail{
+				overflow: visible;
+				width:100%;
+				height: 30px;
+				margin: 10px auto;
+				
+			}
+			.userNameMsg{
+				display: inline-block;
+				font-size: 12px;
+				width:120px;
+				height: 15px;
+				margin-left:10px;
+				margin-top: 5px;
+				position: absolute;
+				background:url('../img/tubiao.jpg') no-repeat 9px 16px;
+			}
+			
+			#passwordMsg{
+				display: none;
+				width:125px;
+				height:50px;
+				overflow:visible;
+				border: 1px solid silver;
+				border-radius: 5px;
+				padding: 5px;
+				position:relative;
+				left: 80.3%;
+				top: -154%;
+				font-size: 12px;
+				text-align: left;
+			}
+			#passwordMsg .spanclass{
+				width:110px;
+				height:12px;
+				background:url('../img/tubiao.jpg') no-repeat 0 -13px;
+				text-align: right;
+				
+			}
+			#passwordMsg .spanclass1{
+				width:129px;
+				height:12px;
+				background:url('../img/tubiao.jpg') no-repeat 0 -13px;
+				text-align: right;
+				margin-top:5px;
+			}
+			#passwordMsg .spanclass2{
+				width:87px;
+				height:12px;
+				background:url('../img/tubiao.jpg') no-repeat 0 -13px;
+				text-align: right;
+				margin-top:5px;
+			}
+			.Userpasswordright{
+				font-size:12px ;
+				color: red;
+				display: none;
+				position: relative;
+				/*display: none;*/
+				left: 81.2%;
+				top: -71%;
+				width: 120px;
+				height: 12px;
+				background:url('../img/tubiao.jpg') no-repeat 0 0px;
+			}
+			
+			.pwcfspan{
+				display: inline-block;
+				font-size: 12px;
+				width:100px;
+				height:13px;
+				background:url('../img/tubiao.jpg') no-repeat 0 13px;
+				position: absolute;
+				margin:10px 15px;
+				text-align: right;
+				color: silver;
+			}
+			.pwcfclass{
+				color:silver;
+				background-position: 0 13px;
+				width: 85px;
+			}
+			.pwcfclass3{
+				color:red;
+				background-position: 5px -26px;
+				width: 85px;
+				padding-left: 20px;
+			}
+			.pwcfclass1{
+				color:red;
+				background-position: 5px -38px;
+				padding-left: 5px;
+			}
+			.pwcfclass2{
+				background-position: 5px 0;
+			}
+			.userNameclass{
+				background-position: 11px 3px;
+			}
+			.birthdayselect2{
+				margin-left: -0.2%;
+			}
+			.shoujiyanzhengma input{
+				height: 25px;
+				width:110px;
+				border-radius: 3px;
+			}
+			.yanzhengmaspan{
+				display: inline-block;
+				height: 28px;
+				width:90px;
+				border: 1px solid silver;
+				margin:0 10px 10px 10px;
+				line-height: 28px;
+				border-radius: 3px;
+				font-size: 14px;
+			}
+			.dianjizheli{
+				color: blue;
+			}
+			[type=submit]{
+				width: 215px;
+				height: 40px;
+				background-color: #69B946;
+				color:white;
+				margin-left:10%;
+			}
+			.shoujihaoma .Userpasswordright{
+				position: relative;
+				left: 82.7%;
+				top: -71%;
+			}
+			

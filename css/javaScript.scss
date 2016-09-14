@@ -1,0 +1,177 @@
+@import "header.scss";
+%height{
+    height: 300px;
+}
+#menues{
+    display: inline-block;
+    overflow: visible;
+    @extend %height;
+    ul{
+         @extend %clearfix;
+    }
+   
+}
+.bodys-divContain{
+    height: 500px;
+}
+
+.subul{margin: 0px; padding: 0px; display: none;}
+.subdisplay{margin: 0px; padding: 0px; display: block;}
+#menues ul li{float: left; width: 100px; list-style: none;  }
+/*#menu ul li a:hover{background-color: red;}*/
+.hightLight{ background-color:red;  color: white;}
+#conTain{
+    margin:0 auto;
+    width: 700px;
+    height: 500px;
+}
+#obj,#rightShow{
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin: 5px;
+    
+}
+#leftimg{
+    width: 300px;
+    height: 300px;
+}
+#obj{
+    position:relative;
+}
+#drag{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: yellow;
+    width: 100px;
+    height: 100px;
+    opacity: 0.4;
+    cursor: move;
+}
+#rightShow{
+    display: none;
+    overflow: hidden;
+}
+#rightShow img{
+    width: 900px;
+    height: 900px;
+}
+.outeres{
+    width: 980px;
+    height: 313px;
+    overflow: hidden;
+    margin: 100px 0;
+}
+#inneres{
+    width:7200px;
+    height: 313px;
+}
+#inneres img{
+    float: left;
+    width: 1200px;
+}
+.toptitlediv{
+    width:300px;
+    overflow:hidden;
+    margin: 0 auto;
+    padding-left: 20px;
+}
+.toptitlediv-head1{
+    width: 30%;
+    height:100%;
+    border: 2px solid silver;
+    float: left;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    line-height:30px;
+    
+}
+.toptitlediv div:first-child{
+    border-bottom: 2px solid white;
+}
+.bodys-div{
+    width: 300px;
+    height: 50px;
+    border-top: 2px solid silver;
+    margin: 0 auto; 
+     margin-top: -2px;
+}
+.displaynone{
+    display: none;
+}
+.conTaines{
+    width: 600px;
+    height:auto;
+    border: 1px solid silver;
+    height: 500px;
+}
+.head{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+}
+.head textarea{
+    width: 98%;
+    height:160px;
+    display: block!important;
+}
+.head input{
+    float: right;
+}
+.fabuxinxi{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    border: 1px solid silver;
+}
+.fabuxinxi span{
+    float:right;
+}
+.textAndimg{
+    height: 70%;
+    
+}
+.textAndimg span{
+    float: none;
+}
+.textAndimg img{
+    width: 15%;
+    height:100%;
+    vertical-align: middle;
+}
+.delete:hover{
+    text-decoration: underline;
+    color: red;
+}
+#wRapes{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    border: 3px solid red;
+    margin: 20px auto;
+}
+#dRapes{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+}
+.main{
+    width: 950px;
+    height:500px;
+    margin: 20px auto;
+    position:relative;
+}
+.ball{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    position: absolute;
+    border-radius: 25px;
+}

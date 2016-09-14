@@ -1,0 +1,450 @@
+$lte7:false;
+$greenColor:#48AE15;
+@import "base.css";
+@import "d:/sassCore/_function.scss";
+body{
+	max-width:1920px;
+	margin:0 auto;
+	min-width: 670px;
+	font-size: 16px; 
+}
+.outer{
+	width: 1000px;
+	height:155px;
+	overflow: hidden;
+}
+#inner{
+	width:2000px;
+	height:118px;
+	@extend %clearfix;
+}
+#inner img{
+	float: left;
+	width: 180px;
+	height:118px;
+	padding: 10px;
+	border:0 none;
+}
+.divClasses{
+	max-width:1000px;
+	margin:0 auto;
+}
+a:visited{
+	color:black;
+}
+h2{
+	padding:10px 0;
+	font-size: 20px;
+	font-weight:bold;
+	background:url("../img/hudie.png") no-repeat;
+	
+	span{
+		color:$greenColor;
+	}
+}
+h3{
+	span{
+		display:block;
+		width:130px;
+		padding:0 10px;
+		height:30px;
+		background-color:$greenColor;
+		font-size:20px;
+		color:white;
+		font-weight:bold;
+		@include box-shadow(5px 10px 0 #1a8a00);
+	}
+	border-bottom: 1px solid white;
+	margin:0;
+	margin: 10px 0;
+	overflow:hidden;
+}
+.header{
+	width:100%;
+	position:fixed;
+	top:0;
+	margin:auto;
+	background-color:white;
+	z-index: 99;
+}
+.headerContain{
+	height:80px;
+	@extend %clearfix;
+	@extend .divClasses;
+	margin:0 auto;
+	min-width: 670px;
+}
+.blog-logo{
+	width:350px;
+	height:80px;
+	background: url("../img/logo.png") no-repeat;
+	@extend %float;
+}
+.blog-picture{
+		margin-top:80px;
+		height:250px;
+		*margin:0;
+		*padding-top:80px;
+		*height:215px;
+		background:url("../img/xc-bg.jpg") no-repeat top center;
+}
+.geYan{
+	@extend .divClasses;
+	color:green;
+	font-family: "Tahoma";
+	font-size:24px;
+	text-align:center;
+	ul{
+		float:left;
+		margin:80px 0 0px 30px;
+		*margin-top: 40px;
+	}
+	li{
+		margin-top: 10px;
+		@include opacity(0);
+		opacity:1\9;
+	}
+	li:nth-child(1){
+		@include animation(conver 2s 2s linear 1 forwards );
+	}
+	li:nth-child(2){
+		@include animation(conver1 2s 4s linear 1 forwards );
+		text-indent: 6em;
+	}
+	li:nth-child(3){
+		@include animation(conver 2s 6s linear 1 forwards );
+		text-indent: 8em;
+	}
+	a{
+		display:inline-block;
+		width:150px;
+		width:150px;
+		background:url("../img/users.jpg") no-repeat;
+
+		&:hover .userName{
+			margin-top:123px;
+		}
+	}
+}
+.charsets{
+	display:inline-block;
+	overflow:hidden;
+	margin-top:50px;
+	*margin-top:30px;
+	width:150px;
+	height:150px;
+	border:3px solid white;
+	border-radius: 100%;
+	
+}
+.userName{
+	display:inline-block;
+	width: 150px;
+	text-align:center;
+	color:white;
+	font-weight:bold;
+	font-size:20px;
+	margin-top:150px;
+	background-color:black;
+	@include transition(all 0.5s linear);
+	padding-bottom: 10px;
+}
+.menu {
+	float:right;
+	@extend %clearfix;
+	margin-top:30px;
+	margin-left: 10px;
+	li{
+		background-color:$greenColor;
+		@include transform(skewX(25deg));
+		position:relative;
+		&:hover{
+			background-color:#1a8a00;
+		}
+		a{
+		display:block;
+		padding:10px 30px;
+		line-height:20px;
+		@include transform(skewX(-25deg));
+		span{
+			display:block;
+			@include transform(skewX(-25deg));
+		}
+		color:white;
+	}
+
+	@extend %float;
+	text-align: center;
+	} 
+	.drop-menu{
+		width:100%;
+		position:absolute;
+		visibility: hidden;
+		
+	}
+}
+.menuChild{
+	background-color:$greenColor;
+	position:relative;
+	left:0;
+	@include transition(all 0.2s linear);
+	a{
+		background-color:$greenColor;
+		transform:skewX(0deg)!important;
+		&:hover{
+		background-color:#1a8a00;
+		}
+	}
+}
+.menuChildaddclass{
+	left:-20px;
+}
+.menuChildaddclass1{
+	left:20px;
+}
+#menu .innerMenu{
+	div{
+		width:360px;
+	}
+	a{
+		padding:0;
+		width:120px;
+		height:40px;
+		line-height:40px;
+		display:inline-block;
+		vertical-align: top;
+	}	
+	position:absolute;
+	top:0px;
+	left:-360px;
+	visibility: hidden;
+	overflow:hidden;
+	width:0px;
+	height:0px;
+	@include transition(all 0.4s linear);
+}
+.menuChildaddclass2{
+	visibility:visible!important;
+	width:360px !important;
+	height:200px !important;
+	z-index:999;
+}
+.divbackGroundcolor{
+	background-color:#efefef;
+	overflow:hidden;
+}
+.blog-demo{
+	@extend .divClasses;
+	height:205px;
+}
+.blog-bodys{
+	h2{
+		border:none;
+	}
+	@extend .divClasses;
+	@extend %clearfix;
+	background:url("../img/bodys.png") no-repeat;
+	padding-top: 60px;
+}
+.wenZhangtuijian{
+	@extend %float;
+	width:670px;
+	
+	li{
+		@extend %clearfix;
+		padding: 10px 0;
+		border-bottom:1px solid #ededed;
+		height:169px\9;
+		position:relative;
+		a:nth-child(1){
+			display:block;
+			
+		}
+		
+	}
+	img{
+		width:185px;
+		height:137px;
+		@extend %float;
+		@include transition(all 0.5s linear);
+	}
+	p{
+		margin:5px 0;
+	}
+	.inforTitle{
+	color:red;
+	}
+
+}
+
+.wenZhangcontain{
+	position:absolute;
+	right:0;
+	left:190px;
+	margin-top:10px;
+	margin-left:10px;
+	p{	
+		height:80px;
+		overflow:hidden;
+		margin:0;
+	}
+	.readButton{
+		float:right;
+		padding:10px 15px;
+		background-color:$greenColor;
+		color:white;
+	}
+}
+
+
+.inforMation{
+	@extend %float;
+	@extend %clearfix;
+	img{
+		width:40px;
+		height:40px;
+		border-radius:20px;
+		margin-right:10px;
+	};
+	span{
+		line-height: 40px;
+	}
+}
+.fenlei{
+	color:blue;
+}
+.bodyRight{
+	h2{
+		border-bottom: 1px solid #ededed;
+	}
+	width:280px;
+	padding-left: 20px;
+	height:1000px;
+	float:right;
+}
+.luboImageclass{
+	border:10px solid $greenColor !important;
+	border-radius:5px;
+	padding:0 !important;
+	position:relative;
+	left:-10px;
+	left:0\9;
+	@include box-shadow(10px 10px 20px black);
+}
+.zuiXintuijian{
+	ul{
+			padding: 10px 0 0 20px;
+
+		}
+	li{	
+		list-style: disc;
+		line-height: 25px;
+		border-bottom: 1px dashed #cbcbca;
+		margin-top:2px;
+		@include ellipsis(238px);
+		a{
+			color:#999999;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+	.liLast{
+	border:none;
+	}
+}
+
+.spanclass{
+	color:red;
+}
+.footer{
+	border:1px solid #ededed;
+	height:49px;
+	border-bottom:none;
+}
+@include max-screen(992px){
+	.bodyRight{
+		width:100%;
+	}
+	.zuiXintuijian li{
+		width:100%;
+	}
+	.blog-bodys{
+		max-width:874px;
+		width:100%;
+		margin:0 auto;
+		background: url("../img/bodys1.png") no-repeat;
+		padding-top:80px;
+	}
+	.wenZhangtuijian{
+		width:100%
+		
+	}
+	.wenZhangtuijian li{
+			position:relative;
+		}
+}
+.huiDingbu{
+	width:50px;
+	height:50px;
+	border-radius: 25px;
+	background-color:$greenColor;
+	position:fixed;
+	top:800px;
+	right:0;
+	cursor: pointer;
+	z-index:999;
+	text-align:center;
+	color:white;
+	@include opacity(70);
+	display:none;
+	&:before{
+		@include triangle(top, 10px, white);
+		@extend %float;
+		margin:10px 15px 0 15px;
+
+	}
+}
+@include max-screen(955px){
+	#menu{
+		margin-top:0;
+		float:none;
+		margin:0 auto;
+		width:575px;
+		height:40px;
+	}
+	.blog-logo{
+		float:none;
+		margin:0 auto;
+
+	}
+
+}
+
+@include keyframes(conver){
+	0%{
+		transform: translateX(-200px) rotateZ(0deg);
+	}
+	100%{
+		@include opacity(100);
+		transform: translateX(0px) rotateZ(360deg);
+	}
+}
+@include keyframes(conver1){
+	0%{
+		transform: translateX(200px) rotateZ(0deg);
+	}
+	100%{
+		@include opacity(100);
+		transform: translateX(0px) rotateZ(-360deg);
+	}
+}
+@include keyframes(conver2){
+	0%{
+		@include opacity(0);
+	}
+
+	100%{
+		@include opacity(100);
+	}
+}

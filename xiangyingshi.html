@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="css/xiangyingshi.css"/>
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js" ></script>
+	<script type="text/javascript">
+			$(function(){
+				$("#menu ul li").click(
+					function(){
+						$(this).children().next().children().hover(function(){
+								$(this).addClass("hightLight");
+							}
+							,function(){
+								$(this).removeClass();
+							}
+						);
+						$(this).children().next().toggle();
+						
+					}
+				);
+				
+			});
+	</script>
+</head>
+<body>
+	<div class="conTains">
+		<div class="zeaLerheads">
+			<div class="headsTitle">
+				<span class="spanclassBigwhite">ZEALER</span>
+				<span >
+					<a href="#">首页</a>
+					<a href="#">视频</a>
+					<a href="#">手机Beta</a>
+					<a href="#">社区</a>
+					<a href="#">维修</a>
+					<a href="#">实验室</a>
+					<a href="#">联系我们</a>
+					<a href="#">APP下载</a>
+					<a href="#">登录</a>
+					<a href="#">注册</a>
+				</span>
+			</div>
+			<div class="headsTitle headsTitle1">
+				<input type="checkbox" name="muluRadio" id="muluRadio" value="" />
+				<label for="muluRadio">三</label>
+				<span class="spanclassBigwhite">ZEALER</span>
+				<span >
+					<a href="#">登录</a>
+				</span>
+				<label for="muluRadio">X</label>
+				<div class="xiaLaMenu">
+					<div class="titles2">
+						<span >ZEALER</span>
+						<span >
+							<a href="#">登录</a>
+						</span>
+					</div>
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">视频</a></li>
+						<li><a href="#">手机Beto</a></li>
+						<li><a href="#">社区</a></li>
+						<li><a href="#">维修</a></li>
+						<li><a href="#">实验室</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">手机APP下载</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="pictureLunbo">
+			<div class="imgContain">
+				<img src="img/1.jpg"/>
+				<img src="img/2.jpg"/>
+				<img src="img/3.jpg"/>
+				<img src="img/4.jpg"/>
+				<img src="img/5.jpg"/>
+				<img src="img/6.jpg"/>
+				<img src="img/1.jpg"/>
+			</div>
+		</div>
+		<div class="zealerChuping">
+			<div class="zealerHead zealerHead5">
+				<span class="spanclassBigblack">ZEALER</span>
+				<span>
+					<a href="#">硬件测试</a>
+					<a href="#">搞机教程</a>
+					<a href="#">脱口秀</a>
+					<a href="#">人物专访</a>
+					<a href="#">FIX小知识</a>
+					<a href="#">ZEALER那些事</a>
+					<a href="#">全部</a>
+				</span>
+			</div>
+			<div class="zealerChuping-img">
+				
+				<div class="imgclass1">
+					<span>—</span><span>—</span><span>播放</span>
+					<a href="#"><img src="img/video1.jpg"/></a>
+					<p><a href="#">一分钟了解九个"全球第一"的ZUK...</a></p>
+				</div>
+				<div class="imgclass1">
+					<span class="spaf">—</span><span>—</span><span>播放</span>
+					<a href="#"><img src="img/video2.jpg" /></a>
+					<p><a href="#">联想ZUKZ2 Pro上手直播版</a></p>
+				</div>
+				<div class="imgclass1">
+					<span>—</span><span>—</span><span>播放</span>
+					<a href="#"><img src="img/video3.jpg" /></a>
+					<p><a href="#">化为P9上手</a></p>
+				</div>
+				<div class="imgclass1">
+					<span>—</span><span>—</span><span>播放</span>
+					<a href="#"><img src="img/video4.jpg" /></a>
+					<p><a href="#">路由器这么摆信号才强</a></p>
+				</div>
+				<div class="imgclass1">
+					<span>—</span><span>—</span><span>播放</span>
+					<a href="#"><img src="img/video5.jpg" /></a>
+					<p><a href="#">总是丢三落四？试试智能防丢器</a></p>
+				</div>
+				<div class="imgclass1">
+					<span>—</span><span>—</span><span>播放</span>	
+					<a href="#"><img src="img/video6.jpg" /></a>
+					<p><a href="#">键帽染色，让你的机器键盘更出彩</a></p>
+				</div>
+			</div>
+		</div>
+		<div class="jptjQmcepingContain">
+			<div class="jptjQmceping">
+				<div class="jptjContains">
+					<span class="spanclassBigblack">精品推荐</span>
+					<img src="img/recommend.jpg"/>
+					<ul>
+						<li>谷歌OnHub路由器9大炫功能<span>alrenelam</span></li>
+						<li>魅蓝3正式亮相，新颜色你喜欢吗?<span>慕烟华梦</span></li>
+						<li>脱离手机行业后[以摄养摄]的生活<span>Rab_X</span></li>
+					</ul>
+				</div>
+				<div class="qmcpContains">
+					<span class="spanclassBigblack">全民测评</span>
+					<img src="img/appraisal.jpg"/>
+					<ul>
+						<li>说好的不粘锅叫做！米家电饭煲使用有感<span>Rab_X</span></li>
+						<li>水冷散热加4K屏幕的笔记本5W?<span>Haonan</span></li>
+						<li>年似不再PRO6其实还是挺PRO的<span>烛火</span></li>
+					</ul>
+				</div>
+				
+				
+			</div>
+			<div class="zealerHead zealerHead1">
+				<span class="spanclassBigblack">Z友生活</span>
+				<span>
+						<a href="#">春季摄影</a>
+						<a href="#">搞机时哇</a>
+						<a href="#">晒外设</a>
+						<a href="#">桌面文化</a>
+						<a href="#">出行装备</a>
+						<a href="#">更多</a>
+				</span>
+			</div>
+			<div class="zYoushenghuo">
+					<img src="img/life1.jpg"/>
+					<img src="img/life2.jpg"/>
+					<img src="img/life3.jpg"/>
+					<img src="img/life4.jpg"/>
+			</div>
+		</div>
+		<div class="erShouyouping">
+			<div class="ershouLeft">
+				<div class="ershouLeftHead">
+					<span class="spanclassBigblack">二手优品</span>
+					<a href="#">手机</a><a href="#">配件</a>
+				</div>
+				<img src="img/hand1.jpg"/>
+				<img src="img/hand2.jpg"/>
+				<img src="img/hand3.jpg"/>
+				<img src="img/hand4.jpg"/>
+			</div>
+			<div class="ershouRight">
+				<div class="ershouLeftHead ershouLeftHead1">
+					<span class="spanclassBigblack">维修</span>
+				</div>
+				<img src="img/maintain.png"/><br />
+				
+				<div class="inputAndSelect">
+					<p>请选择机型</p>
+					<input type="texe" name="" id="" value="iPhone" /><br />
+					<p>请选故障机像</p>
+					<select style="width: 100%;height: 38px; ">
+						<option value="">故障</option>
+						<option value="">进水	</option>
+						<option value="">无法开机</option>
+						<option value="">严重摔坏</option>
+						<option value="">无Wi-Fi</option>
+						<option value="">刷机错误</option>
+						<option value="">无SIM卡</option>
+						<option value="">其它</option>
+					</select>
+					<input type="button" name="erShoubt" id="erShoubt" value="查询价格" />
+				</div>
+				<ul class="buttonList">
+					<li>
+						<a href="#">
+							<img src="img/w1.jpg"/><br />
+							手机进水
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/w2.jpg"/><br />
+							无法开机
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/w3.jpg"/><br />
+							严重损坏
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/w4.jpg"/><br />
+							刷机错误
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/w5.jpg"/><br />
+							无SIM卡
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="erShouyouping erShouyouping2">
+			<div class="ershouLeft">
+				<div class="ershouLeftHead ">
+					<span class="spanclassBigblack">测试工具</span>
+				</div>
+				<div class="imgclass1">
+					<img src="img/t1.jpg"/>
+					<p><a href="#">Galaxy S7 edge</a></p>
+				</div>
+				<div class="imgclass1">
+				<img src="img/t2.jpg"/>
+				<p><a href="#">Galaxy S7</a></p>
+				</div>
+				<div class="imgclass1">
+				<img src="img/t3.jpg"/>
+				<p><a href="#">小米 5</a></p>
+				</div>
+				<div class="imgclass1">
+				<img src="img/t4.jpg"/>
+				<p><a href="#">更多手机</a></p>
+				</div>
+			</div>
+			<div class="ershouRight">
+				<div class="ershouLeftHead">
+					<span class="spanclassBigblack">选择机型</span>
+
+				</div>
+				<img src="img/t5.jpg"/><br />
+				<div class="inputAndSelect">
+					<p>请选择品牌</p>
+					<select style="width: 100%;height: 38px; ">
+						<option value="">故障</option>
+						<option value="">进水	</option>
+						<option value="">无法开机</option>
+						<option value="">严重摔坏</option>
+						<option value="">无Wi-Fi</option>
+						<option value="">刷机错误</option>
+						<option value="">无SIM卡</option>
+						<option value="">其它</option>
+					</select>
+					<p>请选故障机像</p>
+					<select style="width: 100%;height: 38px; ">
+						<option value="">故障</option>
+						<option value="">进水	</option>
+						<option value="">无法开机</option>
+						<option value="">严重摔坏</option>
+						<option value="">无Wi-Fi</option>
+						<option value="">刷机错误</option>
+						<option value="">无SIM卡</option>
+						<option value="">其它</option>
+					</select>
+					<input type="button" name="erShoubt" id="erShoubt" value="查询详情" />
+				</div>
+				<ul class="buttonList">
+					<li>
+						<a href="#">
+							<img src="img/w1.jpg"/><br />
+							手机进水
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/w2.jpg"/><br />
+							无法开机
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/w3.jpg"/><br />
+							严重损坏
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/w4.jpg"/><br />
+							刷机错误
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							<img src="img/w5.jpg"/><br />
+							无SIM卡
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="ershouRight2">
+				<div class="ershouLeftHead">
+					<span class="spanclassBigblack spanclassBigblack1">实验室</span>
+				</div>
+				<img src="img/l5.png"/><br />
+				<a href="#">内容</a><a href="#">简介</a><a href="#">资询</a><a href="#">众测</a>
+			</div>
+		</div>
+		<div class="shiyanShi">
+			<div class="zealerHead zealerHead1">
+				<span class="spanclassBigblack">实验室</span>
+					<span>
+						<a href="#">内容</a>
+						<a href="#">简介</a>
+						<a href="#">咨询</a>
+						<a href="#">众测</a>
+						<a href="#">更多</a>
+					</span>
+			</div>
+			<div class="zealerChuping-img">
+				<div class="imgclass1">
+					<span>—</span><span>—</span><span>更多</span>
+					<a href="#"><img src="img/l1.jpg" /></a>
+					
+					<p><a href="#">[做消费者自已的实验室]</a></p>
+				</div>
+				<div class="imgclass1">
+					<span>—</span><span>—</span><span>更多</span>
+					<a href="#"><img src="img/l2.jpg" /></a>
+					
+					<p><a href="#">[检测&资询]正式上线</a></p>
+				</div>
+				<div class="imgclass1">
+					<span>—</span><span>—</span><span>更多</span>
+					<a href="#"><img src="img/l3.jpg" /></a>
+					
+					<p><a href="#">测评分析 尽在其中</a></p>
+				</div>
+				<div class="imgclass1">
+					<span>—</span><span>—</span><span>更多</span>
+					<a href="#"><img src="img/l4.jpg" /></a>
+					<p><a href="#">众测空间 期待有你</a></p>
+					
+				</div>
+			</div>
+		</div>
+		<div id="menu">
+			<ul>
+				<li ><a >业务</a>
+					<ul class="subul">
+						<li><a href="#">手机服务</a></li>
+						<li><a href="#">实验室</a></li>
+						<li><a href="#">社区</a></li>
+					</ul>
+					
+				
+				</li>
+				<li ><a >关于我们</a>
+					<ul class="subul">
+						<li><a href="#">会员条款	</a></li>
+						<li><a href="#">加入我们</a></li>
+						<li><a href="#">关于ZEALER</a></li>
+					</ul>
+					
+				</li>
+				<li><a >关注我们</a>
+					<ul class="subul">
+						<li><a href="#">新浪微博</a></li>
+						<li><a href="#">联系伙们</a></li>
+					</ul>
+				</li>
+				<li><a >官方微信</a>
+					<ul class="subul">
+						<li><a href="#"><img src="img/about1.jpg"/></a></li>
+					</ul>
+				</li>
+				<li><a >APP下载</a>
+					<ul class="subul">
+						<li><a href="#"><img src="img/about2.jpg"/></a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="youQingLianjie">
+				友情链接: 
+				<a href="#">快科技</a>
+				<a href="#">91门户</a>
+				<a href="#">硅谷网</a>
+				<a href="#">机锋网</a>
+				<a href="#">ROM之家</a>
+				<a href="#">IT之家</a>
+				<a href="#">前瞻网</a>
+				<a href="#">威锋网</a>
+				<a href="#">蜂鸟网</a>
+				<a href="#">i黑马</a>
+				<a href="#">推酷网</a>
+				<a href="#">互联网的一些事</a>
+				<a href="#">手机之家</a>
+				<a href="#">IT168</a>
+				<a href="#">苹果园</a>
+				<a href="#">爱活网</a>
+				<a href="#">优亿市场</a>
+				<a href="#">雷锋网</a>
+			</div>
+			<div class="lastFoot">
+				<a >technology stays true here|@2016 ZEALER|粤ICP备12076188号-1</a><img src="img/foot.jpg"/>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

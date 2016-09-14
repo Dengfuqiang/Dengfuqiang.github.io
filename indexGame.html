@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="css/indexGame.css"/>
+	</head>
+	<body>
+		<div id="backPicture">
+			<div id="chiuZi">
+			</div>
+			<span id="fenShu">0</span>
+			<input type="button" name="playButton" id="playButton" value="" onclick="playings()"/>
+			<div id="tiMing">
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var backs=document.getElementById("backPicture")
+		var chiuzi=document.getElementById("chiuZi")
+		var playButton=document.getElementById("playButton");
+		var jishiTiao=document.getElementById("tiMing");
+		var jiFenqi=document.getElementById("fenShu");
+//		var mouses=document.getElementById("mouseContain").getElementsByTagName("div");
+		var mouses=document.getElementById("backPicture").getElementsByTagName("div");
+		var cont=0;
+		var myArray=new Array();
+		var numBer=0;
+		var playing=0;
+		var settime=0;
+		var times=0;
+		var reduce=0;
+		var setTimeouts=0;
+		//生成老鼠
+		function creatMouse(){
+			
+			var isNo=1;
+			cont=selectfrom(1,9);
+			
+			for(var i=0;i<myArray.length;i++)
+			{
+				if(cont==myArray[i]){
+					isNo=0;
+					break;
+				}
+			}
+			
+			if(isNo)
+			{	
+				var mousediv=document.createElement("div");
+				var mousepictur=document.createElement("img")
+				mousediv.className="mouses mouse"+cont+"";
+				mousepictur.src="img/mouse.png";
+				mousediv.appendChild(mousepictur);
+				backs.appendChild(mousediv);
+				
+				mousediv.onclick=function(){
+					var mou=this.getElementsByTagName("img")[0];
+					mou.src="img/mouse2.png";
+					this.style.paddingTop="33px";
+					setTimeout("backs.removeChild("+this+")",300);
+					//计分
+					numBer++;
+					jiFenqi.innerHTML=""+numBer+"";
+				}
+				
+				setTimeouts=setTimeout("remove("+cont+")",1000);
+			}
+			myArray.push(cont);
+			if(myArray.length>=3){
+				myArray.splice(0,3)
+			}
+		}
+		
+		//删除老鼠
+		function remove(cont){
+			var mousediv=document.getElementsByClassName("mouse"+cont+"");
+			if(mousediv.length!=0){
+				backs.removeChild(mousediv[0]);
+				myArray.shift();
+			}
+			
+		}
+		//锤子跟随
+		backs.onmouseover=function(){
+			document.onmousemove=function(event){
+				var event=event||window.event;
+				var mouseX=event.clientX-backs.offsetLeft+10;
+				var mouseY=event.clientY-backs.offsetTop-100;
+				if(mouseX<=0){
+					mouseX=0;
+				}else if(mouseX>=backs.clientWidth-chiuzi.offsetWidth+150)
+				{
+					mouseX=backs.clientWidth-chiuzi.offsetWidth+150;
+				}
+				if(mouseY<=0){
+					mouseY=0;
+				}else if(mouseY>=backs.clientHeight-chiuzi.offsetHeight+100)
+				{
+					mouseY=backs.clientHeight-chiuzi.offsetHeight;
+				}
+				chiuzi.style.left=mouseX+'px';
+				chiuzi.style.top=mouseY+'px';
+				backs.onmousedown=function(){
+					chiuzi.style.transform="rotateZ(-30deg)";
+				}
+				backs.onmouseup=function(){
+					chiuzi.style.transform="rotateZ(0deg)";
+				}
+			}
+		}
+		//消除锤子跟随
+		backs.onmouseout=function(){
+			document.onmousemove=null;
+		}
+		//随机数
+		function selectfrom (lowValue,highValue){
+				var choice=highValue-lowValue+1;
+				return Math.floor(Math.random()*choice+lowValue);
+		}
+		//游戏开始
+		function playings(){
+			if(playing==0){
+				playButton.style.backgroundImage="url(img/playButton.png)";
+				playing=1;
+				if(reduce<=0){
+					times=prompt("请输入秒数","0");
+					reduce=times;
+				}
+				settime=setInterval(main,500);
+			}
+			else{
+				playButton.style.backgroundImage="url(img/puse.jpg)";
+				playing=0;
+				clearTimeout(setTimeouts);
+				clearInterval(settime);
+				myArray.splice(0,9)
+			}
+		}
+		//计时
+		function jiShi(){
+			reduce--;
+			if(reduce>=0){
+				jishiTiao.innerHTML=""+reduce+"/"+times+"";
+				var nuber=59+143*(1-reduce/times);
+				jishiTiao.style.backgroundPosition="-"+nuber+"px 0px";
+			}else{
+				var isOrno=0;
+				if(jiFenqi.innerHTML<90){
+					clearInterval(settime);
+					isOrno=confirm("游戏失败，是否重来");
+					if(isOrno){
+						jiFenqi.innerHTML="0";
+						reduce=0;
+						playing=0;
+						playings();
+					}else{
+						playButton.style.backgroundImage="url(img/puse.jpg)";
+						playing=0;
+						myArray.splice(0,9);
+					}
+				}
+				
+				
+			}
+		}
+		function main(){
+			jiShi();
+			creatMouse();
+		}
+		
+	</script>
+</html>

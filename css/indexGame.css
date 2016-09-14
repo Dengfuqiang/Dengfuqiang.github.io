@@ -1,0 +1,101 @@
+#backPicture{
+	width: 1280px;
+	height: 720px;
+	margin: 0 auto;
+	background: url(../img/nologo_pic_865266_01ef17.png);
+	position: relative;
+	cursor: none;
+}
+#fenShu{
+	color: white;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	float: right;
+	margin:83px 110px;
+}
+#playButton{
+	display: block;
+	width: 88px;
+	height: 90px;
+	background: url("../img/puse.jpg");
+	position: absolute;
+	right:13px;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	cursor: none;
+	border: none;
+}
+#tiMing{
+	width: 143px;
+	height: 27px;
+	background-color:#a77337;
+	position: absolute;
+	left: 155px;
+	top: 67px;
+	border-radius: 10px;
+	background: url("../img/jishitiao.png") no-repeat -59px 0px;
+	color: white;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: "微软雅黑";
+	text-align: center;
+}
+
+#chiuZi{
+	width:178px;
+	height: 178px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	overflow: visible;
+	background: url(../img/u=2228811278,1873975372&fm=21&gp=0.png);
+
+}
+.mouses{
+	width: 120px;
+	height: 120px;
+	position: absolute;
+}
+.mouses img{
+	width: 100%;
+}
+.mouse1{
+	left: 256px;
+	top: 134px;
+}
+.mouse2{
+	left: 570px;
+	top: 134px;
+}
+.mouse3{
+	left: 884px;
+	top: 134px;
+}
+.mouse4{
+	left: 256px;
+	top: 291px;
+}
+.mouse5{
+	left: 570px;
+	top: 291px;
+}
+.mouse6{
+	left: 884px;
+	top: 291px;
+}
+.mouse7{
+	left: 256px;
+	top: 448px;
+}
+.mouse8{
+	left: 570px;
+	top: 448px;
+}
+
+.mouse9{
+	left: 884px;
+	top: 448px;
+}
