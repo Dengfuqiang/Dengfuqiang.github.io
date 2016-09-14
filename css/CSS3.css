@@ -309,7 +309,7 @@ textarea {
   }
 }
 
-@keyframes conver {
+@-webkit-keyframes conver {
   0% {
     transform: translateX(-200px) rotateZ(0deg);
   }
@@ -329,7 +329,7 @@ textarea {
   }
 }
 
-@keyframes conver1 {
+@-webkit-keyframes conver1 {
   0% {
     transform: translateX(200px) rotateZ(0deg);
   }
@@ -348,7 +348,7 @@ textarea {
   }
 }
 
-@keyframes conver2 {
+@-webkit-keyframes conver2 {
   0% {
     opacity: 0;
   }
@@ -422,7 +422,7 @@ textarea {
   background-color: orange;
 }
 
-@keyframes lunbo {
+@-webkit-keyframes lunbo {
   0% {
     transform: translateX(0px);
     -webkit-transform: translateX(0px);
@@ -515,7 +515,7 @@ textarea {
   opacity: 1;
 }
 
-@keyframes convers1 {
+@-webkit-keyframes convers1 {
   0% {
     -webkit-transform: rotateY(0) translateZ(0px);
     transform: rotateY(0) translateZ(0px);
@@ -526,7 +526,7 @@ textarea {
   }
 }
 
-@keyframes convers1-1 {
+@-webkit-keyframes convers1-1 {
   0% {
     -webkit-transform: rotateY(0) translateZ(360px);
     transform: rotateY(0) translateZ(360px);
@@ -537,7 +537,7 @@ textarea {
   }
 }
 
-@keyframes convers2 {
+@-webkit-keyframes convers2 {
   0% {
     -webkit-transform: rotateY(0) translateZ(0px);
     transform: rotateY(0) translateZ(0px);
@@ -548,7 +548,7 @@ textarea {
   }
 }
 
-@keyframes convers2-2 {
+@-webkit-keyframes convers2-2 {
   0% {
     -webkit-transform: rotateY(60deg) translateZ(360px);
     transform: rotateY(60deg) translateZ(360px);
@@ -559,7 +559,7 @@ textarea {
   }
 }
 
-@keyframes convers3 {
+@-webkit-keyframes convers3 {
   0% {
     -webkit-transform: rotateY(0) translateZ(0px);
     webkit-transform: rotateY(0) translateZ(0px);
@@ -570,7 +570,7 @@ textarea {
   }
 }
 
-@keyframes convers4 {
+@-webkit-keyframes convers4 {
   0% {
     -webkit-transform: rotateY(0) translateZ(0px);
     transform: rotateY(0) translateZ(0px);
@@ -581,7 +581,7 @@ textarea {
   }
 }
 
-@keyframes convers5 {
+@-webkit-keyframes convers5 {
   0% {
     -webkit-transform: rotateY(0) translateZ(0px);
     transform: rotateY(0) translateZ(0px);
@@ -592,7 +592,7 @@ textarea {
   }
 }
 
-@keyframes convers6 {
+@-webkit-keyframes convers6 {
   0% {
     -webkit-transform: rotateY(0) translateZ(0px);
     transform: rotateY(0) translateZ(0px);
@@ -603,7 +603,7 @@ textarea {
   }
 }
 
-@keyframes convers {
+@-webkit-keyframes convers {
   0% {
     -webkit-transform: rotateY(0);
     transform: rotateY(0);
@@ -626,7 +626,7 @@ textarea {
   }
 }
 
-@keyframes convert {
+@-webkit-keyframes convert {
   0% {
     -webkit-transform: none;
     transform: none;
@@ -715,7 +715,7 @@ textarea {
   background-color: silver;
 }
 
-@keyframes liFantimainconver {
+@-webkit-keyframes liFantimainconver {
   0% {
     transform: none;
   }
