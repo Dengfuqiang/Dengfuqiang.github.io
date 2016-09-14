@@ -212,7 +212,7 @@ textarea {
   border-radius: 25px;
   background-color: #48AE15;
   position: fixed;
-  top: 800px;
+  top: 80%;
   right: 0;
   cursor: pointer;
   z-index: 999;
