@@ -17,10 +17,12 @@
 .bodys{
     width:1200px;
     height:300px;
+    -webkit-animation:lunbo 4s linear infinite;
     animation:lunbo 4s linear infinite;
 }
 .bodys:hover{
     animation-play-state:paused;
+    -webkit-animation-play-state:paused;
 }
 
 .contain .bodys div{
@@ -47,6 +49,7 @@
     0%{}
     100%{
         transform:translateX(-600px);
+        -webkit-transform:translateX(-600px);
     }
 }
 .xuanzhuan div{
@@ -58,11 +61,14 @@
     width:400px;
     height:300px;
     margin:200px auto;
-    transform-style: preserve-3d;
-    animation:convers 20s 1s linear infinite;
+     -webkit-transform-style: preserve-3d;
+     transform-style: preserve-3d;
+     -webkit-animation:convers 20s 1s linear infinite;
+     animation:convers 20s 1s linear infinite;
 }
 .xuanzhuan:hover{
-    animation-play-state:paused;
+     -webkit-animation-play-state:paused;
+     animation-play-state:paused;
 }
 
 .xuanzhuan div{
@@ -70,35 +76,49 @@
     height:300px;
     position:absolute;
     -webkit-box-reflect:below 5px  -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
+    -webkit-transition:all 1s linear;
     transition:all 1s linear;
     
 
 }
 .xuanzhuan div:active{
+    -webkit-transform: scale3d(0.01, 0.01, 0.01);
     transform: scale3d(0.01, 0.01, 0.01);
 }
 .div1{
+    -webkit-transform: rotateY(   0deg ) translateZ(360px);
     transform: rotateY(   0deg ) translateZ(360px);
+    -webkit-animation:convers1 1s  linear 1;
     animation:convers1 1s  linear 1;
 }
 .xuanzhuan div:nth-child(2) {
- transform: rotateY(  60deg ) translateZ(360px); 
+ -webkit-transform: rotateY(  60deg ) translateZ(360px);
+ transform: rotateY(  60deg ) translateZ(360px);  
+ -webkit-animation:convers2 1s  linear 1;
  animation:convers2 1s  linear 1;
 }
 .xuanzhuan div:nth-child(3) { 
-    transform: rotateY(  120deg ) translateZ(360px); 
+    -webkit-transform: rotateY(  120deg ) translateZ(360px);
+    transform: rotateY(  120deg ) translateZ(360px);  
+    -webkit-animation:convers3 1s  linear 1;
     animation:convers3 1s  linear 1;
 }
 .xuanzhuan div:nth-child(4) {
- transform: rotateY( 180deg ) translateZ(360px); 
+ -webkit-transform: rotateY( 180deg ) translateZ(360px);
+ transform: rotateY( 180deg ) translateZ(360px);  
+ -webkit-animation:convers4 1s  linear 1;
  animation:convers4 1s  linear 1;
 }
 .xuanzhuan div:nth-child(5) {
+ -webkit-transform: rotateY( 240deg ) translateZ(360px);
  transform: rotateY( 240deg ) translateZ(360px);
+ -webkit-animation:convers5 1s  linear 1;
  animation:convers5 1s  linear 1;
  }
 .xuanzhuan div:nth-child(6) {
- transform: rotateY( 300deg ) translateZ(360px); 
+ -webkit-transform: rotateY( 300deg ) translateZ(360px);
+ transform: rotateY( 300deg ) translateZ(360px);
+ -webkit-animation:convers6 1s  linear 1;
  animation:convers6 1s  linear 1;
 }
 .xuanzhuan div img{
@@ -111,65 +131,81 @@
 }
 @keyframes convers1{
     0%{
+        -webkit-transform:rotateY(0) translateZ(0px) ;
         transform:rotateY(0) translateZ(0px) ;
     }
     100%{
+            -webkit-transform:rotateY(0) translateZ(360px);
             transform:rotateY(0) translateZ(360px);
         }
 }
 @keyframes convers1-1{
     0%{
+        -webkit-transform:rotateY(0) translateZ(360px) ;
         transform:rotateY(0) translateZ(360px) ;
     }
     100%{
+            -webkit-transform:rotateY(0) translateZ(720px);
             transform:rotateY(0) translateZ(720px);
         }
 }
 @keyframes convers2{
     0%{
+        -webkit-transform:rotateY(0) translateZ(0px) ;
         transform:rotateY(0) translateZ(0px) ;
     }
     100%{
+            -webkit-transform:rotateY(60deg) translateZ(360px);
             transform:rotateY(60deg) translateZ(360px);
         }
 }
 @keyframes convers2-2{
     0%{
+        -webkit-transform:rotateY(60deg) translateZ(360px) ;
         transform:rotateY(60deg) translateZ(360px) ;
     }
     100%{
+            -webkit-transform:rotateY(60deg) translateZ(720px);
             transform:rotateY(60deg) translateZ(720px);
         }
 }
 @keyframes convers3{
     0%{
-        transform:rotateY(0) translateZ(0px) ;
+        -webkit-transform:rotateY(0) translateZ(0px) ;
+        webkit-transform:rotateY(0) translateZ(0px) ;
     }
     100%{
+            -webkit-transform:rotateY(120deg) translateZ(360px);
             transform:rotateY(120deg) translateZ(360px);
         }
 }
 @keyframes convers4{
     0%{
+        -webkit-transform:rotateY(0) translateZ(0px) ;
         transform:rotateY(0) translateZ(0px) ;
     }
     100%{
+            -webkit-transform:rotateY(180deg) translateZ(360px);
             transform:rotateY(180deg) translateZ(360px);
         }
 }
  @keyframes convers5{ 
     0%{
+        -webkit-transform:rotateY(0) translateZ(0px) ;
         transform:rotateY(0) translateZ(0px) ;
     }
     100%{
+            -webkit-transform:rotateY(240deg) translateZ(360px);
             transform:rotateY(240deg) translateZ(360px);
         }
 }
 @keyframes convers6{
     0%{
+        -webkit-transform:rotateY(0) translateZ(0px) ;
         transform:rotateY(0) translateZ(0px) ;
     }
     100%{
+            -webkit-transform:rotateY(300deg) translateZ(360px);
             transform:rotateY(300deg) translateZ(360px);
         }
 }
@@ -177,30 +213,30 @@
 
 @keyframes convers{
     0%{
-        transform:rotateY(0) ;
+        -webkit-transform:rotateY(0) ;transform:rotateY(0) ;
     }
     25%{
-        transform:rotateY(90deg);
+        -webkit-transform:rotateY(90deg);transform:rotateY(90deg);
     }
 
     50%{
-        transform:rotateY(180deg);
+        -webkit-transform:rotateY(180deg);transform:rotateY(180deg);
         }
     75%{
-        transform:rotateY(270deg);
+        -webkit-transform:rotateY(270deg);transform:rotateY(270deg);
         }
 
 
     100%{
-            transform:rotateY(360deg);
+            -webkit-transform:rotateY(360deg);transform:rotateY(360deg);
         }
 }
 @keyframes convert{
     0%{
-        transform: none;
+        -webkit-transform: none;transform: none;
     }
     100%{
-        transform: rotateY(180deg);
+        -webkit-transform: rotateY(180deg);transform: rotateY(180deg);
     }
 }
 
