@@ -278,6 +278,7 @@
     transform-style:preserve-3d;
 }
 .liFantimain:hover{
+    -webkit-animation:liFantimainconver 2s 0.5s linear 1;
     animation:liFantimainconver 2s 0.5s linear 1;
     -webkit-transform-origin:200px 100px;
     transform-origin:200px 100px;
