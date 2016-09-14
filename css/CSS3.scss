@@ -242,9 +242,11 @@
     width: 181px;
     margin: 120px auto;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
 }
 
 .fanPaimain:hover{
+    -webkit-animation: convert 1.5s 1;
     animation: convert 1.5s 1;
 }
 
@@ -259,21 +261,25 @@
 }
 
 .front{
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);
 }
 
 .back{
     background-position-x: 181px;
+    -webkit-transform: translateZ(0.01px);
     transform: translateZ(0.01px);
 }
  .liFantimain{
     margin:100px auto;
     width:181px;
     height: 400px;
+    -webkit-transform-style:preserve-3d;
     transform-style:preserve-3d;
 }
 .liFantimain:hover{
     animation:liFantimainconver 2s 0.5s linear 1;
+    -webkit-transform-origin:200px 100px;
     transform-origin:200px 100px;
     
 }
@@ -291,30 +297,37 @@
     
 }
 .liFantimainclass2{
+    -webkit-transform:translateZ(-300px) rotateY(180deg);
     transform:translateZ(-300px) rotateY(180deg);
     background-color:orange;
 }
 .liFantimainclass3{
+    -webkit-transform:translateZ(-150px) translateX(150px) rotateY(90deg) ;
     transform:translateZ(-150px) translateX(150px) rotateY(90deg) ;
     background-color:blue;
 }
 .liFantimainclass4{
+    -webkit-transform:translateZ(-150px) translateX(-150px) rotateY(-90deg) ;
     transform:translateZ(-150px) translateX(-150px) rotateY(-90deg) ;
     background-color:green;
 }
 .liFantimainclass5{
+    -webkit-transform:translateZ(-150px) translateY(-150px) rotateX(90deg) ;
     transform:translateZ(-150px) translateY(-150px) rotateX(90deg) ;
     background-color:gray;
 }
 .liFantimainclass6{
+    -webkit-transform:translateZ(-150px) translateY(150px) rotateX(-90deg) ;
     transform:translateZ(-150px) translateY(150px) rotateX(-90deg) ;
     background-color:silver;
 }
 @-webkit-keyframes liFantimainconver{
     0%{
+        -webkit-transform:none;
         transform:none;
     }
     100%{
+        -webkit-transform:rotateY(360deg) rotateX(360deg) ;
         transform:rotateY(360deg) rotateX(360deg) ;
     }
 }
@@ -408,6 +421,7 @@ div.demo i {
 div.demo i:hover {
     opacity: 1;
     transition-duration: 0s;
+    -webkit-transition-duration: 0s;
 }
 .layoutmain{
     height: 570px;
