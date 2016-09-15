@@ -109,7 +109,8 @@ h3 {
   .geYan li {
     margin-top: 10px;
     opacity: 0;
-    opacity: 1\9; }
+    opacity: 1\9;
+    text-align: right; }
   .geYan li:nth-child(1) {
     -webkit-animation: conver 2s 2s linear 1 forwards;
     animation: conver 2s 2s linear 1 forwards; }
@@ -372,11 +373,23 @@ h3 {
   background-color: #48AE15;
   position: fixed;
   top: 0;
-  z-index: 999;
+  z-index: 998;
   font-size: 20px;
   color: white;
   line-height: 44px;
   text-align: center; }
+  .headerCopy i {
+    width: 30px;
+    height: 30px;
+    display: none;
+    float: left;
+    margin: 5px 5px 2px 5px; }
+    .headerCopy i:before {
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url("../img/erro.png") no-repeat 0px 0px; }
   .headerCopy span {
     display: block;
     height: 30px;
@@ -424,6 +437,25 @@ h3 {
 
 .imforAndRead {
   display: none; }
+
+.studyInfinite {
+  display: none;
+  width: 100%;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  margin-top: 40px; }
+  .studyInfinite li {
+    height: 49px;
+    border-bottom: 1px solid lightblue;
+    padding-left: 20px; }
+    .studyInfinite li a {
+      display: inline-block;
+      background-color: lightblue;
+      padding: 5px;
+      margin: 10px 5px 10px 0;
+      border-radius: 5px; }
 
 @media screen and (max-width: 955px) {
   #menu {

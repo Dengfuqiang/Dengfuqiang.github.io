@@ -190,6 +190,30 @@ textarea{
     height:160px !important;
     z-index:999;
 }
+.studyInfinite{
+    display:none;
+    
+    width:100%;
+    background-color:white;
+    position:fixed;
+    top:0;
+    z-index:999;
+    margin-top: 40px;
+    li{
+        height:49px;
+        border-bottom:1px solid lightblue;
+        padding-left: 20px;
+        a{
+            display:inline-block;
+            background-color:lightblue;
+
+            padding:5px;
+            margin: 10px 5px 10px 0;
+            border-radius:5px;
+            color:black;
+        }
+    }
+}
 @include max-screen(992px){
     .bodyRight{
         width:100%;
@@ -293,7 +317,22 @@ textarea{
     color: #8C8C8C;
 }
 .headerCopy{
-
+    i{
+        width:30px;
+            height:30px;
+            display:none;
+            float:left;
+            margin:5px 5px 2px 5px;
+            &:before{
+                
+                content:"";
+                display:block;
+                width:30px;
+                height:30px;
+                
+                background: url("../img/erro.png") no-repeat 0px 0px;
+        }
+    }
     overflow:visible;
     display:none;
     width:100%;

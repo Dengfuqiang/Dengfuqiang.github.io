@@ -1,4 +1,17 @@
 $(function(){
+	$("li[class='liNext']").find(".a_addclass").click(function(){
+		$(".studyInfinite").eq($(".a_addclass").index(this)).toggle("400");
+		$(".headerCopy i").toggle();
+		$(".headerCopy span:nth-child(1)").toggle();
+		$(".headerCopy ul").toggle("300");
+
+	});
+	$(".headerCopy i").click(function(){
+		$(this).toggle();
+		$(".studyInfinite").css("display","none");
+		$(".headerCopy span:nth-child(1)").toggle();
+		$(".headerCopy ul").toggle("300");
+	});
 	var setIn=0;
 	var outer=document.getElementById("outer");
 	var inner=document.getElementById("inner");
