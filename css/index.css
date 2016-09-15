@@ -439,6 +439,8 @@ h3 {
 @media screen and (max-width: 670px) {
   .headerCopy {
     display: block; }
+    .headerCopy ul li a {
+      color: black !important; }
 
   .blog-picture {
     margin-top: 44px; }
@@ -492,6 +494,7 @@ h3 {
     display: block; }
 
   .readButton1 {
+    color: white !important;
     display: block;
     float: right;
     margin-top: 6px;

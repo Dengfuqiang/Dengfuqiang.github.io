@@ -115,10 +115,6 @@ $(function(){
 			rightshow.scrollLeft=drag.offsetLeft * num;
 			rightshow.scrollTop=drag.offsetTop * num;
 		}
-		obj.onmouseout=function(){
-			drag.style.display='none';
-			rightshow.style.display='none';
-		}
 		var outeres=document.getElementById("outeres");
 		var inneres=document.getElementById("inneres");
 		inneres.innerHTML+=inneres.innerHTML;

@@ -467,10 +467,15 @@ textarea{
         height:150px!important;
     }
     #conTain{
-        height:300px!important;
+        width:100%important;
+        height:160px!important;
     }
     #outeres{
+        width:100%!important;
         margin:0 auto !important;
+    }
+    #inneres{
+        margin-left: -400px!important;
     }
     .bodys-divContain{
         height:100px!important;
@@ -530,7 +535,7 @@ textarea{
     }
     .shengbeileft{
         width:80px!important;
-        margin-left: 11.5%!important;
+        margin-left: 14.5%!important;
     }
     .shengbeiright{
         width:100px!important;
@@ -547,7 +552,7 @@ textarea{
         height:auto!important;
     }
     .shengbeimain{
-        width: 20%!important;
+        width: 17%!important;
     }
     .shengbeibodys{
         padding-left: 80px!important;
@@ -590,7 +595,6 @@ textarea{
     #obj, #rightShow{
         width:150px!important;
         height:150px!important;
-        float:none!important;
     }
     .toptitlediv{
         padding-left:10px!important;
@@ -606,10 +610,54 @@ textarea{
         margin: 3px 0px 0 5px!important;
     }
     .huiDingbu {
-    width: 30px!important;
-    height: 30px!important;
-    border-radius: 15px!important;
-    bottom:2%;
-        right:2%;
-}
+        width: 30px!important;
+        height: 30px!important;
+        border-radius: 15px!important;
+        bottom:2%;
+            right:2%;
+    }
+    #drag{
+        width:50px!important;
+        height:50px!important;
+    }
+    #rightShow img{
+        width:300px!important;;
+        height:300px!important;
+    }
+    textarea{
+        width:100%!important;
+    }
+    .xuanzhuan{
+        margin:0!important;
+    }
+    .xuanzhuanbodys{
+        width:100%!important;
+        height:300px!important;
+    }
+    #floatcontains{
+        width:100%!important;
+    }
+    #floatcontains{
+        height:auto!important;
+    }
+    #floatdiv1{
+         height:100px!important;
+         line-height:100px!important;
+    }
+    #floatdiv2{
+         div{
+            line-height:140px!important;
+        }
+        .floatclass5{
+            line-height:70px!important;
+        }
+        height:350px!important;
+    }
+    #floatdiv3{
+        div{
+            line-height:175px!important;
+        }
+        height:350px!important;
+        
+    }
 }
