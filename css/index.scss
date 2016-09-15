@@ -389,7 +389,7 @@ h3{
 	border-radius: 25px;
 	background-color:$greenColor;
 	position:fixed;
-	top:80%;
+	bottom:10%;
 	right:0;
 	cursor: pointer;
 	z-index:999;
@@ -474,6 +474,7 @@ h3{
 }
 .inforMation1{
 	@extend .inforMation;
+	width:245px;
 }
 .readButton1{
 	@extend .readButton;
@@ -566,6 +567,16 @@ h3{
 	}
 	.geYan ul{
 		margin:60px 0 0 10px;
+	}
+	.huiDingbu:before {
+        margin: 3px 0px 0 5px!important;
+    }
+    .huiDingbu {
+	    width: 30px!important;
+	    height: 30px!important;
+	    border-radius: 15px!important;
+	    bottom:2%;
+	    right:2%;
 	}
 }
 

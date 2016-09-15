@@ -187,7 +187,6 @@ textarea{
 }
 .menuChildaddclass2{
     visibility:visible!important;
-    width:360px !important;
     height:160px !important;
     z-index:999;
 }
@@ -219,7 +218,7 @@ textarea{
     border-radius: 25px;
     background-color:$greenColor;
     position:fixed;
-    top:80%;
+    bottom:20%;
     right:0;
     cursor: pointer;
     z-index:999;
@@ -233,6 +232,12 @@ textarea{
         margin:10px 15px 0 15px;
 
     }
+}
+.footer {
+    border: 1px solid #ededed;
+    height: 40px;
+    border-bottom: none;
+    background-color:white;
 }
 @include max-screen(955px){
     #menu{
@@ -548,4 +553,63 @@ textarea{
         padding-left: 80px!important;
         padding-right:100px!important;
     }
+    #menues ul li{
+        width:50px!important;
+    }
+    .menu li a{
+        padding: 5px 8px!important;
+    }
+    #beautifulMenu{
+        .innerMenu{
+            div{
+                width:280px!important;
+            }
+            left:-277px!important;
+            a{
+            height:auto!important;
+            line-height:20px!important;
+            width:75px!important;
+        }
+        }
+         
+        margin-left:50px!important;
+    }
+    .menuChildaddclass2{
+        width:280px !important;
+    }
+        .menuChildaddclass{
+        left:-10px!important;
+    }
+    .menuChildaddclass1{
+        left:10px!important;
+    }
+    #leftimg{
+        width:150px!important;
+        height:150px!important;
+    }
+    #obj, #rightShow{
+        width:150px!important;
+        height:150px!important;
+        float:none!important;
+    }
+    .toptitlediv{
+        padding-left:10px!important;
+    }
+    .contain{
+        width:100%!important;
+        height:200px!important;
+    }
+    .contain .bodys div{
+        line-height:200px!important;
+    }
+    .huiDingbu:before {
+        margin: 3px 0px 0 5px!important;
+    }
+    .huiDingbu {
+    width: 30px!important;
+    height: 30px!important;
+    border-radius: 15px!important;
+    bottom:2%;
+        right:2%;
+}
 }

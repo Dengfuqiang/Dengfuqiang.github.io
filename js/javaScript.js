@@ -35,8 +35,10 @@ $(function(){
 			);
 			$(".menuChild").hover(function(){
 						$(this).children().next().addClass("menuChildaddclass2");
+						$(this).children().next().css("width","360px");
 					},function(){
 						$(this).children().next().removeClass("menuChildaddclass2");
+						$(this).children().next().css("width","0px");
 					}
 			);
 			$(window).scroll(function(){ 

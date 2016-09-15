@@ -350,7 +350,7 @@ h3 {
   border-radius: 25px;
   background-color: #48AE15;
   position: fixed;
-  top: 80%;
+  bottom: 10%;
   right: 0;
   cursor: pointer;
   z-index: 999;
@@ -418,6 +418,9 @@ h3 {
   background-color: #48AE15 !important;
   color: white !important;
   font-weight: blod !important; }
+
+.inforMation1 {
+  width: 245px; }
 
 .imforAndRead {
   display: none; }
@@ -501,7 +504,17 @@ h3 {
     height: 200px; }
 
   .geYan ul {
-    margin: 60px 0 0 10px; } }
+    margin: 60px 0 0 10px; }
+
+  .huiDingbu:before {
+    margin: 3px 0px 0 5px !important; }
+
+  .huiDingbu {
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 15px !important;
+    bottom: 2%;
+    right: 2%; } }
 @-webkit-keyframes conver {
   0% {
     transform: translateX(-200px) rotateZ(0deg); }
