@@ -16,8 +16,7 @@
 
 body {
   max-width: 1920px;
-  margin: 0 auto;
-  min-width: 670px; }
+  margin: 0 auto; }
 
 .divClasses, .headerContain {
   max-width: 1000px;
@@ -25,7 +24,6 @@ body {
 
 .header {
   width: 100%;
-  min-width: 585px;
   position: fixed;
   top: 0;
   margin: auto;

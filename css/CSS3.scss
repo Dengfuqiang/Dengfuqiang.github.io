@@ -1,5 +1,5 @@
-@import "header.scss";
-
+@import "header.css";
+@import "d:/sassCore/_function.scss";
 .xiaoGuotu{
     perspective: 1000px;
 } 
@@ -259,7 +259,6 @@
     position: absolute;
 
 }
-
 .front{
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg);

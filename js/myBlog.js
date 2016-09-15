@@ -54,6 +54,14 @@ $(function(){
 		
 		$("html,body").animate({scrollTop:"0px"},200);
 	});
-	
+	$(".headerCopy span:nth-child(1)").click(function(){
+		$(".headerCopy ul").toggle("300");
+	});
+	$(".liChildMenu").click(function(){
+		$(this).next().siblings(".liNext").slideUp("300");
+		$(this).next().toggle("300");
+		$(this).siblings(".liChildMenu").removeClass("liAddClass");
+		$(this).addClass("liAddClass");
+	});
 				
 });

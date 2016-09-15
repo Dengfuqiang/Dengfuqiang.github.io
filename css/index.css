@@ -1,11 +1,11 @@
 @import url(base.css);
-.blog-logo, .menu li, .wenZhangtuijian, .wenZhangtuijian img, .inforMation, .huiDingbu:before {
+.blog-logo, .menu li, .wenZhangtuijian, .wenZhangtuijian img, .inforMation, .inforMation1, .huiDingbu:before, .headerCopy span {
   float: left; }
 
-#inner:before, .headerContain:before, .menu:before, .blog-bodys:before, .wenZhangtuijian li:before, .inforMation:before, #inner:after, .headerContain:after, .menu:after, .blog-bodys:after, .wenZhangtuijian li:after, .inforMation:after {
+#inner:before, .headerContain:before, .menu:before, .blog-bodys:before, .wenZhangtuijian li:before, .inforMation:before, .inforMation1:before, #inner:after, .headerContain:after, .menu:after, .blog-bodys:after, .wenZhangtuijian li:after, .inforMation:after, .inforMation1:after {
   content: "";
   display: table; }
-#inner:after, .headerContain:after, .menu:after, .blog-bodys:after, .wenZhangtuijian li:after, .inforMation:after {
+#inner:after, .headerContain:after, .menu:after, .blog-bodys:after, .wenZhangtuijian li:after, .inforMation:after, .inforMation1:after {
   clear: both; }
 
 .zuiXintuijian li {
@@ -22,7 +22,6 @@
 body {
   max-width: 1920px;
   margin: 0 auto;
-  min-width: 670px;
   font-size: 16px; }
 
 .outer {
@@ -83,8 +82,7 @@ h3 {
 
 .headerContain {
   height: 80px;
-  margin: 0 auto;
-  min-width: 670px; }
+  margin: 0 auto; }
 
 .blog-logo {
   width: 350px;
@@ -129,7 +127,7 @@ h3 {
     width: 150px;
     background: url("../img/users.jpg") no-repeat; }
     .geYan a:hover .userName {
-      margin-top: 123px; }
+      margin-top: 80px; }
 
 .charsets {
   display: inline-block;
@@ -268,18 +266,18 @@ h3 {
     height: 80px;
     overflow: hidden;
     margin: 0; }
-  .wenZhangcontain .readButton {
+  .wenZhangcontain .readButton, .wenZhangcontain .readButton1 {
     float: right;
     padding: 10px 15px;
     background-color: #48AE15;
     color: white; }
 
-.inforMation img {
+.inforMation img, .inforMation1 img {
   width: 40px;
   height: 40px;
   border-radius: 20px;
   margin-right: 10px; }
-.inforMation span {
+.inforMation span, .inforMation1 span {
   line-height: 40px; }
 
 .fenlei {
@@ -338,7 +336,8 @@ h3 {
     width: 100%;
     margin: 0 auto;
     background: url("../img/bodys1.png") no-repeat;
-    padding-top: 80px; }
+    padding-top: 80px;
+    z-index: 1px; }
 
   .wenZhangtuijian {
     width: 100%; }
@@ -365,6 +364,64 @@ h3 {
     border-right: 10px dashed transparent;
     margin: 10px 15px 0 15px; }
 
+.headerCopy {
+  overflow: visible;
+  display: none;
+  width: 100%;
+  height: 44px;
+  background-color: #48AE15;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  font-size: 20px;
+  color: white;
+  line-height: 44px;
+  text-align: center; }
+  .headerCopy span {
+    display: block;
+    height: 30px;
+    height: 30px;
+    margin: 8px 5px 2px 5px; }
+    .headerCopy span:before {
+      margin: 0 auto;
+      content: "";
+      display: block;
+      width: 30px;
+      height: 30px;
+      background: url("../img/Home.png") no-repeat 0px 0px; }
+  .headerCopy span:nth-child(2) {
+    float: right; }
+    .headerCopy span:nth-child(2):before {
+      background: url("../img/font-340.png") no-repeat 0px 0px; }
+  .headerCopy ul {
+    display: none; }
+  .headerCopy li {
+    font-size: 16px;
+    text-align: left;
+    background-color: white;
+    color: black;
+    padding-left: 5px;
+    border-bottom: 1px solid lightblue;
+    line-height: 40px; }
+    .headerCopy li a {
+      display: block; }
+  .headerCopy .liNext {
+    display: none;
+    text-align: center; }
+    .headerCopy .liNext a {
+      line-height: 20px;
+      font-size: 16px;
+      padding: 5px 10px;
+      display: inline-block; }
+
+.liAddClass {
+  background-color: #48AE15 !important;
+  color: white !important;
+  font-weight: blod !important; }
+
+.imforAndRead {
+  display: none; }
+
 @media screen and (max-width: 955px) {
   #menu {
     margin-top: 0;
@@ -376,6 +433,75 @@ h3 {
   .blog-logo {
     float: none;
     margin: 0 auto; } }
+@media screen and (max-width: 670px) {
+  .headerCopy {
+    display: block; }
+
+  .blog-picture {
+    margin-top: 44px; }
+
+  .header {
+    display: none; }
+
+  body {
+    font-size: 12px; }
+
+  .geYan {
+    font-size: 12px; }
+
+  .charsets {
+    width: 100px;
+    height: 100px; }
+
+  .geYan a {
+    width: 100px; }
+
+  .userName {
+    width: 100px;
+    margin-top: 100px;
+    font-size: 12px; }
+
+  .wenZhangtuijian img {
+    width: 120px;
+    height: 100px; }
+
+  .inforMation img, .inforMation1 img {
+    width: 30px;
+    height: 30px; }
+
+  .wenZhangcontain {
+    left: 125px; }
+    .wenZhangcontain p {
+      height: auto; }
+
+  .inforMation, .inforMation1 {
+    display: none; }
+
+  .readButton, .readButton1 {
+    display: none; }
+
+  .imforAndRead {
+    display: block;
+    clear: both;
+    height: 40px; }
+
+  .inforMation1 {
+    display: block; }
+
+  .readButton1 {
+    display: block;
+    float: right;
+    margin-top: 6px;
+    padding: 5px 2px;
+    font-size: 12px;
+    background-color: #48AE15;
+    color: white; }
+
+  .blog-picture {
+    height: 200px; }
+
+  .geYan ul {
+    margin: 60px 0 0 10px; } }
 @-webkit-keyframes conver {
   0% {
     transform: translateX(-200px) rotateZ(0deg); }
