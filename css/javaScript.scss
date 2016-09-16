@@ -178,7 +178,7 @@
 .jsXuanZhuan{
             position: relative;
             width:100%;
-            height:500px;
+            height:400px;
             -webkit-transform-style: preserve-3d;
             transform-style: preserve-3d;
                 -webkit-transform: translateZ(-2000px);
@@ -187,7 +187,7 @@
         
         .jsXuanZhuan div{
             width:400px;
-            height:500px;
+            height:300px;
             position:absolute;
             -webkit-box-reflect:below 5px  -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
             -webkit-transition:all 1s linear;
