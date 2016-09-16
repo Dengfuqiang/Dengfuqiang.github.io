@@ -1,4 +1,17 @@
 $(function(){
+	$("li[class='liNext']").find(".a_addclass").click(function(){
+		$(".studyInfinite").eq($(".a_addclass").index(this)).toggle("400");
+		$(".headerCopy i").toggle();
+		$(".headerCopy span:nth-child(1)").toggle();
+		$(".headerCopy ul").toggle("300");
+
+	});
+	$(".headerCopy i").click(function(){
+		$(this).toggle();
+		$(".studyInfinite").css("display","none");
+		$(".headerCopy span:nth-child(1)").toggle();
+		$(".headerCopy ul").toggle("300");
+	});
 	$(".huiDingbu").click(function(){ 
 		
 		$("html,body").animate({scrollTop:"0px"},200);
