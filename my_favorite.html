@@ -2093,15 +2093,141 @@ form{
 					<div class="yuanDaima">
 						<p>点击显示html</p>
 						<textarea name="demoHtml" rows="20" cols="100">
+	body{
+	perspective:2000px;
+	overflow: hidden;
+}
+.jsXuanZhuan{
+	position: relative;
+	width:1000px;
+	height:600px;
+	margin:200px auto;
+	transform-style: preserve-3d;
+	animation:convers 20s 1s linear infinite;
+}
+.jsXuanZhuan:hover{
+	animation-play-state:paused;
+}
 
+.jsXuanZhuan div{
+	width:400px;
+	height:300px;
+	position:absolute;
+	-webkit-box-reflect:below 5px  -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
+	transition:all 1s linear;
+	background-size: 400px 300px;
+	right: 0;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	margin:auto;
+
+}
+.div1{
+	background-image: url('../img/ls10.jpeg');
+	transform: rotateY(   0deg ) translateZ(360px);
+	animation:convers1 1s linear 1;
+}
+div:nth-child(2) {
+	background-image: url('../img/ls11.jpg');
+ transform: rotateY(  60deg ) translateZ(360px); 
+ animation:convers2 1s  linear 1;
+}
+div:nth-child(3) { 
+	background-image: url('../img/ls12.jpg');
+	transform: rotateY(  120deg ) translateZ(360px); 
+	animation:convers3 1s  linear 1;
+}
+div:nth-child(4) {
+	background-image: url('../img/ls13.jpg');
+ transform: rotateY( 180deg ) translateZ(360px); 
+ animation:convers4 1s  linear 1;
+}
+div:nth-child(5) {
+	background-image: url('../img/ls14.jpg');
+ transform: rotateY( 240deg ) translateZ(360px);
+ animation:convers5 1s  linear 1;
+ }
+div:nth-child(6) {
+	background-image: url('../img/ls15.jpg');
+ transform: rotateY( 300deg ) translateZ(360px); 
+ animation:convers6 1s  linear 1;
+}
+.jsXuanZhuan div img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.9;
+}
+.jsXuanZhuan div img:hover{
+	opacity: 1;
+}
 						</textarea>
 						<p>点击显示css</p>
 						<textarea name="demoCss" style="overflow-y:hidden" rows="20" cols="100">
-
+<div class="jsXuanZhuan">
+	<div id="div1" class="div1">
+		
+	</div>
+	<div class="div2">
+		
+	</div>
+	<div class="div3">
+		
+	</div>
+	<div class="div4">
+		
+	</div>
+	<div class="div5">
+		
+	</div>
+	<div class="div6">
+	</div>
+</div>
 						</textarea>
 						<p>点击显示JavaScript</p>
 						<textarea name="demoJavascript" rows="20" cols="100">
+var xuanZhuanContain=document.getElementsByClassName("jsXuanZhuan");
+	var containDiv=xuanZhuanContain[0].getElementsByTagName("div");
+	var clickX=0;
+	var clickY=0;
+	var endX=0;
+	var endY=0;
+	var ints=0;
+	var endXadd=0;
+	var endXadd1=0
+	var endYadd=0;
+	var endYadd1=0;
+	var cont=0;
 
+	document.onmousedown=function(event){
+		clickX= event.clientX;
+		clickY=event.clientY;
+		document.onmousemove=null;
+		document.onmousemove=function(event){
+			endXadd+=( event.clientX-clickX)/200;
+			xuanZhuanContain[0].style.webkitTransform="rotateY("+endXadd+"deg)";
+			endXadd1=endXadd;
+		}
+		
+	}
+	document.onmouseup=function(event){
+		document.onmousemove=null;
+	}
+	var xuanzhuanCont=null;
+	function xuanzhuan(){
+		endXadd+=0.1;
+		xuanZhuanContain[0].style.webkitTransform=" rotateY("+endXadd+"deg)";
+		xuanzhuanCont=setTimeout(xuanzhuan,1);
+	}
+	xuanzhuan();
+	for(var i=0,len=containDiv.length;i<len;i++){
+			containDiv[i].onmouseover=function(){
+			clearInterval(xuanzhuanCont);
+		}
+		containDiv[i].onmouseout=function(){
+			xuanzhuanCont=setTimeout(xuanzhuan,1);
+		}
+	}
 						</textarea>
 						<p></p>
 					</div>
