@@ -192,7 +192,7 @@
 .jsXuanZhuan {
   position: relative;
   width: 100%;
-  height: 300px;
+  height: 500px;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform: translateZ(-2000px);
@@ -210,7 +210,6 @@
   left: 0;
   top: 0;
   bottom: 0;
-  margin: auto;
   opacity: 0.9; }
 
 .div1 {
