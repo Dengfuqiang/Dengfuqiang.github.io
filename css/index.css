@@ -272,6 +272,7 @@ h3 {
   .wenZhangcontain .readButton, .wenZhangcontain .readButton1 {
     float: right;
     padding: 10px 15px;
+    *padding: 10px 10px;
     background-color: #48AE15;
     color: white; }
 

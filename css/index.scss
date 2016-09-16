@@ -292,6 +292,7 @@ h3{
 	.readButton{
 		float:right;
 		padding:10px 15px;
+		*padding:10px 10px;
 		background-color:$greenColor;
 		color:white;
 	}
