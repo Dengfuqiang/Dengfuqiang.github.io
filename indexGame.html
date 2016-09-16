@@ -60,7 +60,7 @@
 					var mou=this.getElementsByTagName("img")[0];
 					mou.src="img/mouse2.png";
 					this.style.paddingTop="33px";
-					setTimeout("backs.removeChild("+this+")",300);
+					setTimeout("backs.removeChild("+this+")",1000);
 					//计分
 					numBer++;
 					jiFenqi.innerHTML=""+numBer+"";
@@ -129,7 +129,7 @@
 					times=prompt("请输入秒数","0");
 					reduce=times;
 				}
-				settime=setInterval(main,500);
+				settime=setInterval(main,1000);
 			}
 			else{
 				playButton.style.backgroundImage="url(img/puse.jpg)";
