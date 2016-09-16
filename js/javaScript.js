@@ -182,6 +182,7 @@ $(function(){
 		var dRapes=document.getElementById("dRapes");
 	var wRapes=document.getElementById("wRapes");
 		dRapes.onmousedown=function(event){
+
 			var event=event||window.event;
 			var tmpX=event.clientX-dRapes.offsetLeft;
 			var tmpY=event.clientY-dRapes.offsetTop;
@@ -190,12 +191,13 @@ $(function(){
 			}else{
 				event.returnValue=false;
 			}
-			document.onmousemove=function(event){
+			wRapes.onmousemove=function(event){
 				var event=event||window.event;
 				var endX=event.clientX-tmpX;
 				var endY=event.clientY-tmpY;
 				var moseX=wRapes.clientWidth-dRapes.offsetWidth;
 				var moseY=wRapes.clientHeight-dRapes.offsetHeight;
+				
 				if(endX<=0){
 					endX=0;
 				}
@@ -213,8 +215,8 @@ $(function(){
 				
 			}
 		}
-		document.onmouseup=function(){
-			document.onmousemove=null;
+		wRapes.onmouseup=function(){
+			wRapes.onmousemove=null;
 		}
 		var main=document.getElementById("main");
 				var ball=document.getElementById("ball");
