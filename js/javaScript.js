@@ -265,7 +265,7 @@ $(function(){
 				}
 				setInterval(mov,1)
 				var spanArray=document.getElementById("xiaoGuotu").getElementsByTagName("span");
-				var iArray=document.getElementsByTagName("i");
+				var iArray=document.getElementById("youhuidates");
 				var con=document.getElementById("con");
 				var time=new Date();
 				var hour=time.getHours();
@@ -294,18 +294,19 @@ $(function(){
 						hours--;
 					}
 					//如果当前date是优惠的当天时
+					console.log(youhuidata);
 					if(dates==youhuidata){
 						//如果时前在优惠小时之前
 						if(hours>=youhuitime){
 							con.innerHTML="距离打拆优惠还有："
-							iArray[0].innerHTML=0;
+							iArray.innerHTML=0;
 							spanArray[0].innerHTML=hours-youhuitime;
 							spanArray[2].innerHTML=minutes;
 							spanArray[4].innerHTML=sconds;
 						}
 						//如果时前在优惠小时之后
 						else{
-							iArray[0].innerHTML=0;
+							iArray.innerHTML=0;
 							spanArray[0].innerHTML=hours;
 							spanArray[2].innerHTML=minutes;
 							spanArray[4].innerHTML=sconds;
@@ -314,8 +315,9 @@ $(function(){
 					}
 					//如果当前date是优惠的天之前时
 					else if(dates<youhuidata){
+
 						con.innerHTML="距离打拆优惠还有："
-						iArray[0].innerHTML=youhuidata-dates;
+						iArray.innerHTML=youhuidata-dates;
 						spanArray[0].innerHTML=hours;
 						spanArray[2].innerHTML=minutes;
 						spanArray[4].innerHTML=sconds;
@@ -323,7 +325,7 @@ $(function(){
 					//如果当前date是优惠的天之后时
 					else{
 						con.innerHTML="打折优惠已过期";
-						iArray[0].innerHTML=0	;
+						iArray.innerHTML=0	;
 					}
 					
 					
