@@ -331,6 +331,51 @@ $(function(){
 					
 				}
 				setInterval(times,1000);
+
+
+		var xuanZhuanContain=document.getElementsByClassName("jsXuanZhuan");
+		var containDiv=xuanZhuanContain[0].getElementsByTagName("div");
+		var xuanzhuanbt1=document.getElementById("xuanzhuanbt1");
+		var xuanzhuanbt2=document.getElementById("xuanzhuanbt2");
+		var clickX=0;
+		var clickY=0;
+		var endX=0;
+		var endY=0;
+		var ints=0;
+		var endXadd=0;
+		var endXadd1=0
+		var endYadd=0;
+		var endYadd1=0;
+		var cont=0;
+		
+		document.onmousedown=function(event){
+			clickX= event.clientX;
+			clickY=event.clientY;
+			document.onmousemove=null;
+			document.onmousemove=function(event){
+				endXadd+=( event.clientX-clickX)/200;
+				xuanZhuanContain[0].style.webkitTransform="translateZ(-2000px) rotateY("+endXadd+"deg)";
+				endXadd1=endXadd;
+			}
+			
+		}
+		document.onmouseup=function(event){
+			document.onmousemove=null;
+		}
+		var xuanzhuanCont=null;
+		function xuanzhuan(){
+			endXadd+=0.1;
+			xuanZhuanContain[0].style.webkitTransform="translateZ(-2000px) rotateY("+endXadd+"deg)";
+			xuanzhuanCont=setTimeout(xuanzhuan,1);
+		}
+
+				xuanzhuanbt2.onclick=function(){
+				clearInterval(xuanzhuanCont);
+			}
+			xuanzhuanbt1.onclick=function(){
+				xuanzhuanCont=setTimeout(xuanzhuan,1);
+			}
+
 				
 });
 function selectfrom (lowValue,highValue){

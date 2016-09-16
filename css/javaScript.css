@@ -189,4 +189,72 @@
   position: absolute;
   border-radius: 25px; }
 
+.jsXuanZhuan {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: translateZ(-2000px);
+  transform: translateZ(-2000px); }
+
+.jsXuanZhuan div {
+  width: 400px;
+  height: 300px;
+  position: absolute;
+  -webkit-box-reflect: below 5px -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(0.6, transparent), to(white));
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
+  background-size: 400px 300px;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  opacity: 0.9; }
+
+.div1 {
+  background-image: url("../img/ls10.jpeg");
+  -webkit-transform: rotateY(0deg) translateZ(360px);
+  transform: rotateY(0deg) translateZ(360px); }
+
+.jsXuanZhuan div:nth-child(2) {
+  background-image: url("../img/ls11.jpg");
+  -webkit-transform: rotateY(60deg) translateZ(360px);
+  transform: rotateY(60deg) translateZ(360px); }
+
+.jsXuanZhuan div:nth-child(3) {
+  background-image: url("../img/ls12.jpg");
+  -webkit-transform: rotateY(120deg) translateZ(360px);
+  transform: rotateY(120deg) translateZ(360px); }
+
+.jsXuanZhuan div:nth-child(4) {
+  background-image: url("../img/ls13.jpg");
+  -webkit-transform: rotateY(180deg) translateZ(360px);
+  transform: rotateY(180deg) translateZ(360px); }
+
+.jsXuanZhuan div:nth-child(5) {
+  background-image: url("../img/ls14.jpg");
+  -webkit-transform: rotateY(240deg) translateZ(360px);
+  transform: rotateY(240deg) translateZ(360px); }
+
+.jsXuanZhuan div:nth-child(6) {
+  background-image: url("../img/ls15.jpg");
+  -webkit-transform: rotateY(300deg) translateZ(360px);
+  transform: rotateY(300deg) translateZ(360px); }
+
+.jsXuanZhuan div img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.9; }
+
+.jsXuanZhuan div img:hover {
+  opacity: 1; }
+
+#jsXuanZhuanMuMa {
+  -webkit-perspective: 2000px;
+  perspective: 2000px; }
+  #jsXuanZhuanMuMa input {
+    margin: 0 10px; }
+
 /*# sourceMappingURL=javaScript.css.map */
