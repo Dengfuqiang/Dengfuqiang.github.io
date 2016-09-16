@@ -8,9 +8,11 @@ div.demo {
     clear: both; }
 
 .xiaoGuotu {
+  -webkit-perspective: 1000px;
   perspective: 1000px; }
 
 .xuanzhuanbodys {
+  -webkit-perspective: 1000px;
   perspective: 1000px;
   width: 1000px;
   height: 500px; }
