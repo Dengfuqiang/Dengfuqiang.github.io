@@ -294,7 +294,6 @@ $(function(){
 						hours--;
 					}
 					//如果当前date是优惠的当天时
-					console.log(youhuidata);
 					if(dates==youhuidata){
 						//如果时前在优惠小时之前
 						if(hours>=youhuitime){
