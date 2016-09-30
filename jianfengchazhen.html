@@ -201,6 +201,11 @@
 				balladd[i].index=i;
 				balladd[i].onclick=function(){
 					ballArray.push(deg);
+					this.parentNode	.removeChild(this);
+					if(balladd.length==0){
+						start.innerHTML="you are win";
+						start.style.display="block";
+					}
 					if(ballArray.length>1){
 						var flag= ballArray.every(function(item,index,array){
 							if(index!=array.length-1){
@@ -240,11 +245,7 @@
 						creatdiv.style.webkitTransform="rotateZ("+(180-deg)+"deg)";
 						bigball.appendChild(creatdiv);
 					}
-					this.parentNode	.removeChild(this);
-					if(balladd.length==0){
-						start.innerHTML="you are win";
-						start.style.display="block";
-					}
+					
 				}
 			}
 			var time;
