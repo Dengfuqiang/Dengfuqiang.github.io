@@ -241,6 +241,10 @@
 						bigball.appendChild(creatdiv);
 					}
 					this.parentNode	.removeChild(this);
+					if(balladd.length==0){
+						start.innerHTML="you are win";
+						start.style.display="block";
+					}
 				}
 			}
 			var time;
