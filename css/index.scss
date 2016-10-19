@@ -331,6 +331,7 @@ h3{
 	left:-10px;
 	left:0\9;
 	@include box-shadow(10px 10px 20px black);
+	@include transition(all 0.2s linear);
 }
 .zuiXintuijian{
 	ul{
