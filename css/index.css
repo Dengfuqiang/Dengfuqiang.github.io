@@ -129,8 +129,7 @@ h3 {
     width: 150px;
     background: url("../img/users.jpg") no-repeat; }
     .geYan a:hover .userName {
-      margin-top: 80px;
-      *margin-top: 120px; }
+      margin-top: 120px; }
 
 .charsets {
   display: inline-block;
