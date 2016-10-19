@@ -326,12 +326,12 @@ h3{
 .luboImageclass{
 	border:10px solid $greenColor !important;
 	border-radius:5px;
+	margin-top: 10px;
 	padding:0 !important;
 	position:relative;
-	left:-10px;
-	left:0\9;
-	@include box-shadow(10px 10px 20px black);
+	@include box-shadow(5px 5px 20px black);
 	@include transition(box-shadow 0.2s linear);
+	@include translate3D(0px,-10px,0px);
 }
 .zuiXintuijian{
 	ul{

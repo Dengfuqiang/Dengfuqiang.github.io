@@ -297,14 +297,15 @@ h3 {
 .luboImageclass {
   border: 10px solid #48AE15 !important;
   border-radius: 5px;
+  margin-top: 10px;
   padding: 0 !important;
   position: relative;
-  left: -10px;
-  left: 0\9;
-  -webkit-box-shadow: 10px 10px 20px black;
-  box-shadow: 10px 10px 20px black;
+  -webkit-box-shadow: 5px 5px 20px black;
+  box-shadow: 5px 5px 20px black;
   -webkit-transition: box-shadow 0.2s linear;
-  transition: box-shadow 0.2s linear; }
+  transition: box-shadow 0.2s linear;
+  -webkit-transform: translate3D(0px, -10px, 0px);
+  transform: translate3D(0px, -10px, 0px); }
 
 .zuiXintuijian ul {
   padding: 10px 0 0 20px; }
