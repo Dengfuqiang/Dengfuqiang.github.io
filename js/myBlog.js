@@ -94,7 +94,6 @@ $(function(){
             // img.onload = null;
             num++;
             if(num==imgList.length){
-                 alert("加载完了");
                 // callback();
                 for(var j = 0;j<imgList.length;j++){
                     imgList[j].src = imgList[j].getAttribute('data-src');
