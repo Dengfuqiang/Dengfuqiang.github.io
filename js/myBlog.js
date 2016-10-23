@@ -1,4 +1,5 @@
 $(function(){
+	//二级菜单鼠标悬浮时增加样式
 	$("li[class='liNext']").find(".a_addclass").click(function(){
 		$(".studyInfinite").eq($(".a_addclass").index(this)).toggle("400");
 		$(".headerCopy i").toggle();
@@ -6,6 +7,7 @@ $(function(){
 		$(".headerCopy ul").toggle("300");
 
 	});
+	//移动端下拉菜单
 	$(".headerCopy i").click(function(){
 		$(this).toggle();
 		$(".studyInfinite").css("display","none");
@@ -16,6 +18,7 @@ $(function(){
 	var outer=document.getElementById("outer");
 	var inner=document.getElementById("inner");
 	inner.innerHTML+=inner.innerHTML;
+	//图片轮播
 	function autoscroll(){
 		outer.scrollLeft++;
 		var scrollLeft=Math.ceil(outer.scrollLeft);
@@ -26,6 +29,7 @@ $(function(){
 		setIn=setTimeout(autoscroll,20);
 	}
 	autoscroll();
+	//图片悬浮增加样式
 	$("#inner img").hover(
 		function(){
 			clearTimeout(setIn);
@@ -36,6 +40,7 @@ $(function(){
 			$(this).removeClass("luboImageclass");
 		}
 	);
+	//首页菜单
 	$("#menu li").hover(
 		function(){
 			$(this).children().next().css("visibility","visible");
@@ -53,6 +58,7 @@ $(function(){
 				$(this).children().next().removeClass("menuChildaddclass2");
 			}
 	);
+	//scrollTop>200显示回到顶部按钮
 	$(window).scroll(function(){ 
 		var scrollt = document.documentElement.scrollTop + document.body.scrollTop; 
 		if( scrollt >200){ 
@@ -62,7 +68,7 @@ $(function(){
 		}
 		
 	});
-				
+	//回到顶部			
 	$(".huiDingbu").click(function(){ 
 		
 		$("html,body").animate({scrollTop:"0px"},200);
@@ -76,6 +82,7 @@ $(function(){
 		$(this).siblings(".liChildMenu").removeClass("liAddClass");
 		$(this).addClass("liAddClass");
 	});
+	//图片预加载
 	(function(){
 		var imgList =document.images;
 	    var num = 0;
@@ -89,6 +96,7 @@ $(function(){
 	        img.onload = imgload;
 	        img.src = imgList[i].getAttribute('data-src');
 	    }
+	    //背景图自预加载
 	    var bgimg=new Image();
 	    bgimg.src="img/xc-bg.jpg";
 	    bgimg.onload=imgload;
@@ -97,6 +105,7 @@ $(function(){
 	    var bgimg3=new Image();
 	    bgimg3.src="img/bodys.png";
 	    bgimg3.onload=imgload;
+	    //图片load事件处理函数
 	    function imgload(){
 	            // img.onload = null;
 	            num++;
