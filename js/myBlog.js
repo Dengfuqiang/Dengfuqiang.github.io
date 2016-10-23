@@ -94,10 +94,13 @@ $(function(){
 	    bgimg.onload=imgload;
 	    var bgimg2=new Image();
 	    bgimg2.src="img/1H03633L-3.jpg";
+	    var bgimg3=new Image();
+	    bgimg3.src="img/bodys.png";
+	    bgimg3.onload=imgload;
 	    function imgload(){
 	            // img.onload = null;
 	            num++;
-	            if(num==imgList.length){
+	            if(num==imgList.length+1){
 	                // callback();
 	                for(var j = 0;j<imgList.length;j++){
 	                    imgList[j].src = imgList[j].getAttribute('data-src');
