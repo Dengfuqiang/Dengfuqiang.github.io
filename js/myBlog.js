@@ -77,31 +77,41 @@ $(function(){
 		$(this).addClass("liAddClass");
 	});
 	(function(){
-	var imgList =document.images;
-    console.log(imgList);
-    var num = 1;
-    for(var i = 0;i<imgList.length;i++){
-        var img = new Image();
-        // img.src = imgList[i].getAttribute('data-src');
-        img.onload = imgload;
-        //img的src赋值要放到onload事件后面
-        //因为低版本ie，放到前面可能不会出发onload事件
-        img.src = imgList[i].getAttribute('data-src');
-    }
-    var bgimg=new Image();
-    bgimg.src="img/xc-bg.jpg";
-    function imgload(){
-            // img.onload = null;
-            num++;
-            if(num==imgList.length){
-                // callback();
-                for(var j = 0;j<imgList.length;j++){
-                    imgList[j].src = imgList[j].getAttribute('data-src');
-                }
-				var div=document.getElementById("myblogCover");
-				div.style.display="none";
-            }
-        }
-	})();
+		var imgList =document.images;
+	    console.log(imgList);
+	    var num = 1;
+	    var geyan=document.getElementById("geYanId").children;
+	    var menu=document.getElementById("menu");
+	   var wenZhangTuiJianId=document.getElementById("wenZhangTuiJianId");
+	   var bodyRightId=document.getElementById("bodyRightId");
+	    for(var i = 0;i<imgList.length;i++){
+	        var img = new Image();
+	        // img.src = imgList[i].getAttribute('data-src');
+	        img.onload = imgload;
+	        //img的src赋值要放到onload事件后面
+	        //因为低版本ie，放到前面可能不会出发onload事件
+	        img.src = imgList[i].getAttribute('data-src');
+	    }
+	    var bgimg=new Image();
+	    bgimg.src="img/xc-bg.jpg";
+	    function imgload(){
+	            // img.onload = null;
+	            num++;
+	            if(num==imgList.length){
+	                // callback();
+	                for(var j = 0;j<imgList.length;j++){
+	                    imgList[j].src = imgList[j].getAttribute('data-src');
+	                }
+					var div=document.getElementById("myblogCover");
+					div.style.display="none";
+					for(var k=0;k<3;k++){
+						geyan[k].style.display="block";
+					}
+					menu.style.display="block";
+					wenZhangTuiJianId.style.display="block";
+					bodyRightId.style.display="block";
+	            }
+	        }
+		})();
     
 });

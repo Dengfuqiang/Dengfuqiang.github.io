@@ -101,6 +101,7 @@ h3{
 	li{
 		margin-top: 10px;
 		text-align: right;
+		display: none;
 	}
 	li:nth-child(1){
 		@include animation(zoomInDown 1s linear 1 forwards );
@@ -152,6 +153,7 @@ h3{
 	padding-bottom: 10px;
 }
 .menu {
+    display: none;
 	float:right;
 	@extend %clearfix;
 	margin-top:30px;
@@ -253,6 +255,7 @@ h3{
 	@extend %float;
 	width:670px;
 	@include animation(bounceInLeft 1s linear 1);
+	display: block;
 	li{
 		@extend %clearfix;
 		padding: 10px 0;
@@ -327,6 +330,7 @@ h3{
 	float:right;
 	@include animation(bounceInRight 1s 0.2s linear 1 forwards);
 	@include opacity(0);
+	display: none;
 }
 .luboImageclass{
 	border:10px solid $greenColor !important;
