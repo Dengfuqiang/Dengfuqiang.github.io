@@ -94,6 +94,8 @@ $(function(){
 	    }
 	    var bgimg=new Image();
 	    bgimg.src="img/xc-bg.jpg";
+	    var bgimg2=new Image();
+	    bgimg2.src="img/1H03633L-3.jpg";
 	    function imgload(){
 	            // img.onload = null;
 	            num++;
