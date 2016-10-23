@@ -255,7 +255,7 @@ h3{
 	@extend %float;
 	width:670px;
 	@include animation(bounceInLeft 1s linear 1);
-	display: block;
+	display: none;
 	li{
 		@extend %clearfix;
 		padding: 10px 0;

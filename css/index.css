@@ -247,7 +247,7 @@ h3 {
   width: 670px;
   -webkit-animation: bounceInLeft 1s linear 1;
   animation: bounceInLeft 1s linear 1;
-  display: block; }
+  display: none; }
   .wenZhangtuijian li {
     padding: 10px 0;
     border-bottom: 1px solid #ededed;
