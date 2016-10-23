@@ -9,6 +9,13 @@
 	<script type="text/javascript" src="js/myBlog.js" ></script>
 </head>
 <body>
+	<div id="myblogCover">
+		<img src="img/5-140FGQT6.gif"/>
+	</div>
+	<script type="text/javascript">
+		var myblogcover=document.getElementById("myblogCover");
+		myblogcover.style.height=document.documentElement.clientHeight+"px";
+	</script>
 	<div class="huiDingbu">back</div>
 	<div class="headerCopy">
 		<span></span>
@@ -154,11 +161,11 @@
 			<h3><span>个人博客模板</span></h3>
 			<div class="outer" id="outer">
 			<div id="inner">
-				<a href="index.html"><img src="img/lunBo1.jpg" alt="1"/></a>
-				<a href="CSS3.html#mobileHtml"><img src="img/lunBo2.jpg" alt="2"/></a>
-				<a href="CSS3.html#jingDong"><img src="img/jingdong.jpg" alt="3"/></a>
-				<a href="http://www.yangqq.com/download/newsfree/2015-06-25/747.html"><img src="img/lunBo4.gif" alt="4"/></a>
-				<a href="CSS3.html#xiangyingshi"><img src="img/lunBo5.jpg" alt="5"/></a>
+				<a href="index.html"><img data-src="img/lunBo1.jpg" alt="1"/></a>
+				<a href="CSS3.html#mobileHtml"><img data-src="img/lunBo2.jpg" alt="2"/></a>
+				<a href="CSS3.html#jingDong"><img data-src="img/jingdong.jpg" alt="3"/></a>
+				<a href="http://www.yangqq.com/download/newsfree/2015-06-25/747.html"><img data-src="img/lunBo4.gif" alt="4"/></a>
+				<a href="CSS3.html#xiangyingshi"><img data-src="img/lunBo5.jpg" alt="5"/></a>
 			</div>
 		</div>
 		</div>
@@ -170,11 +177,11 @@
 			<ul>
 				<li>
 					<p><a class="inforTitle" href="CSS3.html#xiangyingshi">【<span >响应式布局</span>】响应式布局模板</a></p>
-					<img src="img/xiangyingshi.jpg" alt="">
+					<img data-src="img/xiangyingshi.jpg" alt="">
 					<div class="wenZhangcontain">
 						<p>响应式布局：核心关键是media媒体查询,通对它media根据浏览器窗口大小，自式应布局</p>
 						<div class="inforMation">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">收藏夹</span></a>]
@@ -183,7 +190,7 @@
 					</div>
 					<div class="imforAndRead" >
 						<div class="inforMation1">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">收藏夹</span></a>]
@@ -193,11 +200,11 @@
 				</li>
 				<li>
 					<p><a class="inforTitle" href="CSS3.html#mobileHtml">【<span >移动开发</span>】移动端页面开发模板</a></p>
-					<img src="img/lunBo2.jpg" alt="">
+					<img data-src="img/lunBo2.jpg" alt="">
 					<div class="wenZhangcontain">
 						<p>使用了阿里的flexible库,实现了移动端的适配，根据不同的设备添加不同的 data-dpr 值，同时会给 html 加上对应的 font-size 的值</p>
 						<div class="inforMation">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">收藏夹</span></a>]
@@ -206,7 +213,7 @@
 					</div>
 					<div class="imforAndRead" >
 						<div class="inforMation1">
-							<img src="img/users.jpg" alt="">
+							<img data-src="img/users.jpg" alt="">
 							<span class="usersname">邓富强</span>
 							时间：<span class="sentTime">2016.9.6</span>
 							分类：[<a href="my_favorite.html"><span class="fenlei">收藏夹</span></a>]
@@ -217,11 +224,11 @@
 				</li>
 				<li>
 					<p><a href="my_favorite.html#beautemenu" class="inforTitle">【<span >菜单</span>】一个简单酷炫的菜单</a></p>
-					<img src="img/kuxuanmenu.jpg" alt="">
+					<img data-src="img/kuxuanmenu.jpg" alt="">
 					<div class="wenZhangcontain">
 						<p>这个菜单就是本Blog所用的菜单，运用了JQ+CSS3，这个菜单主要JQ+CSS3，所以只能在大支持CSS3的浏览器看到酷炫效果</p>
 						<div class="inforMation">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">JavaScript</span></a>]
@@ -230,7 +237,7 @@
 					</div>
 					<div class="imforAndRead" >
 						<div class="inforMation1">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">JS+JQ</span></a>]
@@ -240,11 +247,11 @@
 				</li>
 				<li>
 					<p><a class="inforTitle" href="CSS3.html#xuanzhuangMuma">【<span >CSS3旋转木马</span>】酷炫的3D旋转效果，可以将自已的图片放入其中</a></p>
-					<img src="img/xuzhuangMuma.jpg" alt="">
+					<img data-src="img/xuzhuangMuma.jpg" alt="">
 					<div class="wenZhangcontain">
 						<p>个是纯css实现的旋转木马，其中用运用了 perspective，animation实等多个css3属性，因为用到CSS3属性，所以只能在支持CSS3的浏览器有效果。</p>
 						<div class="inforMation">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="CSS3.html"><span class="fenlei">CSS3</span></a>]
@@ -253,7 +260,7 @@
 					</div>
 					<div class="imforAndRead" >
 						<div class="inforMation1">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">CSS3</span></a>]
@@ -265,11 +272,11 @@
 				
 				<li>
 					<p><a class="inforTitle" href="my_favorite.html#dadeshuGame">【<span >JS游戏</span>】打地鼠小游戏</a></p>
-					<img src="img/dadishu.jpg" alt="">
+					<img data-src="img/dadishu.jpg" alt="">
 					<div class="wenZhangcontain">
 						<p>用js来做的一个打地鼠游戏，因为没什么设计稿，只能在网上找一些图片，美工方面做的不是很好，只有最基本的一些功能，多多包函</p>
 						<div class="inforMation">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">Javascript</span></a>]
@@ -278,7 +285,7 @@
 					</div>
 					<div class="imforAndRead" >
 						<div class="inforMation1">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">JS+JQ</span></a>]
@@ -288,11 +295,11 @@
 				</li>
 				<li>
 					<p><a class="inforTitle" href="my_favorite.html#biaodanYanzheng">【<span >表单验证</span>】一个注册页面模板，用js做的表单验证</a></p>
-					<img src="img/zhuce.jpg" alt="">
+					<img data-src="img/zhuce.jpg" alt="">
 					<div class="wenZhangcontain">
 						<p>注册页面模板，表单验证：用户名不能为空,长度不能小于8,不能包含字。密码长度为6-16字符，不能9位以上纯数字，不能包含空格，邮箱格式是否正确，手机号格式是否正确</p>
 						<div class="inforMation">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">收藏夹</span></a>]
@@ -301,7 +308,7 @@
 					</div>
 					<div class="imforAndRead" >
 						<div class="inforMation1">
-						<img src="img/users.jpg" alt="">
+						<img data-src="img/users.jpg" alt="">
 						<span class="usersname">邓富强</span>
 						时间：<span class="sentTime">2016.9.6</span>
 						分类：[<a href="my_favorite.html"><span class="fenlei">收藏夹</span></a>]

@@ -596,5 +596,19 @@ h3 {
     opacity: 0; }
   100% {
     opacity: 1; } }
+#myblogCover {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  z-index: 100; }
+  #myblogCover img {
+    width: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
 
 /*# sourceMappingURL=index.css.map */
