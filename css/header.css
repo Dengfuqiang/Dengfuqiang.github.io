@@ -23,7 +23,6 @@ body {
   background-attachment: fixed; }
 
 .lacaTion {
-  margin: 0;
   background-color: white; }
 
 a:visited {
@@ -252,6 +251,9 @@ textarea {
   background-color: white; }
 
 @media screen and (max-width: 955px) {
+  .lacaTion {
+    margin: 100px auto 0 !important; }
+
   #menu {
     margin-top: 0;
     float: none;
