@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/huitailang.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	</head>
+	<body>
+		<div id="langContain">
+			<span id="fenshu">
+				0
+			</span>
+			<span id="jishi">
+				<span></span>
+			</span>
+			<a id="start" href="javascript:void(0)">开始</a>
+		</div>
+		<script type="text/javascript">
+			var langCon=document.getElementById("langContain");
+			var fenshu=document.getElementById("fenshu");
+			var jishi=document.getElementById("jishi").getElementsByTagName("span")[0];
+			var start=document.getElementById("start");
+			var arrays=new Array();
+			var shift=0;
+			var cont=0;
+			var setTimeouts=0;
+			var defen=0
+			var jishitiao=0;
+			var times=0;
+			//开始
+			start.onclick=function(){
+				this.style.display="none";
+				times= setInterval(creatMouse,500)
+				defen=0;
+				fenshu.innerHTML="0";
+			}
+			//生成大小狼
+			function creatMouse(){
+				
+				jishitiao-=5;
+				if(jishitiao<-180){
+					start.style.display="block";
+					start.innerHTML="GAME OVER";
+					jishitiao=0;
+					clearInterval(times);
+					var langDivs=document.getElementById("langContain").getElementsByTagName("div");
+					var lens=langDivs.length;
+					for(var i=0;i<lens;i++){
+						console.log(langDivs[i]);
+						langCon.removeChild(langDivs[i]);
+					}
+					
+				} 
+				jishi.style.left=jishitiao+"px";
+				var num=Math.random().toFixed(2);
+				do{
+					cont= selectfrom(0,8);
+					var flags= arrays.every(function(item,index,array){
+						return item!=cont;
+					});
+				}while(!flags);
+				
+				if(arrays.length<5){
+					arrays.push(cont)
+				}else{
+					shift = arrays.shift();
+					arrays.push(cont)
+				}
+				if(num>0.82){
+					var div=document.createElement("div");
+					div.className="langdong"+cont+" xiaohuihui";
+					div.index=true;
+					div.flags=true;
+					langCon.appendChild(div);
+					div.onclick=function(){
+						if(div.flags){
+							defen+=10;
+						}
+						div.flags=false;
+						fenshu.innerHTML=defen;
+						var step=5;
+						var timexiaolang=setInterval(function(){
+							step++;
+							if(step>9){
+								clearInterval(timexiaolang);
+								langCon.removeChild(div);
+							}
+							div.style.background="url(image/x"+step+".png) no-repeat 0px -15px";
+						},100);
+					}
+				}else{
+					var div=document.createElement("div");
+					div.className="langdong"+cont+"";
+					div.index=true;
+					div.flags=true;
+					langCon.appendChild(div);
+					div.onclick=function(){
+						if(div.flags){
+							defen+=10;
+						}
+						div.flags=false;
+						fenshu.innerHTML=defen;
+						var step=5;
+						var timehuihui=setInterval(function(){
+							step++;
+							if(step>9){
+								clearInterval(timehuihui);
+								langCon.removeChild(div);
+							}
+							div.style.background="url(image/h"+step+".png) no-repeat 0px -15px"
+						},100);
+					}
+				}
+			}
+			var maxT=30;
+			var end=0;
+			var time1=setInterval(function(){
+				var langlangdiv=document.getElementById("langContain").getElementsByTagName("div");
+				var len=langlangdiv.length;
+				if(len>0){
+					for(var i=0;i<len;i++){
+						var start=parseInt(getComputedStyle(langlangdiv[i],null).backgroundPositionY);
+						if(start<-15){
+							langlangdiv[i].index=false;//缩头判断
+						}
+						if(langlangdiv[i].flags){
+							if(langlangdiv[i].index){
+								start--;
+								langlangdiv[i].style.backgroundPositionY=start+"px";	
+							}else{
+								start++;
+								langlangdiv[i].style.backgroundPositionY=start+"px";
+								if(start>65){
+									langCon.removeChild(langlangdiv[i]);
+								}
+							}
+						}
+					}
+				}
+			},16)
+			//随即数
+			function selectfrom (lowValue,highValue){
+				var choice=highValue-lowValue+1;
+				return Math.floor(Math.random()*choice+lowValue);
+			}
+			//删除节点
+			function remove(cont){
+				var mousediv=document.getElementsByClassName("langdong"+cont+"");
+				if(mousediv.length!=0){
+					langCon.removeChild(mousediv[0]);
+				}
+			
+		}
+		</script>
+	</body>
+</html>
