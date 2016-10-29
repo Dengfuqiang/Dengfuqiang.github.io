@@ -1,0 +1,132 @@
+body{background-color: #f2f2f2;
+}
+.user-header{
+	position: relative;
+	
+}
+.user-charst{
+	width: 100%;
+	position: absolute;
+	top:1.44rem;
+	left: 0;
+	text-align: center;
+}
+.user-charst a{
+	display: inline-block;
+	width:2.066667rem;
+	
+}
+.user-charst a img{
+	box-sizing: border-box;
+	border: 2px solid white;
+	border-radius: 1.033333rem;
+}
+.user-charst span{
+	
+	color: white;
+	font-size:14px;
+}
+.vip_user{
+	display: inline-block;
+	border: 1px solid white;
+	border-radius: 0.266667rem;
+	line-height: 0.533333rem;
+	font-size: 11px;
+	padding: 0 0.293333rem;
+	background: rgba(255,255,255,0.2);
+}
+.list_box {
+	background-color: white;
+	margin-top: 0.266667rem;
+	
+}
+.list_box li{
+	margin-left: 0.453333rem ;
+	
+}
+.list_box li:not(:last-child){
+	border-bottom: 1px solid #dbdbdb;
+}
+.list_box a:link{
+	color: #1a1a1a;
+}
+.footListbox a:link{
+	color: #808080;
+}
+.list_box li a{
+	display: block;
+	line-height: 1.2rem;
+	padding-left: 1.146667rem;
+	background: url("../img/icon.png") no-repeat 2px 11px ;
+	background-size:0.533333rem 350px;
+}
+.list_box li:nth-child(2) a{
+	background: url("../img/icon.png") no-repeat 2px -33px ;
+	background-size:0.533333rem 350px;
+}
+.list_box li:nth-child(3) a{
+	background: url("../img/icon.png") no-repeat 2px -77px ;
+	background-size:0.533333rem 350px;
+}
+.list_box li:nth-child(4) a{
+	background: url("../img/icon.png") no-repeat 2px -127px ;
+	background-size:0.533333rem 350px;
+}
+.list_box li:nth-child(5) a{
+	background: url("../img/icon.png") no-repeat 2px -172px ;
+	background-size:0.533333rem 350px;
+}
+.list_box li:nth-child(6) a{
+	background: url("../img/icon.png") no-repeat 2px -218px ;
+	background-size:0.533333rem 350px;
+}
+.list_box1 li:nth-child(1) a{
+	background: url("../img/icon.png") no-repeat 2px -274px ;
+	background-size:0.533333rem 350px;
+}
+.list_box1 li:nth-child(2) a{
+	background: url("../img/icon.png") no-repeat 2px -321px ;
+	background-size:0.533333rem 350px;
+}
+footer{
+	height: 1.333333rem;
+	margin-top: 0.266667rem;
+}
+.footListbox{
+	width: 100%;
+	background-color: white;
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	
+}
+.footListbox a:before{
+	margin: 0 auto;
+	content: "";
+	display: block;
+	width: 0.666667rem;
+	height: 0.586667rem;
+	background: url("../img/nav-bar.png") no-repeat;
+	background-size: 320px 1.333333rem;
+}
+
+.footListbox li{
+	padding-top: 0.266667rem;
+	text-align: center;
+	float: left;
+	width: 20%;
+}
+.footListbox li:nth-child(2) a:before{
+	background-position: -72px 0px;
+}
+.footListbox li:nth-child(3) a:before{
+	background-position: -148px 0px;
+}
+.footListbox li:nth-child(4) a:before{
+	background-position: -226px 0px;
+}
+.footListbox li:nth-child(5) a:before{
+	background-position: -300px 0px;
+}
+
+

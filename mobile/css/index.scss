@@ -1,0 +1,543 @@
+body{
+	color:#474747;
+	font-size: 10px;
+	background-color:#f8f8f8;
+}
+.a_Div a:nth-child(2){
+	color:#fa4736;
+}
+a:link{
+	color: #474747;
+}
+a:visited{
+	color:#474747;
+}
+.nav_list{
+	div{
+		border-bottom: 1px solid #ededed;
+	}
+	a{
+		text-align: center;
+		display: inline-block;
+		width:25%;
+		padding-bottom: 0.28rem;
+	}
+	a:before{
+		display:block;
+		content:"";
+		width:0.96rem;
+		height: 0.96rem;
+		margin: 0 auto;
+		background: url("../img/tubiaopic.png") no-repeat;
+		margin-top: 0.333333rem;
+		margin-bottom: 0.24rem;
+		background-size: 7.333333rem 8.586667rem;
+	}
+	div:nth-child(1){ 
+		a:before{
+			background-position: 0px -5.506667rem;
+		}
+		a:nth-child(2):before{
+			background-position: -2.093333rem -5.506667rem;
+		}
+		a:nth-child(3):before{
+			background-position: -4.266667rem -5.506667rem;
+		}
+		a:nth-child(4):before{
+			background-position: -6.373333rem -5.506667rem;
+		}
+		
+	}
+	div:nth-child(2) {
+		a:before{
+			background-position: 0px -7.64rem;
+		}
+		a:nth-child(2):before{
+			background-position: -2.093333rem -7.64rem;
+		}
+		a:nth-child(3):before{
+			background-position: -4.266667rem -7.64rem;
+		}
+		a:nth-child(4):before{
+			background-position: -6.373333rem -7.64rem;
+		}
+	}
+}
+#zhuangxiuXiaoguo{
+	background-color:white;
+	padding: 0.32rem 0.266667rem;
+
+	span{
+		display:block;
+		font-size:0.36rem;
+		font-weight: bold;
+		color:#363636;
+		line-height: 0.973333rem;
+		padding-left: 0.346667rem;
+		border-bottom:1px solid #ededed;
+	}
+	img:nth-child(3){
+		float: left;
+		width:48%;
+		margin-top:0.266667rem;
+	}
+	img:nth-child(4){
+		margin-top:0.266667rem;
+		float:right;
+		width:48%;
+	}
+	ul{
+		clear:both;
+		overflow: hidden;
+		position:relative;
+		padding-top: 0.386667rem;
+		padding-bottom:0.24rem;
+		li{
+			float:left;
+			a{
+				color:#5c5c5c;
+				display:inline-block;
+				width:1.64rem;
+				margin-right:0.2rem;
+				text-align: center;
+				background-color:#ededed;
+				border-radius: 4px;
+				margin-top:-0.013333rem;
+				padding:0.0rem 0.186667rem;
+
+			}
+
+		}
+		li:nth-child(3){
+			a{
+				padding:0.0rem;
+			}
+		}
+		li:nth-child(1){
+			padding-left:0.2rem;
+			background: url("../img/tubiaopic.png") no-repeat ;
+			background-size: 7.333333rem 8.586667rem;
+			background-position:0.0rem -6.813333rem;
+			a{
+				
+				background-color:#ffc508;
+				color:white;
+			}
+			a:before{
+				content:"";
+				width:0px;
+				height:0px;
+				border:0.133333rem solid white;
+				border-radius:10px;
+				float:left;
+				margin-top:0.08rem;
+				margin-left: 0.08rem;
+			}
+		}
+	
+	}
+	.ulscond {
+		
+		li:nth-child(1) {
+			background-position:-2.213333rem -6.813333rem;
+			border-top: 1px dashed #ebebeb;
+			a{
+			background-color:#fa4e3e;
+			color:white;
+			}
+		}
+	}
+	.a_Div{
+		border:1px solid #ededed;
+		a{
+			display:inline-block;
+			width:50%;
+			line-height:0.84rem;
+			font-size:22px;
+			text-align: center;
+			background: url("../img/tubiaopic.png") no-repeat ;
+			background-size: 7.333333rem 8.586667rem;
+			background-position:-3.866667rem -6.6rem;
+			font-weight:bold;
+		}
+		a:nth-child(1){
+			background-position:-5.6rem -2.733333rem;
+		}
+	}
+}
+
+#zhuxiuJisuanqi{
+	background-color:white;
+	margin:0.0rem 0.226667rem;
+	border-radius:0.133333rem;
+	padding:0.0rem 0.24rem;
+	margin-top: 0.666667rem;
+	border-top:1px solid #ffb039;
+	span{
+		display:block;
+		text-align:center;
+		background: url("../img/tubiaopic.png") no-repeat ;
+		background-size: 7.333333rem 8.586667rem;
+		background-position:-4.666667rem -1.533333rem;
+		height:1.28rem;
+		color:#505050;
+		i{
+			line-height:1.28rem;
+			font-weight:bold;
+		}
+	}
+
+	#mianji{
+		width:48%;
+		box-sizing:border-box;
+		height:0.813333rem;
+		border-radius:6px;
+		padding-left: 0.373333rem;
+		float:left;
+
+	}
+	[name=shiJushi]{
+		width:48%;
+		box-sizing:border-box;
+		height:0.813333rem;
+		border-radius:6px;
+		padding-left: 35px;
+		float:right;
+		color:#2d2d2d;
+	}
+	[name=hunDa]{
+		width:100%;
+		box-sizing:border-box;
+		height:0.813333rem;
+		border-radius:6px;
+		padding-left: 35px;
+		clear: both;
+		margin-top:0.266667rem;
+		color:#2d2d2d;
+	}
+
+	[name=zhongDang]{
+		width:100%;
+		box-sizing:border-box;
+		height:0.813333rem;
+		border-radius:6px;
+		padding-left: 35px;
+		margin-top:0.266667rem;
+		color:#2d2d2d;
+	}
+	#submits{
+		width:100%;
+		height:0.813333rem;
+		margin-top:0.266667rem;
+		border-radius:10px;
+		background-color:#fa4e3e;
+		border:none;
+		color:white;
+		font-size:0.36rem
+	}
+
+
+}
+#zhuxiuGonglue{
+	border-top: 1px solid #ededed;
+	margin-top:0.72rem;
+	.spanclass{
+		line-height:0.973333rem;
+		font-weight:bold;
+		padding-left:0.333333rem;
+	}
+	.zhuangXiau{
+		
+		border-top: 1px solid #ededed;
+		ul:nth-child(1){
+			padding:0 0.24rem 0.24rem;
+			overflow:hidden;
+			background-color:white;
+			li{
+				float:left;
+				border:1px solid #ededed;
+				width:48%;
+				box-sizing:border-box;
+				border-radius:10px;
+				text-align:center;
+				margin-top:0.24rem;
+				a{
+					line-height:0.8rem;
+				}
+			}
+			li:nth-of-type(2n+1){
+				margin-right: 0.266667rem;
+			}
+		}
+		ul:nth-child(2){
+			padding:0 0.306667rem 0.306667rem;
+			background-color:white;
+			li:nth-child(1){
+				border-top: 1px solid #ededed;
+				margin:0;
+				padding-top: 0.266667rem;
+			}
+			li{
+				overflow:hidden;
+				margin-top:0.24rem;
+				img{
+					width:2.626667rem;
+					height:1.773333rem;
+					float:left;
+				}
+				div{
+					float:right;
+					width:6.0rem;
+				}
+				.zhuangXiauTitle{
+					p{
+						color:#a8a8a8;margin-top:0.133333rem
+						
+					}
+					p:nth-child(1){
+						
+						color:#575757;
+						font-weight:bold;
+
+					}
+				}
+			}
+
+		}
+		.a_Div{
+		border:1px solid #ededed;
+		margin:0 0.266667rem;
+		border-radius: 0.133333rem;
+		a{
+			display:inline-block;
+			width:50%;
+			line-height:0.84rem;
+			text-align: center;
+			font-size:22px;
+			background: url("../img/tubiaopic.png") no-repeat ;
+			background-size: 7.333333rem 8.586667rem;
+			background-position:-3.866667rem -6.6rem;
+			font-weight:bold;
+		}
+		a:nth-child(1){
+			background-position:-5.6rem -2.733333rem;
+		}
+	}
+	
+	}
+	.qianZhongHou{
+
+		margin:0.266667rem 0.266667rem 0.0rem;
+		border-top:1px solid #ededed;
+		border-bottom:1px solid #ededed;
+		text-align:center;
+		span{
+			padding:0;
+				vertical-align:top;
+			display:inline-block;
+			width:1.176667rem;
+			height:1.186667rem;
+			background: url("../img/tubiaopic.png") no-repeat ;
+			background-size: 7.333333rem 8.586667rem;
+			background-position:-1.524rem 0.0rem;
+			margin:0 0.266667rem;
+		}
+		a{
+				vertical-align: middle;
+			display:inline-block;
+			width:1.52rem;
+			text-align:center;
+			color:#393939;
+		}
+		a:before{
+			display:block;
+			content:"";
+			width:1.52rem;
+			height:1.52rem;
+			background: url("../img/tubiaopic.png") no-repeat ;
+			background-size: 7.333333rem 8.586667rem;
+			background-position:0.0rem 0.0rem;
+		}
+		a:nth-child(2):before{
+			background-position:-2.693333rem 0rem;
+		}
+		a:nth-child(3):before{
+			background-position:-5.346667rem 0.0rem;
+		}
+	}
+	background-color:white;
+	padding-bottom: 0.266667rem
+}
+.keTing{
+	padding:0.266667rem;
+	#ketingzhuangxiu{
+		padding-left:0.36rem;
+		width:5.6rem;
+		height:0.72rem;
+	}
+	#souDaan{
+		width:2.373333rem;
+	height:0.746667rem;
+	border:none;
+	background-color: #fa4e3e;
+	}
+	ul{
+		margin-top: 0.4rem;
+		text-align:left;
+		padding-left: 0.266667rem;
+		li{
+			list-style: disc;
+			border-bottom:1px solid #ededed;
+			line-height:0.56rem;
+			font-size:0.266667rem;
+			span{
+				color:#fa4b3b;
+			}
+			a{position:relative;
+				float:right;
+				font-size:0.32rem;
+
+			}
+			a:before{
+				content:"";
+				display:inline-block;
+				width:1px;
+				height:1px;
+				border:6px solid transparent;;
+				border-left-color:#cacaca; 
+				position:absolute;
+				left:-0.266667rem;
+				top:0;
+				bottom: 0;
+				margin:auto;
+			}
+		}
+	}
+	.a_Div{
+		margin-top:0.266667rem;
+		border:1px solid #ededed;
+		a{
+			display:inline-block;
+			width:50%;
+			line-height:0.84rem;
+			font-size:0.293333rem;
+			text-align: center;
+			background: url("../img/tubiaopic.png") no-repeat ;
+			background-size: 7.333333rem 8.586667rem;
+			background-position:-3.766667rem -6.6rem;
+			font-weight:bold;
+		}
+		a:nth-child(1){
+			background-position:-5.6rem -2.733333rem;
+		}
+	}
+	background-color:white;
+	text-align:center;
+}
+.bendiNews{
+	
+	.spanclass{
+		line-height:0.973333rem;
+		font-weight:bold;
+		padding-left:0.333333rem;
+	}
+	ul{
+		background-color:white;
+		margin-top: 0.4rem;
+		text-align:left;
+		padding-left:0.533333rem;
+		li{
+			list-style: disc;
+			border-bottom:1px solid #ededed;
+			line-height:1.04rem;
+			span{
+				color:#a9a9a9;
+				float:right;
+				font-size:0.4rem;
+			}
+			a{
+				font-size:0.186667rem;
+			}
+		}
+	}
+}
+.footers{
+	position:relative;
+	padding:0.333333rem;
+	text-align:center;
+	ul{
+		margin-top:0.266667rem;
+		overflow:hidden;
+		text-align:center;
+		li{
+			float:left;
+			border:1px solid #ededed;
+			width:2.533333rem;
+			border-radius:0.133333rem;
+
+			a{
+				display:inline-block;
+				width:100%;
+				line-height:0.706667rem;
+				
+			}
+			margin-left:0.386667rem;
+
+		}
+		li:not(:first-child){
+			list-style:disc;
+		}
+	}
+	a:nth-child(2){
+		display:inline-block;
+		width:4.76rem;
+		line-height:0.773333rem;
+		border:1px solid #ededed;
+		border-radius:0.133333rem;
+		margin-top:0.266667rem;
+		span{
+			color:#fa3f2e;
+			font-size:0.32rem;
+		}
+		margin-bottom: 0.333333rem;
+	}
+	span{
+		font-size:0.186667rem;
+	}
+	a:nth-child(5),a:nth-child(6){
+		&:before{
+			display:block;
+			content:"";
+			width:0.493333rem;
+			height:0.493333rem;
+			background: url("../img/tubiaopic.png") no-repeat ;
+			background-size: 7.333333rem 8.586667rem;
+			margin:0 auto;
+			border-radius:0.266667rem
+		}
+		width:1.08rem;
+		height:1.08rem;
+		border-radius:0.54rem;
+		background-color:#838383;
+		display:inline-block;
+		position:absolute;
+		right:0.2rem;
+		bottom:0;
+		color:white;
+	}
+	a:nth-child(5){
+		bottom:1.333333rem;
+		&:before{
+			background-position:-4.6rem -2.933333rem;
+		}
+		
+	}
+	
+
+
+	a:nth-child(6){
+		&:before{
+			background-position:-5.6rem -3.466667rem;}
+		
+	}
+}

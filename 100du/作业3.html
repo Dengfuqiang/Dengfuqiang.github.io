@@ -1,0 +1,1030 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/base.css" />
+		<link rel="stylesheet" type="text/css" href="css/zuoye2.css" />
+		<script src="http://api.html5media.info/1.1.4/html5media.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.12.3.min.js" ></script>
+		<script type="text/javascript">
+			$(function(){
+				$(".bbsltbody ul li").hover(
+					function(){
+					$(".bbsltbody ul li:nth-child(1)").css({"height":"25px","background-color": "#f8f8f8","color":"black"});
+					$(".bbsltbody ul li:nth-child(1) img").css("display","none").next().css("width","70%");
+					$(".bbsltbody ul li:nth-child(1) .bbsspanclass").css("display","inline-block").next().css("display","none");
+					$(this).css({"height":"70px","background-color": "#d90000","color":"white"}).children().css("display","inline-block").next().children().css("display","none").next().css("display","inline-block");
+				}
+					,function(){
+						$(this).css({"height":"25px","background-color": "#f8f8f8","color":"black"});
+						$(".bbsltbody ul li img").css("display","none").next().css("width","70%");
+						$(".bbsltbody .bbsspanclass").css("display","inline-block").next().css("display","none");
+					}
+				);
+				$(".title3span").click(function(){
+					$(this).siblings(".title3span").css({"background-color":"white","color":"black"});
+					$(this).css({"background-color":"#e21c01","color":"white"});
+					
+				});
+				$(".soudian").click(function(){
+					$("#titleinput").val("例如：荷棠鱼坊烤鱼 或 樱花日本料理");
+				});
+				$(".dizhi").click(function(){
+					$("#titleinput").val("例如：深圳 上海 北京 广州");
+				});
+				$(".youhuijuan").click(function(){
+					$("#titleinput").val("例如：淘宝优惠券 京东优惠卷 天猫优惠券");
+				});
+				$(".quanwen").click(function(){
+					$("#titleinput").val("例如：钢铁是怎样练成的");
+				});
+				$(".shiping").click(function(){
+					$("#titleinput").val("例如：女子开Jeep车硬上步兵战车被反怼");
+				});
+				$(".bdlf2head ul li").click(function(){
+					$(this).siblings().css("border-bottom","1px solid silver");
+					$(this).css("border-bottom","white");
+					$(".bdlf2body").eq($(this).index(".bdlf2head ul li")).css("display","block").siblings(".bdlf2body").css("display","none");
+					
+					
+				});
+				$(".containleft .bdlf2head ul li").click(function(){
+					$(this).siblings().css("border-bottom","1px solid silver");
+					$(this).css("border-bottom","white");
+					console.log(1)
+					$(".bdlf2bds").eq($(this).index(".containleft .bdlf2head ul li")).css("display","block").siblings(".bdlf2bds").css("display","none");
+				});
+				$("#2haoxian").click(function(){
+					$(".bdlf2bdsimg").remove();
+					var $str=$(
+						"<div class='bdlf2bdsimg'>"
+									+"<img src='img/2hao.jpg'/>"
+						+"</div>"
+					);
+					$(this).parent().parent().prepend($str);
+					$(this).css("border-width","4px").parent().siblings().children().css("border-width","2px");
+				});
+				$("#1haoxian").click(function(){
+					$(".bdlf2bdsimg").remove();
+					var $str=$(
+						"<div class='bdlf2bdsimg'>"
+									+"<img src='img/1hao.jpg'/>"
+						+"</div>"
+					);
+					$(this).parent().parent().prepend($str);
+					$(this).css("border-width","4px").parent().siblings().children().css("border-width","2px");
+				});
+				$("#3haoxian").click(function(){
+					$(".bdlf2bdsimg").remove();
+					var $str=$(
+						"<div class='bdlf2bdsimg'>"
+									+"<img src='img/3hao.jpg'/>"
+						+"</div>"
+					);
+					$(this).parent().parent().prepend($str);
+					$(this).css("border-width","4px").parent().siblings().children().css("border-width","2px");
+				});
+				$("#4haoxian").click(function(){
+					$(".bdlf2bdsimg").remove();
+					var $str=$(
+						"<div class='bdlf2bdsimg'>"
+									+"<img src='img/4hao.jpg'/>"
+						+"</div>"
+					);
+					$(this).parent().parent().prepend($str);
+					$(this).css("border-width","4px").parent().siblings().children().css("border-width","2px");
+				});
+				$("#5haoxian").click(function(){
+					$(".bdlf2bdsimg").remove();
+					var $str=$(
+						"<div class='bdlf2bdsimg'>"
+									+"<img src='img/5hao.jpg'/>"
+						+"</div>"
+					);
+					$(this).parent().parent().prepend($str);
+					$(this).css("border-width","4px").parent().siblings().children().css("border-width","2px");
+				});
+				$("#11haoxian").click(function(){
+					$(".bdlf2bdsimg").remove();
+					var $str=$(
+						"<div class='bdlf2bdsimg'>"
+									+"<img src='img/11hao.jpg'/>"
+						+"</div>"
+					);
+					$(this).parent().parent().prepend($str);
+					$(this).css("border-width","4px").parent().siblings().children().css("border-width","2px");
+				});
+				$(".zdfzbdhd1:nth-of-type(1)").click(function(){
+					$(this).css("border-bottom","2px solid white").siblings().css("border-bottom","1px solid white");
+					$(".meishi").css("display","block").siblings(".wenti,.wande").css("display","none");
+				});
+				$(".zdfzbdhd1:nth-of-type(2)").click(function(){
+					$(this).css("border-bottom","2px solid white").siblings().css("border-bottom","1px solid white");
+					$(".wenti").css("display","block").siblings(".meishi,.wande").css("display","none");
+				});
+				$(".zdfzbdhd1:nth-of-type(3)").click(function(){
+					$(this).css("border-bottom","2px solid white").siblings().css("border-bottom","1px solid white")
+					$(".wande").css("display","block").siblings(".meishi,.wenti").css("display","none");
+				});
+				
+				$("#titleinput").focus(function(){
+					var vale=$(this).val();
+					if(vale=="例如：荷棠鱼坊烤鱼 或 樱花日本料理"){
+						$(this).val("");
+					}
+					if(vale=="例如：深圳 上海 北京 广州"){
+						$(this).val("");
+					}
+					if(vale=="例如：淘宝优惠券 京东优惠卷 天猫优惠券"){
+						$(this).val("");
+					}
+					if(vale=="例如：钢铁是怎样练成的"){
+						$(this).val("");
+					}
+					if(vale=="例如：女子开Jeep车硬上步兵战车被反怼"){
+						$(this).val("");
+					}
+					
+					
+				});
+				$("#titleinput").blur(function(){
+					var vale=$(this).val();
+					if(vale=="")
+					{
+					$(this).val("例如：荷棠鱼坊烤鱼 或 樱花日本料理");	
+					}
+					if(vale=="")
+					{
+					$(this).val("例如：深圳 上海 北京 广州");	
+					}
+					if(vale=="")
+					{
+					$(this).val("例如：淘宝优惠券 京东优惠卷 天猫优惠券");	
+					}
+					if(vale=="")
+					{
+					$(this).val("例如：钢铁是怎样练成的");	
+					}
+					if(vale=="")
+					{
+					$(this).val("例如：女子开Jeep车硬上步兵战车被反怼");	
+					}
+					
+				});
+				$("#bofang").click(function(){
+					var vd=document.getElementById("video1");
+					if (vd.paused) {
+						vd.play();
+					} else {
+						vd.pause();
+					}
+				});
+		});
+			
+			
+		</script>
+		<style type="text/css">
+
+		</style>
+	</head>
+
+	<body>
+		<div class="contain">
+			<div class="heads">
+				<div class="title1 clearfix">
+					<ul>
+						<li>切换城市 ：</li>
+						<li>
+							<a href="#">北京</a>
+						</li>
+						<li>
+							<a href="#">上海</a>
+						</li>
+						<li>
+							<a href="#">福州</a>
+						</li>
+						<li>
+							<a href="#">广州</a>
+						</li>
+						<li>
+							<a href="#">青岛</a>
+						</li>
+					</ul>
+					<div class="titleright">
+						<a href="">店铺管理</a>
+					</div>
+					<div class="titleright1">
+						<a href="">加盟100度</a>|
+					</div>
+				</div>
+				<div class="title2">
+						<ul class="clearfix">
+							<li class="icon1"><a href="###"><i></i><br><span>美食</span></a></li>
+							<li class="icon2"><a href="###"><i></i><br><span>夜店</span></a></li>
+							<li class="icon3"><a href="###"><i></i><br><span>购物</span></a></li>
+							<li class="icon4"><a href="###"><i></i><br><span>文化</span></a></li>
+							<li class="icon5"><a href="###"><i></i><br><span>休闲</span></a></li>
+							<li class="icon_logo"><a href="###"><img src="img/100du-logo.png"/></a></li>
+							<li class="icon6"><a href="###"><i></i><br><span>烧客空间</span></a></li>
+							<li class="icon7"><a href="###"><i></i><br><span>知道分子</span></a></li>
+							<li class="icon8"><a href="###"><i></i><br><span>白吃白拿</span></a></li>
+							<li class="icon9"><a href="###"><i></i><br><span>烧客论坛</span></a></li>
+							<li class="icon10"><a href="###"><i></i><br><span>企业俱乐部</span></a></li>
+						</ul>
+				</div>
+				<div class="title3-1">
+					<span class="title3span soudian">
+						 搜店
+					</span>
+					<span class="title3span dizhi">
+						地址
+					</span>
+					<span class="title3span youhuijuan">
+						优惠券
+					</span>
+					<span class="title3span quanwen">
+						全文
+					</span>
+					<span class="title3span shiping">
+						视频
+					</span>
+				</div>
+				<div class="title3 ">
+					<div class="xuanzhuandiv">
+						
+					</div>
+					<div class="title3-2">
+						<input type="text" name="titleinput" id="titleinput" value="例如：荷棠鱼坊烤鱼 或 樱花日本料理" />
+						<input type="button" name="title3bt" id="title3bt" value="" />
+						<a href="#"><span class="title3-1span">金钱豹、大江南、湘水之珠、德瑀楼<br/>荷塘鱼坊烤鱼、SOHO沿都、湘味楼... </span></a>
+						
+					</div>
+					<div class="title3-3">
+						<a href="#" >UPDAPE</a><span class="title3-3span">
+						萱萱
+					</span>
+						<a href="#" style="color: black;background: none;">5分钟前 写了一篇新文章：那些灿烂华美的瞬间...</a>
+					</div>
+					
+				</div>
+			</div>
+			<div class="bodys clearfix">
+				<div class="bodysleft ">
+					<div class="bodysleftcontain clearfix">
+						<div class="bodysleft1 left1">
+							<p>WHAT'HOT <input type="button" name="bofang" id="bofang" value="&#9658" /></p>
+							<video controls id="video1" width="317" height="283">
+								<source src="蜡笔小新1.mp4" type="video/mp4"></source>
+							</video>
+							<div class="hottang">
+								<ul>
+									<li>
+										<a href="#">现场实录：杭州机场国航 系统崩溃</a>
+									</li>
+									<li>
+										<a href="#">网友自拍国航航班晚点的遭遇</a>
+									</li>
+									<li>
+										<a href="#">《拍客》绝对最奢侈的航班 注意第41秒</a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+						<div class="bodysleft2 bdlf2">
+							<div class="bdlf2head">
+								<ul>
+									<li >
+										<a href="#"><span class="spanclass">HOT SHOP</span > 红店铺</a>
+									</li>
+									<li>
+										<a href="#"><span class="spanclassx">EW SHOP</span> 新开张</a>
+									</li>
+								</ul>
+							</div>
+							<div class="bdlf2body clearfix">
+								<div class="bodyimg">
+									<div class="imgs">
+										<a href="#"><img src="img/qcafa.jpg" /></a>
+									</div>
+
+									<div class="bodyimgdiv">
+										<span class="spanclass">御丹和涵珍圆国际酒店</span><br /> 区域：朝阳/CBD
+										<br /> 人均：180元
+										<br /> 人气：12321
+									</div>
+								</div>
+								<div class="bodyimg">
+									<div class="imgs">
+										<a href="#"><img src="img/qcafa.jpg" /></a>
+									</div>
+
+									<div class="bodyimgdiv">
+										<span class="spanclass">御丹和涵珍圆国际酒店</span><br /> 区域：朝阳/CBD
+										<br /> 人均：180元
+										<br /> 人气：12321
+									</div>
+								</div>
+								<div class="bodyimg">
+									<div class="imgs">
+										<a href="#"><img src="img/qcafa.jpg" /></a>
+									</div>
+
+									<div class="bodyimgdiv">
+										<span class="spanclass">御丹和涵珍圆国际酒店</span><br /> 区域：朝阳/CBD
+										<br /> 人均：180元
+										<br /> 人气：12321
+									</div>
+								</div>
+								<a href="###">more</a>
+							</div>
+							<div class="bdlf2body bdlf2body2 clearfix">
+								<div class="bodyimg">
+									<div class="imgs">
+										<a href="#"><img src="img/hmgj.png" /></a>
+									</div>
+
+									<div class="bodyimgdiv">
+										<span class="spanclass">汉莱国际美美食百汇  立省20%</span><br /> 区域：朝阳/CBD
+										<br /> 人均：10元
+										<br /> 人气：12321456
+									</div>
+								</div>
+								<div class="bodyimg">
+									<div class="imgs">
+										<a href="#"><img src="img/hmgj.png" /></a>
+									</div>
+
+									<div class="bodyimgdiv">
+										<span class="spanclass">汉莱国际美美食百汇  立省20%</span><br /> 区域：朝阳/CBD
+										<br /> 人均：10元
+										<br /> 人气：12321124
+									</div>
+								</div>
+								<div class="bodyimg">
+									<div class="imgs">
+										<a href="#"><img src="img/hmgj.png" /></a>
+									</div>
+
+									<div class="bodyimgdiv">
+										<span class="spanclass">汉莱国际美美食百汇  立省20%</span><br /> 区域：朝阳/CBD
+										<br /> 人均：10元
+										<br /> 人气：123211456
+									</div>
+								</div>
+								<a href="###">more</a>
+							</div>
+							
+						</div>
+					</div>
+					<a href="#"style="border: 1ps solid transparent;">
+						<div class="bodysleft3">
+							<img src="img/ipod.png" alt=""/>
+						</div>
+					</a>
+					<div class="bodysleftcontain clearfix">
+						<div class=" bodysleft1 bdlf4 ">
+							<div class="bdlf4head1 clearfix">
+								<div style=" color:#c73830; font-weight: bold;float:left;vertical-align: middle;">
+									LUCK YODAY
+									<br /><span style="font-size: 24px;color:#333333;">
+									每日活动
+									</span>
+								</div>
+								<span style="font-size: 36px;float:left;color:#ec1c16;font-weight: bold;vertical-align: middle;">
+								2014.2
+								</span>
+							</div>
+							<div class="bdlf4head clearfix">
+									<div class="bdf4img">
+										<img src="img/ggxie.png"/>
+									</div>
+								<div class="bdf4text">
+									<span> <a href="#">07</a><a href="#">21</a>本日主题xxxxxxx</span>
+									<p>迟到的荣誉——维米尔的写补实主义风俗画迟到的荣誉维米尔画迟到的荣誉维米尔画</p>
+								</div>
+							</div>
+							<div class="bdf4body">
+								<table border="0" cellspacing="4" cellpadding="0">
+									<tr><th>MON</th><th>TUE</th><th>WED</th><th>THU</th><th>FRI</th><th>SAT</th><th>SUN</th></tr>
+									<tr><td>29</td><td>30</td><td>1</td><td>2</td><td>3</td><td>4</td><td>5</td></tr>
+									<tr><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td><td>12</td></tr>
+									<tr><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td><td>19</td></tr>
+									<tr><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td><td>26</td></tr>
+									<tr><td>27</td><td>28</td><td>29</td><td>30</td><td>31</td><td>1</td><td>2</td></tr>
+									<tr><td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td></tr>
+									
+								</table>
+							</div>
+						</div>
+						<div class="bodysleft2 bdlf2hd">
+							<div class="bdlf4head1 bodyslef2hd clearfix">
+									RECOMMEND
+									<br /><span style="font-size: 24px;color: black;font-family: simhei;">
+										精彩推荐
+									</span>
+							</div>
+							<div class="bodyslef2bd clearfix">
+								<div class="bdlf2bdmain">
+									<img src="img/ls10.jpeg" />
+								</div>
+								<div class="bdlf2bdright">
+									<div class="bdlfr1">
+										<img src="img/jctjpicture.png" />
+									</div>
+									<div class="bdlfr1">
+										<img src="img/jctjpicture2.png" />
+									</div>
+									<div class="bdlfr1">
+										<img src="img/jctjpicture3.png" />
+									</div>
+
+								</div>
+								<div class="bdlftext">
+									爸爸去哪儿
+								</div>
+							</div>
+							<div class="bodyslef2ft">
+
+								<li>
+										<a href="#">老店换新颜，丰泽园野田重张亮相</a><span>08/07/22</span>
+									</li>
+								<li>
+									
+										<a href="#">生活中哪些商品包装有缺陷野田</a>
+									<span>08/07/22</span></li>
+								<li>
+									
+										<a href="#">老店换新颜，丰泽园野田重张亮相</a>
+									<span>08/07/22</span></li>
+								<li>
+									
+										<a href="#">生活中哪些商品包装有缺陷野田</a>
+									<span>08/07/22</span></li>
+								<li>
+									
+										<a href="#">老店换新颜，丰泽园野田重张亮相</a>
+									<span>08/07/22</span></li>
+								<li>
+									
+									<a href="#">生活中哪些商品包装有缺陷野田</a>
+									<span>08/07/22</span>
+								</li>
+								<li>
+									<a href="#">老店换新颜，丰泽园野田重张亮相</a>
+									<span>08/07/22</span>
+								</li>
+								<li>
+									<a href="#">生活中哪些商品包装有缺陷野田</a>
+									<span>08/07/22</span>
+								</li>
+							
+							</div>
+
+						</div>
+					</div>
+					<div class="bodysleftcontain1 clearfix">
+						<div class="bodysleft1 bodysleftcontain1 containleft">
+							<div class="bdlf2head ">
+								<ul>
+									<li>
+										<span class="erwaispan"><span class="spanclass">SUBWAY</span >地铁交通</span></li>
+								<li><span class="erwaispan"><span class="spanclass">MAP</span> 生活圈</span>
+									</li>
+								</ul>
+							</div>
+							<div class="bdlf2bds">
+								<div class="bdlf2bdsimg">
+									<img src="img/1hao.jpg" />
+								</div>
+								<ul class="clearfix">
+									<li><input type="button" name="1haoxian" id="1haoxian" value="1号线" /></li>
+									<li><input type="button" name="2haoxian" id="2haoxian" value="2号线" /></li>
+									<li><input type="button" name="3haoxian" id="3haoxian" value="3号线" /></li>
+									<li><input type="button" name="4haoxian" id="4haoxian" value="4号线" /></li>
+									<li><input type="button" name="5haoxian" id="5haoxian" value="5号线" /></li>
+									<li><input type="button" name="11haoxian" id="11haoxian" value="11号线" /></li>
+
+								</ul>
+							</div>
+							<div class="bdlf2bds bdlf2body2">
+								<img src="img/ls10.jpeg" style="width: 330px;height:225px;"/>
+							</div>
+						</div>
+						<div class="bodysleft2 bodysleftcontain1 ">
+							<div class="bbsluantan">
+								<div class="bbslthead zdfzhead">
+									<a href="#">more</a>
+									<span>BBS</span>论坛
+								</div>
+								<div class="bbsltbody">
+									<ul>
+										<li>
+											<img src="img/qwezc.jpg" />
+											<span class="bbstext"><span class="bbsspanclass">01</span>
+											画皮之——日剧中的手机&nbsp;啊瑞斯<p>ONE</p>
+											</span>
+										</li>
+										<li>
+											<img src="img/qwezc.jpg" />
+											<span class="bbstext"><span class="bbsspanclass">02</span>
+											画皮之——日剧中的手机&nbsp;啊瑞斯<p>ONE</p>
+											</span>
+										</li>
+										<li>
+											<img src="img/qwezc.jpg" />
+											<span class="bbstext"><span class="bbsspanclass">03</span>
+											画皮之——日剧中的手机&nbsp;啊瑞斯<p>ONE</p>
+											</span>
+										</li>
+										<li>
+											<img src="img/qwezc.jpg" />
+											<span class="bbstext"><span class="bbsspanclass">04</span>
+											画皮之——日剧中的手机&nbsp;啊瑞斯<p>ONE</p>
+											</span>
+										</li>
+										<li>
+											<img src="img/qwezc.jpg" />
+											<span class="bbstext"><span class="bbsspanclass">05</span>
+											画皮之——日剧中的手机&nbsp;啊瑞斯<p>ONE</p>
+											</span>
+										</li>
+										<li>
+											<img src="img/qwezc.jpg" />
+											<span class="bbstext"><span class="bbsspanclass">06</span>
+											画皮之——日剧中的手机&nbsp;啊瑞斯<p>ONE</p>
+											</span>
+										</li>
+										<li>
+											<img src="img/qwezc.jpg" />
+											<span class="bbstext"><span class="bbsspanclass">07</span>
+											画皮之——日剧中的手机&nbsp;啊瑞斯<p>ONE</p>
+											</span>
+										</li>
+
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<a href="#">
+						<div class="bodysleft3">
+							<img src="img/ipod.png" alt=""/>
+						</div>
+					</a>
+					<div class="bodysleftcontain1 clearfix">
+						<div class="bodysleft1 bodysleftcontain1 zdfz">
+							<div class="zdfzhead">
+								<a href="#">more</a>
+								<span class="spanclass">LIFESTYLE ADVICE</span>知道分子
+								
+							</div>
+							<div class="zdfzbody">
+								<div class="zdfzbodyhd clearfix">
+									<div class="zdfzbdhd1">
+										<span class="erwaispan">有人在问</span><span class="spanclass">&#9660;</span>
+									</div>
+									<div class="zdfzbdhd1">
+										<span class="erwaispan">有人知道</span><span>&#9660;</span>
+									</div>
+									<div class="zdfzbdhd1">
+										<span class="erwaispan">热门话题</span><span>&#9660;</span>
+									</div>
+								</div>
+								<div class="zdfzbodybd meishi">
+									<p>标题<span>状态</span></p>
+									<ul>
+										<li>
+											<a href="#">[<span class="spanclass">闰食</span>] 推荐几款性价比较好的冰箱 <span class="zhuantai"></span></a>
+										</li>
+										<li>
+											<a href="#">[<span class="spanclass">购物</span>] 生活中哪些商品的包装有缺陷<span class="zhuantai"></span></a>
+										</li>
+										<li>
+											<a href="#">[<span class="spanclass">体闲</span>] 为什么么我第一次进入保姆和宠物<span class="zhuantai"></span></a>
+										</li>
+										<li>
+											<a href="#">[<span class="spanclass">闰食</span>] 推荐几款性价比较好的冰箱 <span class="zhuantai"></span></a>
+										</li>
+										<li>
+											<a href="#">[<span class="spanclass">购物</span>] 生活中哪些商品的包装有缺陷<span class="zhuantai"></span></a>
+										</li>
+									</ul>
+									<div class="sousou">
+										<span>搜搜谁知道：</span><input type="text" name="sousou" id="sousou" placeholder="输入关键字" /><input type="button" name="gobt" id="gobt" value="" />
+									</div>
+
+								</div>
+								<div class="zdfzbodybd bdlf2body2 wenti">
+									<p>标题<span>状态</span></p>
+									<ul>
+										<li>
+											<a href="#">有人知道哪里有好吃的，哪里有好玩的 ？</a>
+										</li>
+										<hr style="border: 1px dotted black" />
+										<li>
+											<a href="#">有人知道哪里有好吃的，哪里有好玩的 ？</a>
+										</li>
+										<hr style="border: 1px dotted black" />
+										<li>
+											<a href="#">有人知道哪里有好吃的，哪里有好玩的 ？</a>
+										</li>
+										<hr style="border: 1px dotted black" />
+										<li>
+											<a href="#">有人知道哪里有好吃的，哪里有好玩的 ？</a>
+										</li>
+										<hr style="border: 1px dotted black" />
+										<li>
+											<a href="#">有人知道哪里有好吃的，哪里有好玩的 ？</a>
+										</li>
+										<hr style="border: 1px dotted black" />
+									</ul>
+
+								</div>
+								<div class="zdfzbodybd bdlf2body2 wande">
+									<p>标题<span>状态</span></p>
+									<ul>
+										<li>
+											<a href="#">我们这周要去大朋所城玩，听说那里挺好玩的</a>
+										</li>
+										<hr style="border: 1px dotted black" />
+										<li>
+											<a href="#">我们这周要去大朋所城玩，听说那里挺好玩的</a></li>
+										<hr style="border: 1px dotted black" />
+										<li>
+											<a href="#">我们这周要去大朋所城玩，听说那里挺好玩的</a></li>
+										<hr style="border: 1px dotted black" />
+										<li>
+											<a href="#">我们这周要去大朋所城玩，听说那里挺好玩的</a>	</li>
+										<hr style="border: 1px dotted black" />
+										<li>
+											<a href="#">我们这周要去大朋所城玩，听说那里挺好玩的</a>	</li>
+										<hr style="border: 1px dotted black" />
+									</ul>
+
+								</div>
+							</div>
+							<div class="zdfzfoot">
+
+							</div>
+						</div>
+						<div class="bodysleft2 bodysleftcontain1 zdfz">
+							<div class="zdfzhead">
+								<a href="#">more</a>
+								<span class="spanclass">HOT</span>红人烧客
+								
+							</div>
+							<div class="hrsk">
+								<table cellspacing="1">
+
+									<tr>
+										<td><img src="img/qwezc.jpg" /></td>
+										<td><img src="img/qwezc.jpg" /></td>
+										<td colspan="2"><img src="img/ls10.jpeg" style="width: 156px" /></td>
+									</tr>
+									<tr>
+										<td><img src="img/qwezc.jpg" /></td>
+										<td><img src="img/qwezc.jpg" /></td>
+										<td><img src="img/qwezc.jpg" /></td>
+										<td><img src="img/qwezc.jpg" /></td>
+									</tr>
+									<tr>
+										<td><img src="img/qwezc.jpg" /></td>
+										<td><img src="img/qwezc.jpg" /></td>
+										<td><img src="img/qwezc.jpg" /></td>
+										<td><img src="img/qwezc.jpg" /></td>
+									</tr>
+
+								</table>
+							</div>
+						</div>
+					</div>
+					<div class="bodysleftcontain1">
+						<div class="bodysleft1 bodysleftcontain1 zdfz">
+							<div class="zdfzhead">
+								<span class="spanclass">HELP</span>在线帮助
+
+							</div>
+							<div class="zxbz">
+								<p style="text-indent: 2em;letter-spacing: 3px;">你有任何问题，都可以通过全国免费电话，或MSN在线客服与我们联系！</p>
+								<div class="zxbzphone">
+									<span class="spanclass">4006-100-516</span>
+								</div>
+								<div class="zxbzEmil">
+									100du.com@live.cn
+								</div>
+								<div class="yhbz">
+									<span>
+							 		用户帮助
+							 	</span>
+									<ul>
+										<li>
+											<a href="#">金币是什么</a>
+										</li>
+										<li>
+											<a href="#">怎样查看我的等级</a>
+										</li>
+										<li>
+											<a href="#">怎么赚积分</a>
+										</li>
+									</ul>
+								</div>
+								<div class="shbz">
+									<span>
+							 		商户帮助
+							 	</span>
+									<ul>
+										<li>
+											<a href="#">如何成为明星商户</a>
+										</li>
+										<li>
+											<a href="#">邮件推广</a>
+										</li>
+										<li>
+											<a href="#">论坛推广方法</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+
+						</div>
+						<div class="bodysleft2 bodysleftcontain1 zdfz">
+							<div class="zdfzhead">
+								<a href="#">more</a>
+								<span class="spanclass">100DU IN MEDIA</span>媒体声音
+							</div>
+							<div class="mtsy">
+								<div class="mtsycontain">
+									<img src="img/chant1.jpg" />
+									<span>
+										<a href="#">日本最大的财经杂志《钻石周刊》对100度享乐网的报道</a>
+									</span>
+								</div>
+								<div class="mtsycontain">
+									<img src="img/chant2.jpg" />
+									<span>
+										<a href="#">视频网站100度享乐网获网络视听许可证</a>
+									</span>
+								</div>
+								<div class="mtsycontain">
+									<img src="img/chant3.jpg" />
+									<span>
+										<a href="#">互联网上的视频橱窗</a>
+									</span>
+								</div>
+								<div class="mtsycontain">
+									<img src="img/chant4.jpg" />
+									<span>
+										<a href="#">享乐主义的机会</a>
+									</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bodysright">
+					<div class="denglu">
+						<div class="denglutitle">
+							<span class="spanclass">
+							LOAD
+						</span>登陆
+						</div>
+						<form action="" method="post">
+							<label for="userName">用户名：</label><input type="text" name="userName" id="userName" value="" /><input type="checkbox" name="usercheckb" id="usercheckb" value="" /><label for="usercheckb">记住我</label><br />
+							<label for="userpassword">密&nbsp;&nbsp;&nbsp;码：</label><input type="password" name="userpassword" id="userpassword" value="" />
+							<input class="submits" type="submit" value="" />
+						</form>
+						<hr />
+						<ul class="clearfix">
+							<li>
+								<a href="#">新用户注册</a>
+							</li>
+							<li>
+								<a href="#">忘记密码了</a>
+							</li>
+						</ul>
+					</div>
+					<a href="#">
+						<div class="qiangpan">
+
+						</div>
+					</a>
+					<div class="qiangquan">
+						<a href="#"><img src="img/01.jpg" /></a>
+					</div>
+					<div class="qiangquan qq1 clearfix">
+						<div class="zdfzhead qq2">
+							<a href="#">more</a>
+							<span class="spanclass">COUPONS</span>抢卷儿
+						</div>
+						<div class="zdfzbodyhd">
+							<div class="zdfzbdhd1">
+								<span class="erwaispan">人气</span><span class="spanclass">&#9660;</span>
+							</div>
+							<div class="zdfzbdhd1">
+								<span class="erwaispan">推荐</span><span>&#9660;</span>
+							</div>
+							<div class="zdfzbdhd1">
+								<span class="erwaispan">最新</span><span>&#9660;</span>
+							</div>
+						</div>
+						<div class="qiangquanbody">
+							<p>商店名<span>省</span><span>打印</span></p>
+							<ul>
+								<li>
+									<a href="#">老北京一尊皇牛 <span>12%</span><span>345</span></a>
+								</li>
+								<li>
+									<a href="#">老北京一尊皇牛 <span>12%</span><span>345</span></a>
+								</li>
+								<li>
+									<a href="#">老北京一尊皇牛 <span>12%</span><span>345</span></a>
+								</li>
+								<li>
+									<a href="#">老北京一尊皇牛 <span>12%</span><span>345</span></a>
+								</li>
+								<li>
+									<a href="#">老北京一尊皇牛 <span>12%</span><span>345</span></a>
+								</li>
+								<li>
+									<a href="#">老北京一尊皇牛 <span>12%</span><span>345</span></a>
+								</li>
+
+							</ul>
+
+						</div>
+
+					</div>
+					<div class="jrtj">
+						<div class="zdfzhead qq2"><a href="#">more</a>
+							<span class="spanclass">SHOP</span>今日推荐
+						</div>
+						<div class="bodyimg jrtjbodyimg ">
+							<div class="imgs" style="float: left;">
+								<a href="#"><img src="img/hmgj.png" /></a>
+							</div>
+
+							<div class="bodyimgdiv jrtjdiv">
+								<span class="spanclass">汉没国际美食百汇</span><br /> 口味：创意中餐
+								<br /> 区域：朝阳/CBD
+							</div>
+						</div>
+						<hr style="border: 1px dotted #cbcbca" />
+						<div class="bodyimg jrtjbodyimg">
+							<div class="imgs">
+								<a href="#"><img src="img/hmgj.png" /></a>
+							</div>
+							
+							<div class="bodyimgdiv jrtjdiv">
+								<span class="spanclass">汉没国际美食百汇</span><br /> 口味：创意中餐
+								<br /> 区域：朝阳/CBD
+							</div>
+						</div>
+						<hr style="border: 1px dotted #cbcbca" />
+						<div class="bodyimg jrtjbodyimg">
+							<div class="imgs">
+								<a href="#"><img src="img/hmgj.png" /></a>
+							</div>
+
+							<div class="bodyimgdiv jrtjdiv">
+								<span class="spanclass">汉没国际美食百汇</span><br /> 口味：创意中餐
+								<br /> 区域：朝阳/CBD
+							</div>
+						</div>
+						<hr style="border: 1px dotted #cbcbca" />
+						<div class="bodyimg jrtjbodyimg">
+							<div class="imgs">
+								<a href="#"><img src="img/hmgj.png" /></a>
+							</div>
+
+							<div class="bodyimgdiv jrtjdiv">
+								<span class="spanclass">汉没国际美食百汇</span><br /> 口味：创意中餐
+								<br /> 区域：朝阳/CBD
+							</div>
+						</div>
+						<hr style="border: 1px dotted #cbcbca" />
+					</div>
+					<div class="qjgd ">
+						<div class="zdfzhead qq2">
+							<a href="#">more</a>
+							<span class="spanclass">360°SHOP</span>全景逛店
+						</div>
+						<a href="#"><img src="img/qjgk.png"/></a>
+						<a href="#"style="line-height: 22px;">苹果雪梨排骨场</a>
+					</div>
+					<div class="zkd ">
+						<div class="zdfzhead qq2">
+							
+							<a href="#">more</a>
+							<span class="spanclass">SHOP</span>折扣店
+						</div>
+						<div class="bodyimg jrtjbodyimg clearfix">
+							<div class="imgs">
+								<a href="#"><img src="img/hmgj.png" /></a>
+							</div>
+
+							<div class="bodyimgdiv jrtjdiv">
+								<span class="spanclass">汉没国际美食百汇</span><br /> 口味：创意中餐
+								<br /> 区域：朝阳/CBD
+							</div>
+
+						</div>
+						<div id="zkdbos" class="zdfzbodybd">
+							<ul>
+								<li>
+									<a href="#">[<span class="spanclass">体闲</span>] 瀚茶缘(雍和宫店) </a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">体闲</span>] 瀚茶缘(雍和宫店) </a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">美食</span>] 老北京一尊皇牛</a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">美食</span>] 老北京一尊皇牛</a></li>
+								
+								<li>
+									<a href="#">[<span class="spanclass">购物</span>] 生活中哪些商品的包装有缺陷</a></li>
+								
+								<li>
+									<a href="#">[<span class="spanclass">闰食</span>] 推荐几款性价比较好的冰箱 </a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">闰食</span>] 推荐几款性价比较好的冰箱 </a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">闰食</span>] 推荐几款性价比较好的冰箱 </a>
+								</li>
+							</ul>
+
+						</div>
+					</div>
+					<div class="zxja">
+						<div class="zdfzhead qq2">
+							<a href="#">more</a>
+							<span class="spanclass">COUPONS</span>最新加盟
+						</div>
+						<table border="0" cellspacing="" cellpadding="">
+						
+						<tr><td><a href="#"><img src="img/hmgj.png"/></a></td><td><a href="#"><img src="img/hmgj.png"/></a></td></tr>
+						<tr><th><span style="color: #b80000;">汉莱国际美食百汇</span><br/>口味：创意中餐<br />区域：朝阳/CBD</th><th><span style="color: #b80000;">汉莱国际美食百汇</span><br/>口味：创意中餐<br />区域：朝阳/CBD</th></tr>
+						</table>
+							<ul style="margin-top:15px;">
+								<li>
+									<a href="#">[<span class="spanclass">体闲</span>] 瀚茶缘(雍和宫店) </a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">体闲</span>] 瀚茶缘(雍和宫店) </a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">美食</span>] 老北京一尊皇牛</a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">美食</span>] 老北京一尊皇牛</a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">购物</span>] 生活中哪些商品的包装有缺陷</a>
+								</li>
+								<li>
+									<a href="#">[<span class="spanclass">购物</span>] 生活中哪些商品的包装有缺陷</a>
+								</li>
+							</ul>
+					</div>
+					
+				</div>
+
+			</div>
+			<div class="foots">
+				<span >
+					<a href="#">关于我们</a> |
+				</span>
+				<span >
+					<a href="#">联系我们</a> |
+				</span>
+				<span >
+					<a href="#">板权声明</a> |
+				</span>
+				<span >
+					<a href="#">加入我们</a> |
+				</span>
+				<span >
+					<a href="#">问题反馈</a> |
+				</span>
+				<span >
+					<a href="#">友情链接</a> |
+				</span>
+				<span >
+					<a href="#">网站地图</a> |
+				</span>
+				<span >
+					<a href="#">视频索引</a>
+				</span>
+				<p>Copyright 2000 www.100du.com 100度享乐网版权所有</p>
+			</div>
+
+		</div>
+	</body>
+
+</html>
