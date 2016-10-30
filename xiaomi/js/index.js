@@ -1,3 +1,5 @@
+//模拟后台拿数据
+//生成对象数组
 var jsonArray=[];
 for(var i=1;i<105;i++){
 	var imgSrc="img/111 ("+i+").jpg";
@@ -25,12 +27,14 @@ function selectfrom (lowValue,highValue){
  
 $(function(){
 	var thisvalue=0;
+	//鼠标悬浮时，改变数据
 	$(".mxdpTitleflag a").mouseenter(function(){
 		$(this).siblings("a").removeClass("titleNavaddclass");
 		$(this).addClass("titleNavaddclass");
 		var aIndex=$(".mxdpTitleflag a").index(this);
 		var znyjleft= $(this).parent().parent().siblings(".znyjLeft").children().children("li");	
 		thisvalue=this.innerHTML;
+		//遍历子节点，并改变数据
 		znyjleft.each(function(i,dom){
 			var dom=$(dom);
 			if(i<8){
@@ -48,10 +52,12 @@ $(function(){
 	});
 	
 	var znyjLefts=$(".znyjLeft2");
+	//页面数据初始化
 	znyjLefts.each(function(p,doc){
 		var doc=$(doc);
 		var index=p*32;
 		var znyjLeftli= $(this).children().children();
+		//遍历子节点，改变数据
 		znyjLeftli.each(function(i,dom){
 			var dom=$(dom);
 			var num=index+i;
@@ -62,7 +68,7 @@ $(function(){
 			dom.children(".shanLaKuang").children().children().text(jsonArray[num].jieshao);
 		});
 	});
-	
+	//购物车鼠标悬浮特效
 	$(".shoppingCar").hover(function(){
 		$(".shoppingCar a").addClass("shoppingCaraddclass");
 		$(".shopMenu").slideDown();
@@ -72,12 +78,14 @@ $(function(){
 		$(".shopMenu").slideUp();
 	}
 	);
+	//点击搜索框特效
 	$("#search").focus(function(){
 		$(".headerSearch").addClass("bordercolor");
 		$("#suearchBtn").addClass("bordercolor");
 		$(".abiaoqian").toggle();
 		$(".searchlist").toggle()
 	});
+	//右边商品列表特效
 	$(".mlFistChild li").mouseenter(function(){
 		
 		$(".ulListContain").css("display","none");
@@ -94,6 +102,7 @@ $(function(){
 		$("#suearchBtn").removeClass("bordercolor");
 		
 	});
+	//Tab切换，添加事件处理函数
 	for(var i=1;i<5;i++){
 		var innerelements=document.getElementById("lunboctInner"+i+"");
 		var lbli =document.getElementById("lunBoBtUl"+i+"").getElementsByTagName("li");
@@ -101,12 +110,13 @@ $(function(){
 		var preNext=document.getElementById("preNext"+i+"");
 		lunboFc(lbcontain,lbli,innerelements,preNext);
 	}
-	
+	//根据传入的，节点动态添加事件处理函数
 	function lunboFc(outerElement,controlBt,innerelements,preNext){
 		var index=0;
 		var len=controlBt.length;
 		var timer=0;
 		var prenextFlag=true;
+		//为下方button添加事件处理函数
 		for(var i=0;i<len;i++){
 			controlBt[i].index=i;
 			controlBt[i].onclick=function(){
@@ -114,6 +124,7 @@ $(function(){
 				tab();
 			}
 		}
+		//切换
 		function tab(){
 			clearInterval(timer);
 			for(var j=0;j<len;j++){
@@ -133,6 +144,7 @@ $(function(){
 			 	outerElement.scrollLeft+=change/totalstep;
 			},16)
 		}
+		//前进按钮
 		preNext.children[0].onclick=function(){
 			if(prenextFlag){
 				index--;
@@ -144,6 +156,7 @@ $(function(){
 			tab();
 			prenextFlag=false;
 		};
+		//后退按钮
 		preNext.children[1].onclick=function(){
 			if(prenextFlag){
 				index++;
@@ -156,6 +169,7 @@ $(function(){
 			prenextFlag=false;
 		};
 	}
+	//导航slideDown效果
 	$(".headerli").hover(function(){
 		$(".headerList").slideDown();
 		$(".headerList ul").siblings().css("display","none");
@@ -168,6 +182,7 @@ $(function(){
 	$(".headerlislideup").mouseenter(function(){
 		$(".headerList").stop().slideUp();
 	});
+	//主轮播效果
 	(function(){
 		var lunbocontain=document.getElementById("lunboContain");
 		var lunbobtn=document.getElementById("lunbobtn").getElementsByTagName("a");
@@ -187,7 +202,7 @@ $(function(){
 				tab();
 			}
 		}
-		//渐隐
+		//渐隐，兼容ie8及以下
 		function tab(){
 				for(var j=0;j<len;j++){
 						lunbobtn[j].className="lunboBtns";
@@ -227,7 +242,7 @@ $(function(){
 			}
 			clickFlag=false;
 		}
-		//下按钮
+		//上按钮
 		pre.onclick=function (){
 			luboImage[index].style.zIndex=-1;
 			index--;
@@ -245,7 +260,7 @@ $(function(){
 			autogo=setInterval(autoGo,4000);
 		}
 	})();
-
+		//明星单品轮播效果
 		(function(){
 			var outer=document.getElementById("mxdpout");
 			var inner=document.getElementById("mxdpinner");
@@ -269,6 +284,7 @@ $(function(){
 				}
 				clickFlag=false;
 			};
+			//事件处理函数
 			function tab(){
 				for(var j=0;j<len;j++){
 						nextandpre[j].style.color="#b0b0b0";
@@ -313,6 +329,7 @@ $(function(){
 					autogoes=setInterval(autoGoes,3000);
 			}
 		})();
+		//为你推荐轮播效果
 		(function(){
 			var outer=document.getElementById("mxdpout1");
 			var inner=document.getElementById("mxdpinner1");

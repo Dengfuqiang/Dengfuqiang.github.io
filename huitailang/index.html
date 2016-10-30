@@ -21,7 +21,7 @@
 			var fenshu=document.getElementById("fenshu");
 			var jishi=document.getElementById("jishi").getElementsByTagName("span")[0];
 			var start=document.getElementById("start");
-			var arrays=new Array();
+			var arrays=new Array();//存放随机数数组
 			var shift=0;
 			var cont=0;
 			var setTimeouts=0;
@@ -39,6 +39,7 @@
 			function creatMouse(){
 				
 				jishitiao-=5;
+				//时间走完，弹出GAME OVER
 				if(jishitiao<-180){
 					start.style.display="block";
 					start.innerHTML="GAME OVER";
@@ -53,6 +54,7 @@
 					
 				} 
 				jishi.style.left=jishitiao+"px";
+				//生成随即数，判断5次以内是否重复，直到不重复就加入到随即数组
 				var num=Math.random().toFixed(2);
 				do{
 					cont= selectfrom(0,8);
@@ -60,13 +62,14 @@
 						return item!=cont;
 					});
 				}while(!flags);
-				
+				//数组长度大于5就删出第一个数
 				if(arrays.length<5){
 					arrays.push(cont)
 				}else{
 					shift = arrays.shift();
 					arrays.push(cont)
 				}
+				//大小狼的比例为0.82:0.18
 				if(num>0.82){
 					var div=document.createElement("div");
 					div.className="langdong"+cont+" xiaohuihui";
@@ -113,6 +116,7 @@
 					}
 				}
 			}
+			//全局的一个伸头
 			var maxT=30;
 			var end=0;
 			var time1=setInterval(function(){
