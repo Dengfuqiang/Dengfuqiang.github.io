@@ -246,6 +246,7 @@ $orgincolor:#ff6700;
     border: 0;
     border: 1px solid transparent;
     border-left: 1px solid #e0e0e0;
+    margin-top: -1px;
     outline:0;
     cursor: pointer;
      background:url(../img/zhong.png) no-repeat 0px -308px ;
@@ -257,13 +258,14 @@ $orgincolor:#ff6700;
 }
 .searchlist{
     display: none;
-    margin-top: 50px;
+    margin-top: 49px;
     position: relative;
     z-index:1;
     background-color: white;
     border: 1px solid $orgincolor;
     width: 246px;
     margin-left: -1px;
+    border-top:none;
     li{
         line-height: 30px;
         padding: 0 15px;
