@@ -46,7 +46,6 @@
 				$(".containleft .bdlf2head ul li").click(function(){
 					$(this).siblings().css("border-bottom","1px solid silver");
 					$(this).css("border-bottom","white");
-					console.log(1)
 					$(".bdlf2bds").eq($(this).index(".containleft .bdlf2head ul li")).css("display","block").siblings(".bdlf2bds").css("display","none");
 				});
 				//subway切换

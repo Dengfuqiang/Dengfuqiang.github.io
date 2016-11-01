@@ -14,6 +14,9 @@
 		color: #5c5c5c;
 		
 	}
+	a:link{
+		color: #999999;
+	}
 	a:hover{
 		text-decoration: underline;
 	}
@@ -168,7 +171,7 @@
 			width: 405px;
 			height: 19px;
 			border-radius: 8px;
-			color: #ea7a7a;
+			color: red;
 			vertical-align: middle;
 			
 		}
@@ -177,9 +180,7 @@
 			height: 23px;
 			border-radius:25px;
 			background-color:white;
-			background:url("../img/100du.png") no-repeat;
-			background-position:-7px -273px;
-			*background-position:-9px -273px;
+			background:url("../img/100du.png") no-repeat -7px -273px;
 			vertical-align: middle;
 			outline: none;
 		}
@@ -281,8 +282,6 @@
 		.bdlf2head{
 			height: 32px;
 		}
-		.spanclassx{
-			color:#666666}
 		.bdlf2head ul li{
 			width:172px;
 			height:32px;
@@ -295,9 +294,6 @@
 			background-color: white;
 			
 		}
-		.bdlf2head ul li a{
-			color:#2b2d2d;
-			font-weight:bold;}
 		.bdlf2head ul li:nth-of-type(1){
 			border-bottom:white;
 		}
@@ -311,7 +307,6 @@
 		}
 		.bdlf2body2{
 			display:none;
-			
 		}
 		.bodyimg{
 			margin: 30px 15px ;
@@ -327,7 +322,6 @@
 			float: right;
 			padding-right:30px ;
 			margin: 12px;
-			background:url("../img/100du.png") no-repeat 29px -528px;
 		}
 		.imgs img{
 			width: 105px;
@@ -553,12 +547,11 @@
 		.bbsltbody ul li{
 			list-style: none;
 			width: 100%;
-			height: 24px;
+			height: 25px;
 			margin-top: 3px;
 			background-color: #f8f8f8;
-			border-radius:15px ;
+			border-radius:10px ;
 			padding-top: 5px;
-			
 		}
 		.bbsltbody ul li:nth-child(2n){
 			background-color: #f1f1f1;
@@ -795,7 +788,6 @@
 			width: 86px;
 			height: 18px;
 			vertical-align: middle;
-			background-color:#f7f7f7;
 		}
 		form .submits{
 			display: inline-block;
@@ -839,14 +831,14 @@
 			height: 180px;
 		}
 		.qq1{
-			padding:0 10px 18px 10px;
+			padding:0 10px 0px 10px;
 		}
 		.qq2{
 			background-position: 310px -152px;
 			
 		}
 		.qq1 .zdfzbodyhd {
-			height: 26.4px;
+			height: 40.4px;
 		}
 		.qiangquanbody{
 			border-top: 2px solid silver;
@@ -866,22 +858,16 @@
 			height: 26px;
 			border-top: 1px dashed #cbcbca;
 		}
-		.qiangquanbody ul li a{
-			line-height:27px;
-		}
 		
 		.jrtj{
 			border: 1px solid silver;
 			margin-top: 10px;
 			border-radius: 15px;
-			padding:0 11px 10px 12px;
+			padding:0 11px 0 12px;
 		}
 		.jrtjbodyimg{
 			padding: 0;
 			margin: 0;
-		}
-		.last_li{
-			border-bottom: none!important;
 		}
 		.jrtjbodyimg img,.jrtjbodyimg .imgs{
 			width: 100px;
@@ -1034,6 +1020,4 @@
 		}
 		.jrtjdiv{
 			width: 105px;
-			height: 75px;
-			margin-bottom: 3px;
 		}
