@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <script type="text/javascript" src="js/EventUtilObject.js" ></script>
+    <script type="text/javascript" src="js/vue.js" ></script>
+    <style media="screen">
+    	.bounce-transition{
+        	transition: all 0.5s linear;
+			overflow: hidden;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: "Microsoft Yahei";
+            background-color: hsl(200,50%,50%);
+        }
+        ul,li{
+            list-style-type: none;
+        }
+        a{
+            text-decoration: none;
+            color:black;
+        }
+        #container{
+            width: 600px;
+            background-color: white;
+            margin: 80px auto;
+            border-radius: 8px;
+            padding: 15px 30px;
+        }
+        #msg{
+            margin-top: 15px;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            height: 100px;
+            resize: none;
+            padding-left: 10px;
+            font-size: 24px;
+            outline: none;
+            box-shadow:inset 0 0 5px 0 #ccc;
+        }
+        #msg:focus,#user:focus{
+            border: 1px solid orange;
+            box-shadow: none;
+        }
+        #user{
+            font-size: 16px;
+            outline: none;
+            border: none;
+            width: 150px;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 8px;
+            border:1px solid #ccc;
+            box-shadow:inset 0 0 5px 0 #ccc;
+        }
+        .left-tips{
+            float: left;
+        }
+        .tips{
+            overflow: hidden;
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        #submit{
+            float: right;
+            width: 80px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: orange;
+            color:white;
+            border-radius: 4px;
+        }
+        #word-num{
+            font-weight: bold;
+            font-family: Constantia;
+        }
+        #msgList li{
+            overflow: hidden;
+        }
+        .user-logo{
+            float: left;
+            margin-right: 15px;
+        }
+        .user-logo img{
+            width: 50px;
+            height: 50px;
+            display: block;
+            border-radius: 50%;
+        }
+        .info{
+            overflow: hidden;
+            padding-bottom: 15px;
+        }
+        .user-name{
+            overflow: hidden;
+        }
+        .user-name span{
+            font-size: 18px;
+            font-weight: bold;
+            float: left;
+        }
+        .del{
+            float: right;
+        }
+        .del:hover{
+            color:orange;
+        }
+		.txt{
+			width: 535px;
+		}
+        @keyframes bounce-in{
+				 0% {
+				    transform: scale(0);
+				  }
+				  50% {
+				    transform: scale(1.5);
+				  }
+				  100% {
+				    transform: scale(1);
+				  }
+			}
+			@keyframes bounce-out{
+				 0% {
+				    transform: scale(1);
+				  }
+				  50% {
+				    transform: scale(1.5);
+				  }
+				  100% {
+				    transform: scale(0);
+				  }
+			}
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form>
+            <label>用户:<input v-model="myname" type="text" id="user"></label>
+            <textarea v-model="mytext" id="msg"></textarea>
+            <p class="tips">
+                <span class="left-tips">还可以输入<span id="word-num">{{140-mytext.length}}</span>个字</span>
+                <a @click="arrAddText" href="javascript:void(0)" id="submit">发布</a>
+            </p>
+        </form>
+        <!--:style="{height:item.newHeight+'px'}"-->
+        <ul id="msgList">
+             <li transition="bounce" v-for="item in items"  >
+                <div class="user-logo">
+                    <img src="img/user.jpg" alt="">
+                </div>
+                <div class="info">
+                    <p class="user-name">
+                        <span>{{item.name}}</span>
+                        <a @click="removeArr($index)" href="javascript:void(0)" class="del">删除</a>
+                    </p>
+                    <p class="txt">
+                        {{item.text}}
+                    </p>
+                </div>
+            </li> 
+        </ul>
+    </div>
+    <script type="text/javascript">
+    	var username=document.getElementById("user");
+    	var usertext=document.getElementById("msg");
+		// 当 show 变为 false 时，Vue 将会：
+		//1.调用 beforeLeave 钩子；
+		//2.在元素上应用 CSS 类 .v-leave 来触发过渡效果；
+		//3.调用 leave 钩子；
+		//4.等待过渡效果执行完毕； (监听 transitionend 事件)
+		//5.从 DOM 中移除元素并且移除 CSS 类 .v-leave。
+		//6.调用 afterLeave 钩子。
+		//当 show 为 true 时，Vue 将会：
+		//1.调用 beforeEnter 钩子；
+		//2.在元素上应用 CSS 类 .v-enter；
+		//3.将元素插入 DOM；
+		//4.调用 enter 钩子；
+		//5.应用 .v-enter 类, 然后强制 CSS 布局以保证 .v-enter 生效；最后移除 .v-enter 来触发元素过渡到原本的状态。
+		//6.等待过渡效果执行完毕；
+		//7.调用 afterEnter 钩子。
+    	Vue.transition("bounce",{
+    		beforeEnter: function (el) {
+    			el.style.height="0px";
+			},
+    		enter: function (el) {
+    			var info=el.querySelector(".info");
+			    el.style.height=info.offsetHeight+"px";
+			},
+			leave: function (el) {
+			    el.style.height="0px";
+			}
+    	});
+        var VM= new Vue({
+                el:"#container",
+                data:{
+                	mytext:"",
+                	myname:"",
+                    items:[
+                    ]
+                },
+		        methods:{
+		        	arrAddText:function(){
+		        		var text=this.mytext.trim();
+		        		var name=this.myname.trim();
+		        		if(text==""){
+		        			usertext.focus();
+		        		}
+		        		else if(name==""){
+		        			username.focus();
+		        			
+		        		}else{
+		        			this.items.push({
+		        				text:text,
+		        				name:name,
+		        			});
+		        			this.mytext = "";
+		        			this.myname = "";
+		        		}
+		        	},
+		        	removeArr:function(index){
+		        		this.items.splice(index,1);
+		        	}
+		        }
+                
+            });
+    </script>
+</body>
+</html>
