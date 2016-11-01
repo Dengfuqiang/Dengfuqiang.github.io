@@ -1,0 +1,297 @@
+@import "base.css";
+@import "d:/sassCore/_function.scss";
+
+%divWidthAuto{
+    width: 1200px;
+    margin: 0 auto;
+}
+#beatifulBody{
+    @extend %divWidthAuto;
+    background-color: white;
+    padding-top: 32px;
+}
+#bt_left{
+    @extend %float;
+    width: 170px;
+    
+    a{
+        display: block;
+        line-height:39px;
+        color: #656565;
+    }
+    li{
+        border: 1px solid #e6e6e6;
+        border-top: none;
+        padding-left: 32px;
+    }
+    .speilli{
+        background-color: #ffa130;
+        border: none;
+        border-bottom: 1px solid #e6e6e6;
+        a{
+            color: white;
+        } 
+    } 
+}
+#bt_middle{
+    width:720px;
+    overflow: hidden;
+    margin: 0 260px 0 192px;
+    padding-bottom: 55px;
+    border: 1px solid #e6e6e6;
+    @extend %clearfix;
+    img{
+        width: 86px;
+        height: 86px;
+        margin:0 0px 18px 20px;
+        @extend %float;
+    }
+    li{
+        padding-top: 20px;
+        border: 1px solid #e6e6e6;
+        border-bottom:3px solid #e6e6e6;
+    }
+    h2 a{
+        display: block;
+        font-size: 18px;
+        color: black; 
+        margin-bottom: 18px;
+        font-weight: bold;
+      }
+        
+    
+    span{
+        width: 597px;
+        display: block;
+        @extend %floatRight;
+        font-size: 14px;
+        color: #62ab00;
+    }
+    h3{
+        clear: both;
+        line-height: 43px;
+        border-top: 1px solid #e6e6e6;
+        background-color: #f2f2f2;
+        padding-left: 15px;
+        margin: 18px 0 11px;
+        a{
+            padding-left: 26px;
+            font-size: 18px;
+        }
+    }
+    p{
+        line-height: 28px;
+        font-size: 14px;
+        padding:0 28px 18px 19px;
+    }
+}
+#bt_right{
+    @extend %floatRight;
+    width: 260px;
+    border: 1px solid #e6e6e6;
+    padding-top: 14px;
+    h4{
+        margin-bottom: 6px;
+        a{
+          color: black;  
+        }
+        width: 73px;
+        font-size: 18px;
+        line-height: 34px;
+        border-bottom: 4px solid #ffa130;
+        margin-left: 12px;
+    }
+    li{
+        color: #62ab00;
+        @extend %clearfix;
+        padding-top: 18px;
+        border-bottom: 1px solid #e6e6e6;
+        img{
+            width: 86px;
+            height: 86px;
+            margin:0 0px 18px 12px;
+            @extend %float;
+        }
+        h2 a{
+            margin-left:112px ;
+            display: block;
+            font-size: 18px;
+            color: black; 
+            margin-bottom: 18px;
+            font-weight: bold;
+          }
+          i{
+              margin-left: 15px;
+          }
+         h3{
+            clear: both;
+            line-height: 43px;
+            border-top: 1px solid #e6e6e6;
+            background-color: #f2f2f2;
+            padding-left: 15px;
+            margin: 0px 0 11px;
+            a{
+                padding-left: 26px;
+                font-size: 18px;
+            }
+        }
+        p{
+            padding: 0px 20px 20px 18px;
+            line-height: 28px;
+            font-size: 14px;
+            color: black;
+        }
+    }
+    .bt_right_li{
+        padding-top: 0;
+    }
+    .speilce_h{
+        margin-bottom:14px;
+        margin-top: 24px;
+    }
+    
+}
+%select-list{
+    text-align: center;
+    word-spacing: -3px;
+    a{
+        display: inline-block;
+        width: 28px;
+        border: 1px solid #cccccc;
+        line-height: 28px;
+        word-spacing: 0px;
+        margin-left: 28px;
+        color: #1a1a1a;
+    }
+}
+#select-list{
+    @extend %select-list;
+    width: 720px;
+    margin: 20px 0px  50px 190px;
+}
+.active-a{
+    background-color: #fb7803;
+    color: white !important;
+}
+#beatiful_inner{
+    width: 916px;
+    margin-right: 280px;
+    margin-bottom: 148px;
+    li{
+        overflow: hidden;
+        border: 1px solid #dbdbdb;
+        border-bottom: 2px solid #DBDBDB;
+        margin-top: 29px;
+        padding-bottom: 34px;
+    }
+    .pictureAndInformation{
+        padding:23px 20px 35px 23px;
+        margin-top: 0;
+    }
+}
+#picture_watch{
+    width: 380px;
+    @extend %float;
+    font-size: 0; 
+    .bigPicture{
+        margin: 0;
+        img{
+          width: 380px;
+          height: 380px; 
+        }
+        
+    }
+    img{
+        width: 80px;
+        height: 80px;
+    }
+    a{
+        font-size: 12px;
+        display:inline-block;
+        margin:10px 0 0 12px;
+    }
+}
+#information{
+    @extend %floatRight;
+    width: 470px;
+    height: 380px;
+    line-height:28px ;
+    font-size: 14px;
+    color: #6b6b6b;
+    font-weight: bold;
+    h6{
+        font-size: 16px;
+        padding: 18px 0 10px 0;
+        border-bottom: 1px dashed #cccccc;
+    }
+    
+}
+.telphone{
+        @extend %floatRight;
+        display: block;
+        width: 420px;
+        padding-left: 40px;
+        line-height:62px ;
+        color: #62ab00;
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        border-top: 1px solid #e1f5c5;
+        border-bottom: 1px solid #e1f5c5;
+        background-color: #f7f7f6;
+        margin-top: 18px;
+ }
+ .spInformation{
+     display: block;
+     border-bottom: 1px solid #dbdbdb;
+     
+     a{
+         display: block;
+         width: 150px;
+         line-height: 74px;
+         border-right: 1px solid #dbdbdb;
+         font-size: 18px;
+         text-align: center;
+         font-weight: bold;
+         color: black;
+     }
+     h2{
+        width: 98px;
+        margin: 0 auto;
+        border-top: 4px solid #ffa130;
+     }
+ }
+.xiangxi{
+    display: block;
+    margin-top: 20px;
+    margin-left: 20px;
+    @extend %clearfix;
+    a{
+        display: block;
+        width: 600px;
+        height: 450px;
+        @extend %float;
+    }
+    span{
+        display: block;
+        overflow: hidden;
+        padding:0 76px 0 24px;
+        
+    }
+    h2{
+        color: #53a500;
+        font-size: 24px;
+        font-weight: bold;
+        line-height: 60px;
+        margin: 10px 0 24px 0;
+        border-bottom: 1px solid #f3f3f3;
+    }
+    h4{
+        font-size: 20px;
+        line-height: 40px;
+    }
+    p{
+        font-size: 12px;
+        line-height: 24px;
+    }
+}

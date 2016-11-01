@@ -1,0 +1,128 @@
+@import "base.css";
+@import "d:/sassCore/_function.scss";
+a{
+    color:#838383;
+}
+#familyAndContain{
+    width: 1600px;
+    margin: 0 auto;
+}
+#familyHeader{
+    background-color: #f5f5f5;
+   
+}
+%divWidthAuto{
+    width: 1200px;
+    margin: 0 auto;
+}
+#loginNav{
+    line-height: 29px;
+    text-align: right;
+    @extend %divWidthAuto; 
+    border-bottom: 1px solid #f2f2f2;
+    span{
+        margin: 0 6px;
+    }
+    .shuGang{
+        margin: 0;
+    }
+}
+.seacherKuang{
+    background-color: white;
+}
+.seacherInner{
+     @extend %divWidthAuto;
+     @extend %clearfix;
+     input{
+        width: 405px;
+        margin-top: 30px;
+        height: 32px;
+        border: 2px solid #ffa130;
+    }
+}
+
+select{
+    overflow: hidden;
+    margin-left: 45px;
+    border: none;
+    padding-right: 15px;
+    background: url("../img/lifepicture (1).png") no-repeat 29px -121px;
+}
+
+.familyLogo{
+    display: inline-block;
+    @extend %float;
+    width: 220px;
+    height: 98px;
+    background: url("../img/lifepicture (1).png") no-repeat 0px 22px; 
+}
+
+#searchBt{
+    width: 70px;
+     height: 36px;
+     background-color:#ffa130 ;
+}
+.kefuShoppingCar{
+    @extend %floatRight;
+    padding-right: 4px;
+    margin-top: 32px;
+    a{
+        display: inline-block;
+        width: 114px;
+        height: 32px;
+        border: 2px solid #e0e0e0;
+        font-size: 14px;
+        text-align: center;
+        line-height: 32px;
+        margin-right: 27px;
+    }
+    
+}
+#shoppingCar{
+    width: 66px;
+    padding-left: 52px;
+    text-align: left;
+    background: url("../img/lifepicture (1).png") no-repeat -269px -175px;
+}
+.headerNav{
+    background-color:#ffa130;
+}
+.headerNavInner{
+    @extend %divWidthAuto;
+    ul{
+        @extend %clearfix;
+    }
+    li{
+        width:171px;
+        @extend %float;
+    }
+    a{
+        display:block;
+        line-height: 48px;
+        font-size: 16px;
+        color: white;
+        text-align:center; 
+        &:hover{
+            background-color: #f88f1f;
+        }
+    }
+}
+#familyFooter{
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f0e4;
+    a{
+        font-size: 12px;
+        color: #4d4d4d;
+    }
+    p{
+        margin-top: 12px;
+    }
+    span{
+        color: black;
+        margin: 0 11px;
+    }
+}
+.active_nav{
+    background-color: #f88f1f ;
+}

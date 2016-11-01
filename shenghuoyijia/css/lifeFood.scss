@@ -1,0 +1,199 @@
+@import "base.css";
+@import "d:/sassCore/_function.scss";
+%divWidthAuto{
+    width: 1200px;
+    margin: 0 auto;
+}
+#familyAndContain{
+    background-color: #f5f5f5;
+}
+#beatifulBody{
+    @extend %divWidthAuto;
+    padding-top: 32px;
+    @extend %clearfix;
+    
+}
+#bt_left{
+    @extend %float;
+    width: 170px;
+    
+    a{
+        display: block;
+        line-height:39px;
+        color: #656565;
+    }
+    li{
+        border: 1px solid #e6e6e6;
+        border-top: none;
+        padding-left: 32px;
+        background-color: white;
+    }
+    .speilli{
+        background-color: #ffa130;
+        border: none;
+        border-bottom: 1px solid #e6e6e6;
+        a{
+            color: white;
+        } 
+    } 
+}
+
+
+%select-list{
+    text-align: center;
+    word-spacing: -3px;
+    a{
+        display: inline-block;
+        width: 28px;
+        border: 1px solid #cccccc;
+        line-height: 28px;
+        word-spacing: 0px;
+        margin-left: 28px;
+        color: #1a1a1a;
+    }
+}
+#select-list{
+    @extend %select-list;
+    width: 720px;
+    margin: 20px auto 50px;
+    clear: both;
+}
+.active-a{
+    background-color: #fb7803;
+    color: white !important;
+}
+#life_contain{
+    width: 1004px;
+    @extend %floatRight;
+}
+%sanjiao{
+    font-size: 14px;
+    display:inline-block;
+    border: 6px solid transparent;
+}
+.food_selecter{
+    color: #383838;
+    border: 1px solid #e6e6e6;
+   font-size: 0;
+   background-color: white;
+    span{
+        line-height: 35px;
+        font-size: 14px;
+        width: 55px;
+        text-align: center;
+        display: inline-block;
+        position: relative;
+        border-right: 1px solid #e6e6e6;
+        padding-right: 25px;
+    }
+    .food_next_pre{
+        font-size: 14px;
+        @extend %floatRight;
+        padding: 0;
+        width: 178px;
+        span{
+            border: none;
+            padding: 0;
+            vertical-align: middle;
+            }
+        a{
+            display: inline-block;
+            width: 18px;
+            height: 15px;
+            background-color: #f7f7f7;
+            border: 1px solid #e6e6e6;
+            vertical-align: middle;
+            &:before{
+                display: block;
+                content: "";
+                @extend %sanjiao;
+                position: relative;
+                
+            }
+        }
+        
+        .food_pre{
+            &:before{ 
+                border-right-color:#999999;
+                top: 1px;
+                left: -6px;
+            }
+            
+        }
+        .food_next{
+            &:before{
+                border-left-color:#999999;
+                top: 1px;
+                right: -6px;
+            }
+        }
+    }
+    .active_span{
+        color: #ffaf5b;
+    }
+}
+
+
+.food_top{
+    @extend %sanjiao;
+    position: absolute;
+    top: 3px;
+    right: 15px;
+    
+    border-bottom-color: #999999;
+}
+.food_bottom{
+    @extend %sanjiao;
+    position: absolute;
+    bottom: 3px;
+    right: 15px;
+    border-top-color:#999999;
+}
+.active_food{
+    border-top: 2px solid #ffa130!important;
+}
+#foodContain{
+    @extend %clearfix;
+    font-size: 14px;
+    margin-top: 8px;
+    border: 1px solid #E6E6E6;
+    .active_margin{
+        margin: 0;
+    }
+    li{
+        background-color: white;
+        @extend %float;
+        padding: 24px 29.8px 16px;
+        margin-right: 1px;
+        margin-bottom: 1px;
+    }
+    a{
+        display: block;
+        width: 190px;
+        height: 190px;
+        font-size: 12px;
+    }
+    .addShoppingCar{
+        width: 76px;
+        height: 28px ;
+        line-height: 28px;
+        border: 1px solid #E6E6E6;
+        text-align: center;
+        padding-left: 22px;
+        margin: 19px auto 0;
+        background: url("../img/lifepicture (1).png") no-repeat -283px -177px;
+    }
+    h2{
+        margin: 16px auto 11px;
+        color: #4d4d4d;
+    }
+    p{
+        color: #ed601b;
+       span{
+           @extend %floatRight;
+           text-decoration: line-through;
+            color: #999999;
+            margin-right: 20px;
+        } 
+     } 
+}
