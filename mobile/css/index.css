@@ -303,14 +303,12 @@ a:visited {
     .keTing ul li {
       list-style: disc;
       border-bottom: 1px solid #ededed;
-      line-height: 0.56rem;
-      font-size: 12px; }
+      line-height: 0.56rem; }
       .keTing ul li span {
         color: #fa4b3b; }
       .keTing ul li a {
         position: relative;
-        float: right;
-        font-size: 12px; }
+        float: right; }
       .keTing ul li a:before {
         content: "";
         display: inline-block;
