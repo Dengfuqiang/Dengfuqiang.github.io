@@ -304,13 +304,13 @@ a:visited {
       list-style: disc;
       border-bottom: 1px solid #ededed;
       line-height: 0.56rem;
-      font-size: 0.266667rem; }
+      font-size: 12px; }
       .keTing ul li span {
         color: #fa4b3b; }
       .keTing ul li a {
         position: relative;
         float: right;
-        font-size: 0.32rem; }
+        font-size: 12px; }
       .keTing ul li a:before {
         content: "";
         display: inline-block;
@@ -355,9 +355,9 @@ a:visited {
     .bendiNews ul li span {
       color: #a9a9a9;
       float: right;
-      font-size: 0.4rem; }
+      font-size: 12px; }
     .bendiNews ul li a {
-      font-size: 0.186667rem; }
+      font-size: 12px; }
 
 .footers {
   position: relative;
@@ -417,5 +417,5 @@ a:visited {
       background-position: -4.6rem -2.933333rem; }
   .footers a:nth-child(6):before {
     background-position: -5.6rem -3.466667rem; }
-	.keTing li a{color:#a9a9a9; }
+
 /*# sourceMappingURL=index.css.map */
