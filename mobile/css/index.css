@@ -352,10 +352,7 @@ a:visited {
     line-height: 1.04rem; }
     .bendiNews ul li span {
       color: #a9a9a9;
-      float: right;
-      font-size: 12px; }
-    .bendiNews ul li a {
-      font-size: 12px; }
+      float: right; }
 
 .footers {
   position: relative;
