@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="build/flexible_css.debug.js"></script>
+	    <script src="build/flexible.debug.js"></script>
+	    <script type="text/javascript" src="js/vue.js" ></script>
+	    <script type="text/javascript" src="js/EventUtilObject.js" ></script>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="css/base.css"/>
+	</head>
+	<script type="text/javascript">
+		EventUtil.addHandler(document,"DOMContentLoaded",changes);
+		function changes(event){
+		   var xhr=new XMLHttpRequest();
+			var dat=null;
+			var VM=null;
+			xhr.onreadystatechange=function(){
+				if(xhr.readyState == 4 && ((xhr.status >= 200 && xhr.status < 300) || xhr.status == 304)) {
+					dat=JSON.parse(xhr.responseText);
+					VM=new Vue({
+					el:"#mayi_body",
+						data:{
+							user:dat,
+							persons:dat.discover.person,
+							activeFlag:true,
+							discoverFlag:false
+						},
+						methods:{
+							tab:function(num){
+								if(num){
+									this.activeFlag=false;
+									this.discoverFlag=true;
+								}else{
+									this.activeFlag=true;
+									this.discoverFlag=false;
+								}
+							}
+						}
+					});
+				}
+			}
+			xhr.open("GET","myjson.json",true);
+			xhr.send(null);
+		    
+		}
+		</script>
+	<body>
+		<header><a id="toutiao" href="javascript:void(0)">头条</a><a id="mulu" href="javascript:void(0)"></a><a id="search" href="javascript:void(0)"></a></header>
+		<div id="mayi_body">
+			<div id="geren_xinxi">
+				<a id="character" href="javascript:void(0);"></a>
+				<h2>{{user.character.userName}}</h2>
+				<p><a href="javascript:void(0)">关注<span id="guanzhu">{{user.character.guanZhu}}</span></a><a href="javascript:void(0)">粉丝<span id="fensi">{{user.character.fenShi}}</span></a>
+				</p>
+				<p class="zouyouming">{{user.character.qianMing}}</p>
+			</div>
+			<div id="dajiataolun">
+				<h2>大家在讨论</h2>
+				<span class="taolun_pic" href="javascript:void(0)">
+					<a href="javascript:void(0);"><img src="img/ dajiaotaolun (1).jpg" alt="" /></a>
+					<p>#{{user.dajiataolu[0].shuoMing}}#</p>
+					<span>{{user.dajiataolu[0].name}}</span>
+				</span>
+				<span class="taolun_pic" href="javascript:void(0)">
+					<a href="javascript:viod(0)"><img src="img/ dajiaotaolun (2).jpg" alt="" /></a>
+					<p>#{{user.dajiataolu[1].shuoMing}}#</p>
+					<span>{{user.dajiataolu[1].name}}</span>
+				</span>
+				<a id="hot_topic" href="javascript:void(0);">热门话题</a>
+				<div  id="licai_contain">
+					<a v-for="item in user.taolunrenshu" class="licai_nav" href="javascript:void(0)">
+						<h2>{{item.name}}</h2>
+						<span>{{item.personNum}}评论</span>
+					</a>
+				</div>
+			</div>
+			<div id="active_discover">
+				<div id="ad_tab">
+					<a v-on:click="tab(0)" :class="{'active':activeFlag}" href="javascript:void(0);">动态</a>
+					<a v-on:click="tab(1)" :class="{'active':discoverFlag}" href="javascript:void(0);">发现</a>
+				</div>
+				<ul v-show="activeFlag">
+					<li v-for="item in user.dongtai">
+						<h2>{{item.activeType}}</h2>
+						<a class="dongtai_person" href="###">
+							<img class="char_picture" src="img/-camera.jpg"/>
+							<p>{{item.name}}</p>
+							<span class="time_before">{{item.time}}</span>
+							<span class="guanzhu">关注</span>
+							<i></i>
+						</a>
+						<span id="instruction">
+							<a class="dongtai_img" href="###"><img src="img/ dajiaotaolun (1).jpg" alt="" /></a>
+							<h3 class="dongtai_title">{{item.title}}</h3>
+							<p>{{item.jieshao}}</p>
+							<a class="more_zan more_zan1" href="javascript:void(0)">{{item.xiaoxi}}</a>
+							<a class="more_zan" href="javascript:void(0)">{{item.dianzan}}</a>
+							
+						</span>
+					</li>
+				</ul>
+				<div v-show="discoverFlag" id="pay_friend">
+					<a href="javascript:void(0);">
+						<p>支付宝好友</p>
+						<h2>来看看哪些好友来聚宝了</h2>
+						<span>找好友</span>
+					</a>
+				</div>
+				<ul v-show="discoverFlag" id="discover">
+					<li v-for="item in user.discover">
+						<h2>{{item.title}}</h2>
+						<a v-for="per in item.person" class="dongtai_person" href="###">
+							<img class="char_picture" src="img/-camera.jpg"/>
+							<p>{{per.name}}</p>
+							<span class="time_before">{{per.jieshan}}</span>
+							<span class="guanzhu_zhan">{{per.zan_guanzhu}}</span>
+							<span class="guanzhu">关注</span>
+						</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<footer>
+			<a href="javascript:void(0)"><span class="little_pic"></span><span>首页</span></a>
+			<a href="javascript:void(0)"><span class="little_pic"></span><span>市场</span></a>
+			<a href="javascript:void(0)"><span class="little_pic"></span><span>自选</span></a>
+			<a class="active_a" href="javascript:void(0)"><span class="little_pic"></span><span>社区</span></a>
+		</footer>
+	</body>
+</html>
