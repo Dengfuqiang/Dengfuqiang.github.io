@@ -219,18 +219,18 @@ header {
       font-size: 28px; }
     [data-dpr="3"] .dongtai_person p {
       font-size: 42px; }
-    .dongtai_person p:before {
-      display: block;
-      content: "";
-      width: 0.466667rem;
-      height: 0.466667rem;
-      position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      background: url("../img/css_sprite.png") no-repeat 0 -1.48rem;
-      background-size: 4.0rem 4.0rem; }
+  .dongtai_person .p_before {
+    display: block;
+    content: "";
+    width: 0.466667rem;
+    height: 0.466667rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: url("../img/css_sprite.png") no-repeat 0 -1.48rem;
+    background-size: 4.0rem 4.0rem; }
   .dongtai_person .time_before {
     font-size: 12px;
     color: #a0afb3;

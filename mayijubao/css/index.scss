@@ -209,7 +209,11 @@ header{
 		line-height:0.613333rem;
 		padding-right:0.6rem;
 		position:relative;
-		&:before{
+
+		
+
+	}
+	.p_before{
 			display:block;
 			content:"";
 			width:0.466667rem;
@@ -222,9 +226,6 @@ header{
 			background:url("../img/css_sprite.png") no-repeat 0 -1.48rem;
 			background-size: 4.0rem 4.0rem;
 		}
-		
-
-	}
 	.time_before{
 		@include font-dpr(24px);
 		color:#a0afb3;

@@ -53,7 +53,7 @@
 						<h2 v-text="item.activeType"></h2>
 						<a class="dongtai_person" href="###">
 							<img class="char_picture" src="img/-camera.jpg"/>
-							<p v-text="item.name"></p>
+							<p>{{item.name}}<span v-show="item.show_flag" class="p_before"></span></p>
 							<span class="time_before" v-text="item.time"></span>
 							<span class="guanzhu">关注</span>
 							<i></i>
@@ -79,7 +79,7 @@
 						<h2>{{item.title}}</h2>
 						<a v-for="per in item.person" class="dongtai_person" href="###">
 							<img class="char_picture" src="img/-camera.jpg"/>
-							<p v-text="per.name"></p>
+							<p>{{per.name}}<span v-show="per.show_flag" class="p_before"></span></p>
 							<span class="time_before" v-text="per.jieshan"></span>
 							<span class="guanzhu_zhan" v-text="per.zan_guanzhu"></span>
 							<span class="guanzhu">关注</span>

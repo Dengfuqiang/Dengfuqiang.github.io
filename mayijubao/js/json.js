@@ -44,7 +44,8 @@ callback({
 			"imgURl":"img/-camera.jpg",
 			"imgCont":"5",
 			"xiaoxi":"5",
-			"dianzan":"4"
+			"dianzan":"4",
+			"show_flag":true
 		},
 		{
 			"activeType":"优选",
@@ -55,7 +56,8 @@ callback({
 			"imgURl":"img/-camera.jpg",
 			"imgCont":"5",
 			"xiaoxi":"16",
-			"dianzan":"4"
+			"dianzan":"4",
+			"show_flag":true
 		},
 		{
 			"activeType":"猜你喜欢",
@@ -66,7 +68,8 @@ callback({
 			"imgURl":"",
 			"imgCont":"5",
 			"xiaoxi":"206",
-			"dianzan":"99"
+			"dianzan":"99",
+			"show_flag":false
 		},
 		{
 			"activeType":"猜你喜欢",
@@ -77,7 +80,8 @@ callback({
 			"imgURl":"",
 			"imgCont":"5",
 			"xiaoxi":"175",
-			"dianzan":"109"
+			"dianzan":"109",
+			"show_flag":false,
 		},
 		{
 			"activeType":"猜你喜欢",
@@ -88,7 +92,8 @@ callback({
 			"imgURl":"img/-camera.jpg",
 			"imgCont":"5",
 			"xiaoxi":"5",
-			"dianzan":"4"
+			"dianzan":"4",
+			"show_flag":false,
 		},
 		{
 			"activeType":"大家都在看",
@@ -99,7 +104,8 @@ callback({
 			"imgURl":"",
 			"imgCont":"5",
 			"xiaoxi":"65",
-			"dianzan":"18"
+			"dianzan":"18",
+			"show_flag":false
 		},
 		{
 			"activeType":"猜你喜欢",
@@ -110,7 +116,8 @@ callback({
 			"imgURl":"",
 			"imgCont":"5",
 			"xiaoxi":"5",
-			"dianzan":"4"
+			"dianzan":"4",
+			"show_flag":false
 		},
 		{
 			"activeType":"优选",
@@ -121,7 +128,8 @@ callback({
 			"imgURl":"dongtai_img",
 			"imgCont":"5",
 			"xiaoxi":"5",
-			"dianzan":"4"
+			"dianzan":"4",
+			"show_flag":true
 		}
 	],
 	"discover":[
@@ -132,31 +140,37 @@ callback({
 					"name":"财经美女抱",
 					"jieshan":"千语文化，一个有想法的团队，不...",
 					"zan_guanzhu":"被1293人关注，最近收到66个赞",
-					"imageURl":"img/-camera.jpg"
+					"imageURl":"img/-camera.jpg",
+					"show_flag":true
+					
 				},
 				{
 					"name":"天弘刘冬",
 					"jieshan":"关注：4 粉丝：292万",
 					"zan_guanzhu":"被2921448人关注，最近收到83个赞",
-					"imageURl":"img/-camera.jpg"
+					"imageURl":"img/-camera.jpg",
+					"show_flag":true
 				},
 				{
 					"name":"新钱NewMoney",
 					"jieshan":"上海珠玑文化信息技术有限公司，是...",
 					"zan_guanzhu":"被6797人关注，最近收到285个赞",
-					"imageURl":"img/-camera.jpg"
+					"imageURl":"img/-camera.jpg",
+					"show_flag":true
 				},
 				{
 					"name":"民生加银基金",
 					"jieshan":"关注：3 粉丝：9416",
 					"zan_guanzhu":"被5683人关注，最近收到130个赞",
-					"imageURl":"img/-camera.jpg"
+					"imageURl":"img/-camera.jpg",
+					"show_flag":true
 				},
 				{
 					"name":"博时黄金资讯",
 					"jieshan":"用专业捕捉资讯，用观点解读金市",
 					"zan_guanzhu":"被2317人关注，最近收到65个赞",
-					"imageURl":"img/-camera.jpg"
+					"imageURl":"img/-camera.jpg",
+					"show_flag":true
 				}
 			]
 		},
