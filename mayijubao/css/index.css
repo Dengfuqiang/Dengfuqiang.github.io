@@ -473,7 +473,9 @@ footer {
 #guandian_wenti {
   z-index: 10;
   background: url("../img/wenti.jpg") no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  -webkit-transform: translate3D(0, 0, 0);
+  transform: translate3D(0, 0, 0); }
 
 .guandian_wenti {
   background: url("../img/erro.jpg") no-repeat !important;
