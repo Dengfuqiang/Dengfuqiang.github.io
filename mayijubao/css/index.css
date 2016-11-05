@@ -185,7 +185,8 @@ header {
     background-color: white; }
 
 #ad_tab {
-  background-color: white; }
+  background-color: white;
+  -webkit-transform: translateZ(0); }
   #ad_tab a {
     width: 50%;
     height: 1.24rem;

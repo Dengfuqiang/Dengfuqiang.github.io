@@ -178,6 +178,7 @@ header{
 #ad_tab{
 	@extend %clearfix;
 	background-color:white;
+	-webkit-transform: translateZ(0);
 	a{
 		@extend %float;
 		width:50%;
