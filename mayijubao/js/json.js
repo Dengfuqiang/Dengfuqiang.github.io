@@ -7,12 +7,12 @@ callback({
 	},
 	"dajiataolu":[
 		{
-			"shuoMing":"10年投资翻6倍药不能食停",
+			"shuoMing":"#10年投资翻6倍药不能食停#",
 			"name":"基金经理访谈",
 			"imgURl":"img/ dajiaotaolun (1).jpg"
 		},
 		{
-			"shuoMing":"我的理财心得",
+			"shuoMing":"#我的理财心得#",
 			"name":"基金公司活动",
 			"imgUrl":"img/ dajiaotaolun (2).jpg"
 		}
@@ -20,18 +20,18 @@ callback({
 	"taolunrenshu":[
 		{
 			"name":"定期理财",
-			"personNum":"4万"
+			"personNum":"4万评论"
 		},
 		{
 			"name":"存金宝",
-			"personNum":"50万"},
+			"personNum":"50万评论"},
 		{
 			"name":"基金综合",
-			"personNum":"8万"},
+			"personNum":"8万评论"},
 			
 		{
 			"name":"聚宝官方",
-			"personNum":"1741"
+			"personNum":"1741评论"
 		}
 	],
 	"dongtai":[
@@ -48,11 +48,66 @@ callback({
 		},
 		{
 			"activeType":"优选",
-			"name":"万家基金莫海波",
-			"time":"6小时前",
-			"title":"三季度我们买了什么股票?",
-			"jieshao":"近期我们基金的三季报对外发布，很多聚宝的同学们非常关注，下面转发一篇媒体(牛熊交易...(n",
+			"name":"广发基金",
+			"time":"20小时前",
+			"title":"传说，定投的江湖里流传着两大奥义...",
+			"jieshao":"传说，定投的江湖里流传着两大奥义...",
 			"imgURl":"img/-camera.jpg",
+			"imgCont":"5",
+			"xiaoxi":"16",
+			"dianzan":"4"
+		},
+		{
+			"activeType":"猜你喜欢",
+			"name":"策鸡司令",
+			"time":"8小时前",
+			"title":"",
+			"jieshao":"我带领军团兄弟国庆前期退出存金宝避免大跌，国庆结束又在272杀入存金宝当时就放言存金宝能涨到285左右！白银赚5个点位即可...",
+			"imgURl":"",
+			"imgCont":"5",
+			"xiaoxi":"206",
+			"dianzan":"99"
+		},
+		{
+			"activeType":"猜你喜欢",
+			"name":"金石为涨",
+			"time":"11-04 11：44",
+			"title":"",
+			"jieshao":"存金宝283.50在昨天晚上跌的比较厉害的时候有个朋友私信跟我说，他在292买入的八万存宝宝.问还能不能涨回来！我回答大涨回来肯定...",
+			"imgURl":"",
+			"imgCont":"5",
+			"xiaoxi":"175",
+			"dianzan":"109"
+		},
+		{
+			"activeType":"猜你喜欢",
+			"name":"龙行天下虎",
+			"time":"11-04 09:30",
+			"title":"",
+			"jieshao":"昨天白天下跌肯定吓到你们了，晚上小非农数据利多迅速从281爬升到今天284.19有望在通过今晚美国大非农数据冲击288，今晚八点...数",
+			"imgURl":"img/-camera.jpg",
+			"imgCont":"5",
+			"xiaoxi":"5",
+			"dianzan":"4"
+		},
+		{
+			"activeType":"大家都在看",
+			"name":"中书省",
+			"time":"11-04 12:30",
+			"title":"",
+			"jieshao":"又到周五了，很多人都戏称今天是”黑色星期五“。从黄金的规则可以看的话可以这样说。国庆那段时间黄金就出现了断崖式下跌，很多人认...",
+			"imgURl":"",
+			"imgCont":"5",
+			"xiaoxi":"65",
+			"dianzan":"18"
+		},
+		{
+			"activeType":"猜你喜欢",
+			"name":"博时黄金资讯",
+			"time":"11-03 17:00",
+			"title":"#叽歪黄金#美国大选之后还能不能现金？",
+			"jieshao":"距离美国大选还有5天，最新消息显示，川普民选票数已反超希啦里，看到邮件门对希拉里打击不...",
+			"imgURl":"",
 			"imgCont":"5",
 			"xiaoxi":"5",
 			"dianzan":"4"
@@ -63,62 +118,7 @@ callback({
 			"time":"6小时前",
 			"title":"三季度我们买了什么股票?",
 			"jieshao":"近期我们基金的三季报对外发布，很多聚宝的同学们非常关注，下面转发一篇媒体(牛熊交易...(n",
-			"imgURl":"img/-camera.jpg",
-			"imgCont":"5",
-			"xiaoxi":"5",
-			"dianzan":"4"
-		},
-		{
-			"activeType":"优选",
-			"name":"万家基金莫海波",
-			"time":"6小时前",
-			"title":"三季度我们买了什么股票?",
-			"jieshao":"近期我们基金的三季报对外发布，很多聚宝的同学们非常关注，下面转发一篇媒体(牛熊交易...(n",
-			"imgURl":"img/-camera.jpg",
-			"imgCont":"5",
-			"xiaoxi":"5",
-			"dianzan":"4"
-		},
-		{
-			"activeType":"优选",
-			"name":"万家基金莫海波",
-			"time":"6小时前",
-			"title":"三季度我们买了什么股票?",
-			"jieshao":"近期我们基金的三季报对外发布，很多聚宝的同学们非常关注，下面转发一篇媒体(牛熊交易...(n",
-			"imgURl":"img/-camera.jpg",
-			"imgCont":"5",
-			"xiaoxi":"5",
-			"dianzan":"4"
-		},
-		{
-			"activeType":"优选",
-			"name":"万家基金莫海波",
-			"time":"6小时前",
-			"title":"三季度我们买了什么股票?",
-			"jieshao":"近期我们基金的三季报对外发布，很多聚宝的同学们非常关注，下面转发一篇媒体(牛熊交易...(n",
-			"imgURl":"img/-camera.jpg",
-			"imgCont":"5",
-			"xiaoxi":"5",
-			"dianzan":"4"
-		},
-		{
-			"activeType":"优选",
-			"name":"万家基金莫海波",
-			"time":"6小时前",
-			"title":"三季度我们买了什么股票?",
-			"jieshao":"近期我们基金的三季报对外发布，很多聚宝的同学们非常关注，下面转发一篇媒体(牛熊交易...(n",
-			"imgURl":"img/-camera.jpg",
-			"imgCont":"5",
-			"xiaoxi":"5",
-			"dianzan":"4"
-		},
-		{
-			"activeType":"优选",
-			"name":"万家基金莫海波",
-			"time":"6小时前",
-			"title":"三季度我们买了什么股票?",
-			"jieshao":"近期我们基金的三季报对外发布，很多聚宝的同学们非常关注，下面转发一篇媒体(牛熊交易...(n",
-			"imgURl":"img/-camera.jpg",
+			"imgURl":"dongtai_img",
 			"imgCont":"5",
 			"xiaoxi":"5",
 			"dianzan":"4"

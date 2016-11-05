@@ -10,6 +10,7 @@
         font-size: 3*$font-size /2;
     }
 }
+p { max-height: 999999px; }
 a:active{
     text-decoration: none;
 }
@@ -239,7 +240,7 @@ header{
 		top:0.426667rem;
 		text-align:center;
 		line-height:0.746667rem;
-		border: 2px solid #0272d1;
+		border: 1px solid #0272d1;
 		border-radius:5px;
 		color:#0272d1;
 	}
@@ -273,7 +274,7 @@ header{
 
 }
 #instruction{
-	display:inline-block;
+	display:block;
 	padding-left:1.2rem;
 	h3{
 		width:6.4rem;
@@ -307,13 +308,23 @@ header{
 
 .dongtai_img{
 	display:block;
-	width: 1.733333rem;
-	height:1.826667rem;
 	@extend %floatRight;
 	padding-left: 0.413333rem;
+	position:relative;
 	img{
 		display:block;
 		height:100%;
+		width: 1.733333rem;
+		height:1.826667rem;
+	}
+	span{
+		position:absolute;
+		right:0;
+		bottom:0;
+		display:inline-block;
+		padding:0 3px;
+		color:white;
+		background-color: rgba(0,0,0,0.3);
 	}
 }
 footer{
@@ -324,6 +335,7 @@ footer{
 	border-top: 1px solid #e7e7e7;
 	background-color:white;
 	font-size:0;
+	z-index:100;
 	-webkit-transform: translateZ(0);
 	a{
 		text-align:center;
