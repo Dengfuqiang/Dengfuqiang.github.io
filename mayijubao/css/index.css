@@ -456,8 +456,8 @@ footer {
   line-height: 1.466667rem;
   text-align: center;
   color: white;
-  -webkit-transition: bottom 0.2s linear;
-  transition: bottom 0.2s linear;
+  -webkit-transition: transform 0.2s linear;
+  transition: transform 0.2s linear;
   position: absolute; }
   [data-dpr="2"] #contain, [data-dpr="2"] #guandian_wenti, [data-dpr="2"] #wenti, [data-dpr="2"] #guandian {
     font-size: 35px; }
@@ -473,34 +473,34 @@ footer {
 #guandian_wenti {
   z-index: 10;
   background: url("../img/wenti.jpg") no-repeat;
-  background-size: 100% 100%;
-  -webkit-transform: translate3D(0, 0, 0);
-  transform: translate3D(0, 0, 0); }
+  background-size: 100% 100%; }
 
 .guandian_wenti {
   background: url("../img/erro.jpg") no-repeat !important;
   background-size: 100% 100% !important; }
 
 .guandian {
-  bottom: 4.173333rem !important;
+  -webkit-transform: translate3d(0, -4.17333rem, 0);
+  -moz-transform: translate3d(0, -4.17333rem, 0);
+  -ms-transform: translate3d(0, -4.17333rem, 0);
+  transform: translate3d(0, -4.17333rem, 0);
   z-index: 8; }
 
 .wenti {
-  bottom: 2.08rem !important;
+  -webkit-transform: translate3d(0, -2.06667rem, 0);
+  -moz-transform: translate3d(0, -2.06667rem, 0);
+  -ms-transform: translate3d(0, -2.06667rem, 0);
+  transform: translate3d(0, -2.06667rem, 0);
   z-index: 8; }
 
 #wenti {
   z-index: 8;
-  background-color: #0c77d3;
-  bottom: 0; }
+  background-color: #0c77d3; }
 
 #guandian {
   z-index: 8;
   background-color: #f35833;
   bottom: 0; }
-
-body {
-  display: none; }
 
 .ad_addclass {
   width: 100% !important;
