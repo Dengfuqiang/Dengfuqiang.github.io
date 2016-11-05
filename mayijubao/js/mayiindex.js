@@ -1,28 +1,4 @@
-//jsonp回调函数
-		function callback(data){
-            	var dat=data;
-            	var VM=new Vue({
-				el:"#mayi_body",
-					data:{
-						user:dat,
-						persons:dat.discover.person,
-						activeFlag:true,
-						discoverFlag:false
-					},
-					methods:{
-						tab:function(num){
-							if(num){
-								this.activeFlag=false;
-								this.discoverFlag=true;
-							}else{
-								this.activeFlag=true;
-								this.discoverFlag=false;
-							}
-						}
-					}
-			});
-         }
-		$(function(){
+	$(function(){
 			//请求带数据的js文件
 			var script = document.createElement('script');
             script.src = "js/json.js";
@@ -73,3 +49,28 @@
 		        }
 		    }
 		});
+		//jsonp回调函数
+		function callback(data){
+            	var dat=data;
+            	var VM=new Vue({
+				el:"#mayi_body",
+					data:{
+						user:dat,
+						persons:dat.discover.person,
+						activeFlag:true,
+						discoverFlag:false
+					},
+					methods:{
+						tab:function(num){
+							if(num){
+								this.activeFlag=false;
+								this.discoverFlag=true;
+							}else{
+								this.activeFlag=true;
+								this.discoverFlag=false;
+							}
+						}
+					}
+			});
+            document.body.style.display="block";
+         }

@@ -499,6 +499,9 @@ footer {
   background-color: #f35833;
   bottom: 0; }
 
+body {
+  display: none; }
+
 .ad_addclass {
   width: 100% !important;
   position: fixed !important;
