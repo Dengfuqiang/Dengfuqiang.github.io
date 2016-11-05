@@ -16,8 +16,8 @@ header a, #hot_topic, .dongtai_img {
 p {
   max-height: 999999px; }
 
-a:active {
-  text-decoration: none; }
+a {
+  text-decoration: none !important; }
 
 header {
   width: 100%;
