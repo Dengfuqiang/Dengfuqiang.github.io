@@ -182,7 +182,10 @@ header {
       font-size: 36px; }
   #active_discover li {
     padding: 0 0.266667rem 0.666667rem 0;
-    background-color: white; }
+    background-color: white;
+    margin-bottom: 0.2rem; }
+  #active_discover li:last-child {
+    margin-bottom: 0; }
 
 #ad_tab {
   background-color: white;
@@ -523,5 +526,17 @@ footer {
   background-color: white !important;
   z-index: 10 !important;
   -webkit-transform: translateZ(0); }
+
+#zannoContain {
+  height: 1.746667rem;
+  background-color: #f1f6f8;
+  font-size: 12px;
+  color: #a1afb4;
+  text-align: center;
+  line-height: 1.746667rem; }
+  [data-dpr="2"] #zannoContain {
+    font-size: 24px; }
+  [data-dpr="3"] #zannoContain {
+    font-size: 36px; }
 
 /*# sourceMappingURL=index.css.map */

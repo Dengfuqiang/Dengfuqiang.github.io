@@ -173,6 +173,10 @@ header{
 	li{
 		padding: 0 0.266667rem 0.666667rem 0;
 		background-color:white;
+		margin-bottom:0.2rem;
+	}
+	li:last-child{
+		margin-bottom:0;
 	}
 }
 #ad_tab{
@@ -517,4 +521,12 @@ footer{
 	background-color:white !important;
 	z-index:10 !important;
 	-webkit-transform: translateZ(0);
+}
+#zannoContain{
+	height:1.746667rem;
+	background-color:#f1f6f8;
+	@include font-dpr(24px);
+	color:#a1afb4;
+	text-align: center;
+	line-height:1.746667rem;
 }
