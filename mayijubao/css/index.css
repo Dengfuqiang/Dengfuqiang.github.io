@@ -197,7 +197,7 @@ header {
 
 .active {
   height: 1.16rem !important;
-  border-bottom: 7px solid #0c77d3 !important;
+  border-bottom: 0.09333rem solid #0c77d3 !important;
   color: #005dcb; }
 
 .dongtai_person {
