@@ -45,7 +45,8 @@ callback({
 			"imgCont":"5",
 			"xiaoxi":"5",
 			"dianzan":"4",
-			"show_flag":true
+			"show_flag":true,
+			"imgFlag":true
 		},
 		{
 			"activeType":"优选",
@@ -57,7 +58,8 @@ callback({
 			"imgCont":"5",
 			"xiaoxi":"16",
 			"dianzan":"4",
-			"show_flag":true
+			"show_flag":true,
+			"imgFlag":true
 		},
 		{
 			"activeType":"猜你喜欢",
@@ -69,7 +71,8 @@ callback({
 			"imgCont":"5",
 			"xiaoxi":"206",
 			"dianzan":"99",
-			"show_flag":false
+			"show_flag":false,
+			"imgFlag":false
 		},
 		{
 			"activeType":"猜你喜欢",
@@ -82,6 +85,7 @@ callback({
 			"xiaoxi":"175",
 			"dianzan":"109",
 			"show_flag":false,
+			"imgFlag":false
 		},
 		{
 			"activeType":"猜你喜欢",
@@ -94,6 +98,7 @@ callback({
 			"xiaoxi":"5",
 			"dianzan":"4",
 			"show_flag":false,
+			"imgFlag":false
 		},
 		{
 			"activeType":"大家都在看",
@@ -105,7 +110,8 @@ callback({
 			"imgCont":"5",
 			"xiaoxi":"65",
 			"dianzan":"18",
-			"show_flag":false
+			"show_flag":false,
+			"imgFlag":false
 		},
 		{
 			"activeType":"猜你喜欢",
@@ -117,7 +123,8 @@ callback({
 			"imgCont":"5",
 			"xiaoxi":"5",
 			"dianzan":"4",
-			"show_flag":false
+			"show_flag":false,
+			"imgFlag":false
 		},
 		{
 			"activeType":"优选",
@@ -129,7 +136,8 @@ callback({
 			"imgCont":"5",
 			"xiaoxi":"5",
 			"dianzan":"4",
-			"show_flag":true
+			"show_flag":true,
+			"imgFlag":true
 		}
 	],
 	"discover":[

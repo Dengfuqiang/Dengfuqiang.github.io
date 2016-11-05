@@ -59,7 +59,7 @@
 							<i></i>
 						</a>
 						<span id="instruction">
-							<a class="dongtai_img" href="###"><img src="img/dajiaotaolun(1).jpg" alt="" /><span v-text="item.imgCont"></span></a>
+							<a v-show="item.imgFlag" class="dongtai_img" href="###"><img src="img/dajiaotaolun(1).jpg" alt="" /><span v-text="item.imgCont"></span></a>
 							<h3 class="dongtai_title" v-text="item.title"></h3>
 							<p v-text="item.jieshao"></p>
 							<a class="more_zan more_zan1" href="javascript:void(0)" v-text="item.xiaoxi"></a>
