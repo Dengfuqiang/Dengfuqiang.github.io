@@ -320,7 +320,11 @@ header {
     line-height: 0.613333rem;
     letter-spacing: 2px;
     color: #1b1b1b;
-    margin: 0.333333rem 0 0.533333rem 0; }
+    margin: 0.333333rem 0 0.533333rem 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden; }
     [data-dpr="2"] #instruction p {
       font-size: 30px; }
     [data-dpr="3"] #instruction p {
