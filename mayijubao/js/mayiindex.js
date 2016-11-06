@@ -65,6 +65,7 @@
 		        	flag=false;
 		        }
 		    }
+		    
 		});
 		//jsonp回调函数
 		function callback(data){
@@ -89,5 +90,10 @@
 						}
 					}
 			});
-            
+            $(".guanzhu").click(function(){
+		    	$(this).html("已关注").css({
+		    		borderColor:"#606060",
+		    		color:"#5d5d5d"
+		    	})
+		    })
          }
