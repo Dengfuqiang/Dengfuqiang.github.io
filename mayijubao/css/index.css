@@ -40,7 +40,8 @@ header {
   header a {
     color: #4d4d4d;
     background: url(../img/css_sprite.png) no-repeat;
-    background-size: 4.0rem 4.0rem;
+    -webkit-background-size: 4rem 4rem;
+    background-size: 4rem 4rem;
     margin-right: 0.426667rem; }
 
 #shequ {
@@ -82,9 +83,8 @@ header {
   position: absolute;
   content: "";
   display: block;
-  width: 0.253333rem;
-  height: 0.293333rem;
-  background-size: 4.0rem 4.0rem; }
+  width: 0.293333rem;
+  height: 0.293333rem; }
 
 #geren_xinxi {
   text-align: center;
@@ -114,13 +114,17 @@ header {
     display: inline-block;
     position: relative; }
     #geren_xinxi .zouyouming:before {
-      left: -0.333333rem;
+      left: -0.373333rem;
       top: 0;
-      background: url("../img/css_sprite.png") no-repeat -1rem -0.8rem; }
+      background: url("../img/css_sprite.png") no-repeat -1rem -0.88rem;
+      -webkit-background-size: 4rem 4rem;
+      background-size: 4rem 4rem; }
     #geren_xinxi .zouyouming:after {
-      right: -0.333333rem;
+      right: -0.373333rem;
       bottom: 0;
-      background: url("../img/css_sprite.png") no-repeat -1.33333rem -0.8rem; }
+      background: url("../img/css_sprite.png") no-repeat -1.33333rem -0.88rem;
+      -webkit-background-size: 4rem 4rem;
+      background-size: 4rem 4rem; }
 
 #character {
   display: block;
@@ -162,7 +166,8 @@ header {
         top: 0;
         margin: auto;
         background: url("../img/css_sprite.png") no-repeat 0 -0.81333rem;
-        background-size: 4.0rem 4.0rem; }
+        -webkit-background-size: 4rem 4rem;
+        background-size: 4rem 4rem; }
   #dajiataolun .taolun_pic {
     position: relative;
     text-align: center;
@@ -288,7 +293,8 @@ header {
     bottom: 0;
     margin: auto;
     background: url("../img/css_sprite.png") no-repeat 0 -1.48rem;
-    background-size: 4.0rem 4.0rem; }
+    -webkit-background-size: 4rem 4rem;
+    background-size: 4rem 4rem; }
   .dongtai_person .time_before {
     font-size: 12px;
     color: #a0afb3;
@@ -336,7 +342,8 @@ header {
     bottom: 0;
     margin: auto;
     background: url("../img/css_sprite.png") no-repeat 0 -2.62667rem;
-    background-size: 4.0rem 4.0rem; }
+    -webkit-background-size: 4rem 4rem;
+    background-size: 4rem 4rem; }
 
 #instruction {
   display: block;
@@ -374,13 +381,14 @@ header {
     color: #93a3a9;
     padding-left: 0.56rem;
     background: url("../img/css_sprite.png") no-repeat -3.64rem 0.06667rem;
-    background-size: 4.0rem 4.0rem; }
+    -webkit-background-size: 4rem 4rem;
+    background-size: 4rem 4rem; }
     [data-dpr="2"] #instruction .more_zan {
       font-size: 28px; }
     [data-dpr="3"] #instruction .more_zan {
       font-size: 42px; }
   #instruction .more_zan1 {
-    background-position: -3.64rem -0.6rem; }
+    background-position: -3.60rem -0.6rem; }
 
 .dongtai_img {
   display: block;
@@ -426,7 +434,8 @@ footer {
     height: 0.693333rem;
     margin: 0.146667rem auto;
     background: url("../img/css_sprite.png") no-repeat -2px -3.30667rem;
-    background-size: 4.0rem 4.0rem; }
+    -webkit-background-size: 4rem 4rem;
+    background-size: 4rem 4rem; }
   footer a:nth-child(2) .little_pic {
     background-position: -1.186667rem -3.306667rem; }
   footer a:nth-child(3) .little_pic {

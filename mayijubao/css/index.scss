@@ -32,7 +32,7 @@ header{
 		@extend %floatRight;
 		color: #4d4d4d;
 		background: url(../img/css_sprite.png) no-repeat;
-		background-size: 4.0rem 4.0rem;
+		@include background-size(4.0rem 4.0rem);
 		margin-right: 0.426667rem;
 	}
 }
@@ -74,9 +74,8 @@ header{
 	position:absolute;
 	content:"";
 	display:block;
-	width:0.253333rem;
+	width:0.293333rem;
 	height:0.293333rem;
-	background-size: 4.0rem 4.0rem;
 }
 #geren_xinxi{
 	text-align: center;
@@ -102,15 +101,17 @@ header{
 		position:relative;
 		&:before{
 			@extend %zouyouming_before;
-			left:-0.333333rem;
+			left:-0.373333rem;
 			top:0;
-			background:url("../img/css_sprite.png") no-repeat -1.0rem -0.8rem;
+			background:url("../img/css_sprite.png") no-repeat -1.0rem -0.88rem;
+			@include background-size(4.0rem 4.0rem);
 		}
 		&:after{
 			@extend %zouyouming_before;
-			right:-0.333333rem;
+			right:-0.373333rem;
 			bottom:0;
-			background:url("../img/css_sprite.png") no-repeat -1.333333rem -0.8rem;
+			background:url("../img/css_sprite.png") no-repeat -1.333333rem -0.88rem;
+			@include background-size(4.0rem 4.0rem);
 		}
 	}
 }
@@ -151,7 +152,7 @@ header{
 				top:0;
 				margin:auto;
 				background:url("../img/css_sprite.png") no-repeat 0 -0.813333rem;
-				background-size: 4.0rem 4.0rem;
+				@include background-size(4.0rem 4.0rem);
 			}
 
 		}
@@ -285,7 +286,7 @@ header{
 			bottom:0;
 			margin:auto;
 			background:url("../img/css_sprite.png") no-repeat 0 -1.48rem;
-			background-size: 4.0rem 4.0rem;
+			@include background-size(4.0rem 4.0rem);
 		}
 	.time_before{
 		@include font-dpr(24px);
@@ -334,7 +335,7 @@ header{
 			    bottom: 0;
 			    margin: auto;
 			    background: url("../img/css_sprite.png") no-repeat 0 -2.626667rem;
-			    background-size: 4.0rem 4.0rem;
+			    @include background-size(4.0rem 4.0rem);
 		}
 
 }
@@ -368,10 +369,10 @@ header{
 		color:#93a3a9;
 		padding-left:0.56rem;
 		background:url("../img/css_sprite.png") no-repeat -3.64rem 0.066667rem;
-		background-size: 4.0rem 4.0rem;
+		@include background-size(4.0rem 4.0rem);
 	}
 	.more_zan1{
-		background-position: -3.64rem -0.6rem;
+		background-position: -3.60rem -0.6rem;
 	}
 }
 
@@ -419,7 +420,7 @@ footer{
 		height:0.693333rem;
 		margin:0.146667rem auto;
 		background:url("../img/css_sprite.png") no-repeat -2px -3.306667rem ;
-		background-size: 4.0rem 4.0rem;
+		@include background-size(4.0rem 4.0rem);
 	}
 	a:nth-child(2) .little_pic{
 		background-position: -1.186667rem -3.306667rem;
