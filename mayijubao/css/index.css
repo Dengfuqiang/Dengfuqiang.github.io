@@ -43,6 +43,22 @@ header {
     background-size: 4.0rem 4.0rem;
     margin-right: 0.426667rem; }
 
+#shequ {
+  width: 1.333333rem;
+  display: none;
+  position: absolute;
+  top: 0.373333rem;
+  right: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  font-size: 18px;
+  color: white; }
+  [data-dpr="2"] #shequ {
+    font-size: 36px; }
+  [data-dpr="3"] #shequ {
+    font-size: 54px; }
+
 #search {
   width: 0.506667rem;
   height: 0.533333rem; }

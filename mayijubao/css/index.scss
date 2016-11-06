@@ -36,6 +36,18 @@ header{
 		margin-right: 0.426667rem;
 	}
 }
+#shequ{
+	width:1.333333rem;
+	display:none;
+	position:absolute;
+	top:0.373333rem;
+	right:0;
+	left:0;
+	margin:auto;
+	text-align:center;
+	@include font-dpr(36px);
+	color:white;
+}
 #search{
 	width: 0.506667rem;
 	height:0.533333rem;

@@ -34,11 +34,12 @@
 				if(scrolltop<taolunchushi){
 					$("header").css("background-color","rgba(0,93,174,"+scrolltop/taolunchushi+"");
 					$("header").children("#toutiao").css("color","#4d4d4d").next().css("background-position","-0.946667rem 0px").next().css("background-position","0 0");
-					
+					$("#shequ").hide();
 				}else{
 					
 					$("header").css("background-color","rgba(0,93,174,1)");
 					$("header").children("#toutiao").css("color","white").next().css("background-position","-2.626667rem 0").next().css("background-position","-1.84rem 0");
+					$("#shequ").show();
 				}
 				if(adTopChuShi<$("header").outerHeight()){
 					$("#ad_tab").addClass("ad_addclass");
