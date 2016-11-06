@@ -78,6 +78,14 @@ header {
   background-color: #f1f6f8;
   padding-bottom: 1.44rem; }
 
+#geren_xinxi .zouyouming:before, #geren_xinxi .zouyouming:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0.253333rem;
+  height: 0.293333rem;
+  background-size: 4.0rem 4.0rem; }
+
 #geren_xinxi {
   text-align: center;
   background-color: white;
@@ -102,7 +110,17 @@ header {
     margin: 0 0.106667rem; }
   #geren_xinxi .zouyouming {
     color: #8a9ba1;
-    margin: 0.533333rem 0; }
+    margin: 0.533333rem auto 0.533333rem;
+    display: inline-block;
+    position: relative; }
+    #geren_xinxi .zouyouming:before {
+      left: -0.333333rem;
+      top: 0;
+      background: url("../img/css_sprite.png") no-repeat -1rem -0.8rem; }
+    #geren_xinxi .zouyouming:after {
+      right: -0.333333rem;
+      bottom: 0;
+      background: url("../img/css_sprite.png") no-repeat -1.33333rem -0.8rem; }
 
 #character {
   display: block;
