@@ -14,6 +14,9 @@ p { max-height: 999999px; }
 a{
     text-decoration: none!important;
 }
+h2{
+	max-height:99999px;
+}
 header{
 	width:100%;
     height: 0.533333rem;
@@ -61,7 +64,7 @@ header{
 	@include font-dpr(30px);
 	overflow: hidden;
 	h2{
-		margin:0.293333rem 0 0.4rem 0;
+		margin:0.266667rem 0 0.32rem 0;
 	}
 	p a{
 		display:inline-block;
@@ -214,8 +217,6 @@ header{
 		padding-right:0.6rem;
 		position:relative;
 
-		
-
 	}
 	.p_before{
 			display:block;
@@ -233,9 +234,11 @@ header{
 	.time_before{
 		@include font-dpr(24px);
 		color:#a0afb3;
-		line-height:0.56rem;
+		line-height:0.48rem;
 		@extend %float;
 		clear:both;
+		margin-bottom:0.12rem;
+		margin-top:1px;
 	}
 	.guanzhu{
 		display:block;
@@ -248,12 +251,12 @@ header{
 		border: 1px solid #0272d1;
 		border-radius:3px;
 		color:#0272d1;
-		padding:0 34px;
+		padding:0 0.48rem;
 	}
 	.char_picture{
 		position:absolute;
 		left:0.266667rem;
-		top:0;
+		top:0.266667rem;
 		bottom:0;
 		margin:auto;
 		display:block;
@@ -285,7 +288,7 @@ header{
 	h3{
 		width:6.4rem;
 		@include font-dpr(34px);
-		line-height:0.853333rem;
+		line-height:0.64rem;
 		color:#212121;
 		font-weight:bold;
 	}
@@ -449,7 +452,12 @@ footer{
 		margin-top:0.133333rem;
 	}
 	.time_before{
-		line-height:0.666667rem;
+		display:inline-block;
+		width:5.733333rem;
+		overflow: hidden;
+		text-overflow:ellipsis;
+		white-space: nowrap;
+		line-height:0.48rem;
 	}
 	.char_picture{
 		top:0.8rem;
