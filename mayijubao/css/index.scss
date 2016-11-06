@@ -111,6 +111,28 @@ header{
 		color:#141414;
 		margin-bottom: 0.666667rem;
 		font-weight:bold;
+		a{
+			display:inline-block;
+			@extend %floatRight;
+			padding-right:0.666667rem;
+			color:#0065cd;
+			font-weight:400;
+			position:relative;
+			&:after{
+				display:block;
+				content:"";
+				width:0.373333rem;
+				height:0.373333rem;
+				position:absolute;
+				bottom:0;
+				right:0.16rem;
+				top:0;
+				margin:auto;
+				background:url("../img/css_sprite.png") no-repeat 0 -0.813333rem;
+				background-size: 4.0rem 4.0rem;
+			}
+
+		}
 	}
 	.taolun_pic{
 		@extend %float;

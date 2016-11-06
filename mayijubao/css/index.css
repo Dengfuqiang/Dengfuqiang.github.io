@@ -10,7 +10,7 @@
   #dajiataolun:after, #active_discover:after, #ad_tab:after, .dongtai_person:after {
     clear: both; }
 
-header a, #hot_topic, .dongtai_img {
+header a, #dajiataolun h2 a, #hot_topic, .dongtai_img {
   float: right; }
 
 p {
@@ -127,6 +127,24 @@ header {
       font-size: 30px; }
     [data-dpr="3"] #dajiataolun h2 {
       font-size: 45px; }
+    #dajiataolun h2 a {
+      display: inline-block;
+      padding-right: 0.666667rem;
+      color: #0065cd;
+      font-weight: 400;
+      position: relative; }
+      #dajiataolun h2 a:after {
+        display: block;
+        content: "";
+        width: 0.373333rem;
+        height: 0.373333rem;
+        position: absolute;
+        bottom: 0;
+        right: 0.16rem;
+        top: 0;
+        margin: auto;
+        background: url("../img/css_sprite.png") no-repeat 0 -0.81333rem;
+        background-size: 4.0rem 4.0rem; }
   #dajiataolun .taolun_pic {
     position: relative;
     text-align: center;
