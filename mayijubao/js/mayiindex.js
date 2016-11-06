@@ -54,6 +54,9 @@
 		    	$(this).toggleClass("guandian_wenti").siblings("#guandian").toggleClass("guandian").siblings("#wenti").toggleClass("wenti");
 		    	flag=true;
 		    });
+		    //erro图片预加载
+		    var img=new Image();
+		    img.src="img/erro.jpg";
 		    //评论模块收起判断
 		    EventUtil.addHandler(document,"touchstart",start);
 		    function start(event){
