@@ -435,7 +435,7 @@ footer{
 %before_after{
 	display:block;
 			content:"";
-			width:1.173333rem;
+			width:1.163333rem;
 			height:1.146667rem;
 			position:absolute;
 			top: 0;
@@ -454,7 +454,7 @@ footer{
 		&:before{
 			@extend %before_after;
 			left:0.4rem;
-			background-position:-2.893333rem -1.506667rem;
+			background-position:-2.873333rem -1.506667rem;
 		}
 		&:after{
 			@extend %before_after;
