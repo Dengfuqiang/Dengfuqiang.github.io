@@ -27,7 +27,7 @@ header{
 	left: 0;
 	background-color:rgba(0,93,174,0);
 	z-index: 100;
-	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 	a{
 		@extend %floatRight;
 		color: #4d4d4d;
@@ -242,7 +242,7 @@ header{
 #ad_tab{
 	@extend %clearfix;
 	background-color:white;
-	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 	a{
 		@extend %float;
 		width:50%;
@@ -406,7 +406,7 @@ footer{
 	background-color:white;
 	font-size:0;
 	z-index:100;
-	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 	a{
 		text-align:center;
 		@include font-dpr(22px);
@@ -589,7 +589,7 @@ footer{
 	top:1.386667rem !important;
 	background-color:white !important;
 	z-index:10 !important;
-	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
 }
 #zannoContain{
 	height:1.746667rem;

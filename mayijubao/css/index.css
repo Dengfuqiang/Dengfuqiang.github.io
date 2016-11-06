@@ -32,7 +32,7 @@ header {
   left: 0;
   background-color: rgba(0, 93, 174, 0);
   z-index: 100;
-  -webkit-transform: translateZ(0); }
+  transform: translateZ(0); }
   [data-dpr="2"] header {
     font-size: 32px; }
   [data-dpr="3"] header {
@@ -249,7 +249,7 @@ header {
 
 #ad_tab {
   background-color: white;
-  -webkit-transform: translateZ(0); }
+  transform: translateZ(0); }
   #ad_tab a {
     width: 50%;
     height: 1.24rem;
@@ -417,7 +417,7 @@ footer {
   background-color: white;
   font-size: 0;
   z-index: 100;
-  -webkit-transform: translateZ(0); }
+  transform: translateZ(0); }
   footer a {
     text-align: center;
     font-size: 11px;
@@ -600,7 +600,7 @@ footer {
   top: 1.386667rem !important;
   background-color: white !important;
   z-index: 10 !important;
-  -webkit-transform: translateZ(0); }
+  transform: translateZ(0); }
 
 #zannoContain {
   height: 1.746667rem;
