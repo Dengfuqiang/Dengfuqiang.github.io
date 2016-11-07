@@ -6,7 +6,6 @@
             document.body.appendChild(script);
             //滑动页面时，改变header透明度
 		    var taolunchushi=$("#dajiataolun").offset().top;
-		   
 		    var contain=document.getElementById("contain");
 		    var scrolltop=0;
 		    var flag=false;
@@ -52,7 +51,7 @@
 			//评论模块的点击事件处理程序
 		    $(document).on("click","#guandian_wenti",function(){
 		    	$(this).toggleClass("guandian_wenti").siblings("#guandian").toggleClass("guandian").siblings("#wenti").toggleClass("wenti");
-		    	flag=true;
+		    	flag=!flag;
 		    });
 		    //erro图片预加载
 		    var img=new Image();
