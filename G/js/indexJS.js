@@ -45,6 +45,10 @@ $(function(){
     document.addEventListener('touchstart',function(e){
         beginPoint = e.touches[0];
     });
+    document.addEventListener('touchmove',function(e){
+        e.preventDefault();
+        e.stopPropagation();
+    });
     document.addEventListener('touchend',function(e){
         var endPoint = e.changedTouches[0];
         //水平方向
