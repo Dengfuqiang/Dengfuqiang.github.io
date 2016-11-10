@@ -153,7 +153,7 @@ li:first-child~li{
 }
 .big_logo3{
 	@extend %logo;
-	top:2.890625rem;
+	bottom:12.1875rem;
 	width:4.84375rem;
 	height:2.40625rem;
 	background:url("../img/big_button19.png") no-repeat;
@@ -162,7 +162,7 @@ li:first-child~li{
 }
 #click_haoli{
 	@extend %logo;
-	top:5.9375rem;
+	bottom:10.125rem;
 	width:7.859375rem;
 	height:1.65625rem;
 	background:url("../img/big_button20.png") no-repeat;
@@ -172,7 +172,7 @@ li:first-child~li{
 }
 %first_btn{
 	@extend %logo;
-	top:8.59375rem;
+	bottom:4.125rem;
 	width:4.390625rem;
 	height:5.03125rem;
 	-webkit-animation-delay:0.8s;
@@ -187,7 +187,7 @@ li:first-child~li{
 }
 #first_little_btn{
 	@extend %logo;
-	bottom:0.53125rem;
+	bottom:0.9375rem;
 	width:4.265625rem;
 	height:3.3125rem;
 	background:url("../img/big_button2.png") no-repeat;
@@ -198,7 +198,7 @@ li:first-child~li{
 }
 #active_rule{
 	@extend %logo;
-	top:5.265625rem;
+	bottom:5.78125rem;
 	width:9.9375rem;
 	height:6.734375rem;
 	background:url("../img/big_button3.png") no-repeat;
@@ -237,7 +237,7 @@ li:first-child~li{
 }
 #go_back{
 	@extend %logo;
-	bottom:0.234375rem;
+	bottom:0;
 	width:3.046875rem;
 	height:2.34375rem;
 	background:url("../img/big_button21.png") no-repeat;
@@ -248,7 +248,7 @@ li:first-child~li{
 }
 %first_word{
 	@extend %logo;
-	top:5.90625rem;
+	bottom:10.15625rem;
 	width:6.390625rem;
 	height:1.625rem;
 	@extend %delay;
@@ -279,11 +279,9 @@ li:first-child~li{
 }
 #big_car{
 	@extend %logo;
-	left:0.859375rem;
-	margin:0;
-	top:7.734375rem;
 	width:9.0625rem;
 	height:6.25rem;
+	bottom:3.75rem;
 	background:url("../img/big_button8.png") no-repeat;
 	background-size:100% 100%;
 	-webkit-animation-delay:0.8s;
@@ -291,7 +289,7 @@ li:first-child~li{
 }
 #dinggou{
 	@extend %logo;
-	bottom:0.703125rem;
+	bottom:0.625rem;
 	width:5.703125rem;
 	height:3.3125rem;
 	background:url("../img/big_button9.png") no-repeat;
@@ -303,11 +301,13 @@ li:first-child~li{
 	@extend %logo;
 	left:1.5625rem;
 	margin:0;
-	top:6.046875rem;
+	bottom:4.765625rem;
 	width:6.890625rem;
 	height:6.890625rem;
 	background:url("../img/big_button11.png") no-repeat;
 	background-size:100% 100%;
+	-webkit-transform-style: preserve-3d;
+	transform-style: preserve-3d;
 	@include translate3D(0,0,0);
 	-webkit-transform-origin:center center;
 	-webkit-animation-delay:0.5s;
@@ -328,7 +328,7 @@ li:first-child~li{
 	position:absolute;
 	width:1.734375rem;
 	left:4.96875rem;
-	top:6.328125rem;
+	bottom:8.28125rem;
 	height:3.170625rem;
 	background:url("../img/big_button12.png") no-repeat;
 	background-size:100% 100%;
@@ -356,8 +356,23 @@ li:first-child~li{
 	}
 }
 
-.addanimation{
-	@include animation(changeSize 10s ease-in-out 1 forwards);
+.addanimation0{
+	@include animation(changeSize0 10s ease-in-out 1 forwards);
+	-webkit-animation-duration:10s!important;
+	animation-duration:10s!important;
+}
+.addanimation1{
+	@include animation(changeSize1 10s ease-in-out 1 forwards);
+	-webkit-animation-duration:10s!important;
+	animation-duration:10s!important;
+}
+.addanimation2{
+	@include animation(changeSize2 10s ease-in-out 1 forwards);
+	-webkit-animation-duration:10s!important;
+	animation-duration:10s!important;
+}
+.addanimation3{
+	@include animation(changeSize3 10s ease-in-out 1 forwards);
 	-webkit-animation-duration:10s!important;
 	animation-duration:10s!important;
 }
@@ -373,7 +388,7 @@ li:first-child~li{
 }
 #zhongjiang{
 	@extend %logo;
-	top:5.15625rem;
+	bottom:1.09375rem;
 	width:7.46875rem;
 	height:11.484375rem;
 	background:url("../img/bg_picture8.jpg") no-repeat;
@@ -404,4 +419,28 @@ li:first-child~li{
 	     	margin: 0 auto;
 		}
 	}
+}
+@include keyframes(changeSize0){
+    0% {transform: rotateZ(0)}
+    100% {transform: rotateZ(7410deg)}
+}
+@include keyframes(changeSize1){
+    0% {transform: rotateZ(0)}
+    100% {transform: rotateZ(7500deg)}
+}
+@include keyframes(changeSize2){
+    0% {transform: rotateZ(0)}
+    100% {transform: rotateZ(7350deg)}
+}
+@include keyframes(changeSize3){
+    0% {transform: rotateZ(0)}
+    100% {transform: rotateZ(7530deg)}
+}
+.logo_title{
+	@extend %logo;
+	bottom:14.6875rem;
+	height:0.90625rem;
+	background:url("../img/big_button28.png") no-repeat;
+	-webkit-background-size: 100% 100%;
+	background-size:100% 100%;
 }

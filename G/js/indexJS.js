@@ -15,7 +15,7 @@ $(function(){
 	
 	//图片预加载
 	var imgCont=0;
-	for(var i=1;i<28;i++){
+	for(var i=1;i<29;i++){
 		var img=new Image();
 		img.onload=imgload;
 		img.src="img/big_button"+i+".png";
@@ -28,11 +28,11 @@ $(function(){
 	function imgload(){
         // img.onload = null;
         imgCont++;
-        var str= (imgCont/35*100).toFixed(0)+"%";
-        var width=6.71875*imgCont/35+"rem";
+        var str= (imgCont/36*100).toFixed(0)+"%";
+        var width=6.71875*imgCont/36+"rem";
         $("#red_tiao span").html(str);
         $("#red_tiao").css("width",width);
-        if(imgCont==35){
+        if(imgCont==36){
         	$("#jingdutiao").fadeOut("400");
         	$("#big_logo").addClass("animated bounceInRight");
         	$("#gaoerfu_GTI").addClass("animated bounceInRight");
@@ -112,20 +112,14 @@ $(function(){
     	if(choujiangFlag){
     		return;
     	};
-    	console.log(1)
     	choujiangFlag=true;
     	//中什么奖判断
-    	var zhongjiang=2;
-    	//反回转动度数
-    	var deg=iszhongjiang(zhongjiang);
-    	var sheet = document.styleSheets[1];
-    	sheet.insertRule("@keyframes changeSize{0%   {transform:rotateZ(0);}100% {transform:rotateZ("+deg+"deg);}}",sheet.rules.length);
-    	$("#zhuan_pan").addClass("addanimation");
+    	var zhongjiang=3;
+    	$("#zhuan_pan").addClass("addanimation"+zhongjiang+"");
     	//11S后删除样式
     	setTimeout(function(){
-    		var sheet = document.styleSheets[1];
-    		sheet.deleteRule(sheet.rules.length-1);
     		choujiangFlag=false;
+    		$("#zhuan_pan").removeClass("addanimation"+zhongjiang+"");
     		if(zhongjiang==0){
     			$("#weizhongjiang").show().click(function(){
     			$(this).hide();
@@ -165,36 +159,7 @@ function selectfrom (lowValue,highValue){
 	return Math.floor(Math.random()*choice+lowValue);
 }
 
-function iszhongjiang (zhongjiang){
-	//服务器反回中奖值，然后判断0,1,2,3
-    	var suijiNum=selectfrom(1,6);
-    	var deg=0;
-    	switch (zhongjiang){
-    		case 0:switch (suijiNum){
-	    		case 1:deg=0;break;
-	    		case 2:deg=90;break;
-	    		case 3:deg=120;break;
-	    		case 4:deg=180;break;
-	    		case 5 :deg=210;break;
-	    		default :deg=270; break;
-    		};break;
-    		case 1:deg=300;break;
-    		case 2:if(suijiNum<4){
-    			deg=60;
-    		}else{
-    			deg=150;
-    		};break;
-    		default :if(suijiNum<3){
-    			deg=30;
-    		}else if(suijiNum<5){
-    			deg=240;
-    		}else{
-    			deg=330;
-    		};break;
-    	}
-    	deg=20*360+deg;
-    	return deg;
-}
+
 function launchFullScreen(element) {
 	if(element.requestFullscreen) {
 		element.requestFullscreen();

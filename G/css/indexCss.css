@@ -55,7 +55,7 @@ body {
     right: -0.296875rem;
     margin: auto; }
 
-#big_logo, #gaoerfu_GTI, #big_logo2, #car_audio, .big_logo3, #click_haoli, #first_btn, #second_btn, #third_btn, #first_little_btn, #active_rule, #go_back, #first_word, #second_word, #third_word, #big_car, #dinggou, #zhuan_pan, #start_zhuan, #weizhongjiang, #zhongjiang {
+#big_logo, #gaoerfu_GTI, #big_logo2, #car_audio, .big_logo3, #click_haoli, #first_btn, #second_btn, #third_btn, #first_little_btn, #active_rule, #go_back, #first_word, #second_word, #third_word, #big_car, #dinggou, #zhuan_pan, #start_zhuan, #weizhongjiang, #zhongjiang, .logo_title {
   position: absolute;
   left: 0;
   right: 0;
@@ -135,7 +135,7 @@ li:first-child ~ li {
     font-size: 27px; }
 
 .big_logo3 {
-  top: 2.890625rem;
+  bottom: 12.1875rem;
   width: 4.84375rem;
   height: 2.40625rem;
   background: url("../img/big_button19.png") no-repeat;
@@ -143,7 +143,7 @@ li:first-child ~ li {
   background-size: 100% 100%; }
 
 #click_haoli {
-  top: 5.9375rem;
+  bottom: 10.125rem;
   width: 7.859375rem;
   height: 1.65625rem;
   background: url("../img/big_button20.png") no-repeat;
@@ -151,7 +151,7 @@ li:first-child ~ li {
   background-size: 100% 100%; }
 
 #first_btn, #second_btn, #third_btn {
-  top: 8.59375rem;
+  bottom: 4.125rem;
   width: 4.390625rem;
   height: 5.03125rem;
   -webkit-animation-delay: 0.8s;
@@ -164,7 +164,7 @@ li:first-child ~ li {
   background-image: url("../img/big_button1.png"); }
 
 #first_little_btn {
-  bottom: 0.53125rem;
+  bottom: 0.9375rem;
   width: 4.265625rem;
   height: 3.3125rem;
   background: url("../img/big_button2.png") no-repeat;
@@ -174,7 +174,7 @@ li:first-child ~ li {
   animation-delay: 1s; }
 
 #active_rule {
-  top: 5.265625rem;
+  bottom: 5.78125rem;
   width: 9.9375rem;
   height: 6.734375rem;
   background: url("../img/big_button3.png") no-repeat;
@@ -212,7 +212,7 @@ li:first-child ~ li {
   display: none; }
 
 #go_back {
-  bottom: 0.234375rem;
+  bottom: 0;
   width: 3.046875rem;
   height: 2.34375rem;
   background: url("../img/big_button21.png") no-repeat;
@@ -222,7 +222,7 @@ li:first-child ~ li {
   animation-delay: 1.1s; }
 
 #first_word, #second_word, #third_word {
-  top: 5.90625rem;
+  bottom: 10.15625rem;
   width: 6.390625rem;
   height: 1.625rem;
   background-repeat: no-repeat;
@@ -245,18 +245,16 @@ li:first-child ~ li {
   background-image: url("../img/big_button22.png"); }
 
 #big_car {
-  left: 0.859375rem;
-  margin: 0;
-  top: 7.734375rem;
   width: 9.0625rem;
   height: 6.25rem;
+  bottom: 3.75rem;
   background: url("../img/big_button8.png") no-repeat;
   background-size: 100% 100%;
   -webkit-animation-delay: 0.8s;
   animation-delay: 0.8s; }
 
 #dinggou {
-  bottom: 0.703125rem;
+  bottom: 0.625rem;
   width: 5.703125rem;
   height: 3.3125rem;
   background: url("../img/big_button9.png") no-repeat;
@@ -267,11 +265,13 @@ li:first-child ~ li {
 #zhuan_pan {
   left: 1.5625rem;
   margin: 0;
-  top: 6.046875rem;
+  bottom: 4.765625rem;
   width: 6.890625rem;
   height: 6.890625rem;
   background: url("../img/big_button11.png") no-repeat;
   background-size: 100% 100%;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transform: translate3D(0, 0, 0);
   transform: translate3D(0, 0, 0);
   -webkit-transform-origin: center center;
@@ -291,7 +291,7 @@ li:first-child ~ li {
   position: absolute;
   width: 1.734375rem;
   left: 4.96875rem;
-  top: 6.328125rem;
+  bottom: 8.28125rem;
   height: 3.170625rem;
   background: url("../img/big_button12.png") no-repeat;
   background-size: 100% 100%;
@@ -316,9 +316,27 @@ li:first-child ~ li {
     background: url("../img/big_button14.png") no-repeat;
     background-size: 100% 100%; }
 
-.addanimation {
-  -webkit-animation: changeSize 10s ease-in-out 1 forwards;
-  animation: changeSize 10s ease-in-out 1 forwards;
+.addanimation0 {
+  -webkit-animation: changeSize0 10s ease-in-out 1 forwards;
+  animation: changeSize0 10s ease-in-out 1 forwards;
+  -webkit-animation-duration: 10s !important;
+  animation-duration: 10s !important; }
+
+.addanimation1 {
+  -webkit-animation: changeSize1 10s ease-in-out 1 forwards;
+  animation: changeSize1 10s ease-in-out 1 forwards;
+  -webkit-animation-duration: 10s !important;
+  animation-duration: 10s !important; }
+
+.addanimation2 {
+  -webkit-animation: changeSize2 10s ease-in-out 1 forwards;
+  animation: changeSize2 10s ease-in-out 1 forwards;
+  -webkit-animation-duration: 10s !important;
+  animation-duration: 10s !important; }
+
+.addanimation3 {
+  -webkit-animation: changeSize3 10s ease-in-out 1 forwards;
+  animation: changeSize3 10s ease-in-out 1 forwards;
   -webkit-animation-duration: 10s !important;
   animation-duration: 10s !important; }
 
@@ -332,7 +350,7 @@ li:first-child ~ li {
   display: none; }
 
 #zhongjiang {
-  top: 5.15625rem;
+  bottom: 1.09375rem;
   width: 7.46875rem;
   height: 11.484375rem;
   background: url("../img/bg_picture8.jpg") no-repeat;
@@ -359,5 +377,52 @@ li:first-child ~ li {
       background-size: 100% 100%;
       border: none;
       margin: 0 auto; }
+
+@-webkit-keyframes changeSize0 {
+  0% {
+    transform: rotateZ(0); }
+  100% {
+    transform: rotateZ(7410deg); } }
+@keyframes changeSize0 {
+  0% {
+    transform: rotateZ(0); }
+  100% {
+    transform: rotateZ(7410deg); } }
+@-webkit-keyframes changeSize1 {
+  0% {
+    transform: rotateZ(0); }
+  100% {
+    transform: rotateZ(7500deg); } }
+@keyframes changeSize1 {
+  0% {
+    transform: rotateZ(0); }
+  100% {
+    transform: rotateZ(7500deg); } }
+@-webkit-keyframes changeSize2 {
+  0% {
+    transform: rotateZ(0); }
+  100% {
+    transform: rotateZ(7350deg); } }
+@keyframes changeSize2 {
+  0% {
+    transform: rotateZ(0); }
+  100% {
+    transform: rotateZ(7350deg); } }
+@-webkit-keyframes changeSize3 {
+  0% {
+    transform: rotateZ(0); }
+  100% {
+    transform: rotateZ(7530deg); } }
+@keyframes changeSize3 {
+  0% {
+    transform: rotateZ(0); }
+  100% {
+    transform: rotateZ(7530deg); } }
+.logo_title {
+  bottom: 14.6875rem;
+  height: 0.90625rem;
+  background: url("../img/big_button28.png") no-repeat;
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%; }
 
 /*# sourceMappingURL=indexCss.css.map */
