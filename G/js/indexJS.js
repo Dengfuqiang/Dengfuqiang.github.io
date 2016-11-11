@@ -65,11 +65,10 @@ $(function(){
                 resets();
                 
             }else{
-            	index++;
-            	if(index>2){
-		    		index=2;
+            	if(index<=2){
+            		index++;
+		    		resets();
 		    	}
-            	resets();
             }
         }
     });
