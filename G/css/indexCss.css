@@ -65,7 +65,7 @@ body {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1; }
 
-#gaoerfu_GTI, #car_audio, #click_haoli, #first_word, #second_word, #third_word {
+#car_audio, #click_haoli, #first_word, #second_word, #third_word {
   -webkit-animation-delay: 0.5s;
   animation-delay: 0.5s; }
 
@@ -419,6 +419,7 @@ li:first-child ~ li {
   100% {
     transform: rotateZ(7530deg); } }
 .logo_title {
+  width: 9.375rem;
   bottom: 14.6875rem;
   height: 0.90625rem;
   background: url("../img/big_button28.png") no-repeat;

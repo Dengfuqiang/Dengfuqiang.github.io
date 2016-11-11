@@ -1,5 +1,5 @@
 @import "base.css";
-@import "d:/sassCore/_function.scss";
+@import "f:/sassCore/_function.scss";
 @mixin font-dpr($font-size){
     font-size: $font-size/2;
 
@@ -101,7 +101,6 @@ body{
 	background:url("../img/big_button16.png") no-repeat;
 	-webkit-background-size: 100% 100%;
 	background-size:100% 100%;
-	@extend %delay;
 	display:none;
 }
 #big_logo2{
@@ -438,6 +437,7 @@ li:first-child~li{
 }
 .logo_title{
 	@extend %logo;
+	width:9.375rem;
 	bottom:14.6875rem;
 	height:0.90625rem;
 	background:url("../img/big_button28.png") no-repeat;

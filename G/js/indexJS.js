@@ -35,7 +35,7 @@ $(function(){
         if(imgCont==36){
         	$("#jingdutiao").fadeOut("400");
         	$("#big_logo").addClass("animated bounceInRight");
-        	$("#gaoerfu_GTI").addClass("animated bounceInRight");
+        	$("#gaoerfu_GTI").addClass("animated flash");
         	$("#big_logo").show().next().show();
         }
     }
