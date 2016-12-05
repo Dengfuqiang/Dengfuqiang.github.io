@@ -1,5 +1,5 @@
 @import "base.css";
-@import "d:/sassCore/_function.scss";
+@import "g:/sassCore/_function.scss";
 %divWidthAuto{
     width: 1200px;
     margin: 0 auto;
@@ -13,6 +13,7 @@
     @extend %clearfix;
     
 }
+
 #bt_left{
     @extend %float;
     width: 170px;
@@ -157,9 +158,6 @@
     font-size: 14px;
     margin-top: 8px;
     border: 1px solid #E6E6E6;
-    .active_margin{
-        margin: 0;
-    }
     li{
         background-color: white;
         @extend %float;
