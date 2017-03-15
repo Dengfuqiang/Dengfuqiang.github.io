@@ -1,0 +1,50 @@
+.assess_level {
+  display: inline-block;
+  width: 0.57rem;
+  height: 0.506667rem;
+  background: url("assess_level.png") no-repeat 0 0;
+  background-size: cover;
+  margin-right: 0.266667rem; }
+
+#order_detail_title p {
+  color: #FFFFFF;
+  opacity: 0.7;
+  font-size: 13px; }
+  [data-dpr="2"] #order_detail_title p {
+    font-size: 26px; }
+  [data-dpr="3"] #order_detail_title p {
+    font-size: 39px; }
+#order_detail_title span {
+  font-size: 17px;
+  margin-bottom: 0.133333rem; }
+  [data-dpr="2"] #order_detail_title span {
+    font-size: 34px; }
+  [data-dpr="3"] #order_detail_title span {
+    font-size: 51px; }
+
+#order_detail_contain .pro_imformation {
+  width: 4.8rem; }
+#order_detail_contain .assess_shuoming {
+  border-bottom: 1px solid #999999;
+  padding-bottom: 0.56667rem; }
+#order_detail_contain #order_detail_title {
+  padding: 0.533333rem 0.533333rem 0.4rem; }
+#order_detail_contain ul {
+  padding: 0.2rem 0.533333rem 0.733333rem; }
+#order_detail_contain li {
+  border-bottom: none;
+  padding: 0.2rem 0; }
+#order_detail_contain .li_special_black {
+  margin: 0.56667rem 0;
+  padding: 0; }
+  #order_detail_contain .li_special_black span {
+    color: black; }
+#order_detail_contain .assess_level_contain {
+  float: right;
+  margin-right: 0.533333rem; }
+
+.pay_code {
+  display: inline-block !important;
+  width: 100% !important; }
+
+/*# sourceMappingURL=wx_assess.css.map */
