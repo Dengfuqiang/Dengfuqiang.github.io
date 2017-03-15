@@ -1,16 +1,90 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<title></title>
-		<style type="text/css">
-			a{
-				color: black;
-				text-decoration: none;
-			}
-		</style>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="format-detection" content="telephone=no">
+        <meta name="format-detection" content="email=no">
+        <meta name="author" content="equinox_sun">
+		<title>我要安装</title>
+		<link rel="stylesheet" type="text/css" href="wx_order_detail.css"/>
+		<link rel="stylesheet" type="text/css" href="wx_assess.css"/>
+	    <script src="flexible.js"></script>
+	    <script type="text/javascript" src="jquery-2.2.2.min.js" ></script>
 	</head>
 	<body>
-		<a href="###">我是一个a</a>
+		<div id="order_detail_contain">
+			<div id="order_detail_title">
+				<span class="pay_code">您的付款凭证码：6157-2644-1263</span>
+				<p>请在服务网点为您安装完毕后出示以作付款凭证。</p>
+			</div>
+			<ul>
+				<li>
+					<span >服务项目：</span>
+					<span class="pro_imformation">座垫</span>
+				</li>
+				<li>
+					<span >网点名称：</span>
+					<span class="pro_imformation">南山爱普店</span>
+				</li>
+				
+				<li>
+					<span >网点电话：</span>
+					<span class="pro_imformation">15989606274</span>
+				</li>
+				<li class="assess_shuoming">
+					<span >网店地址：</span>
+					<span class="pro_imformation">广东省深圳市市辖区南山区 深圳大学</span>
+				</li>
+				<li class="li_special_black">
+					<span >技术水平：</span>
+					<div class="assess_level_contain">
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+					</div>
+				</li>
+				<li class="li_special_black">
+					<span  >服务态度：</span>
+					<div class="assess_level_contain">
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+					</div>
+				</li>
+				<li class="li_special_black">
+					<span  >店面环境：</span>
+					<div class="assess_level_contain">
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+						<span class="assess_level"></span>
+					</div>
+				</li>
+				<a id="assess" href="javascript:void(0)">提交评价</a>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			//点击评价的星星，变亮
+			$(".assess_level").click(function(){
+				var index=$(this).index();
+				$(this).css("background-position-x","-0.6rem").siblings().css("background-position-x","0");
+				$(this).parent().children(":lt("+index+")").css("background-position-x","-0.6rem");
+				alert($(this)[0].style.backgroundPositionX+" "+index);
+			});
+			
+//			$(".assess_level").click(function(){
+//				var index=$(this).index();
+//				$(this).parent().find("span").each(function(i,d){
+//						$(d).css("background-position-x","-0.6rem")
+//						if(i==index)return false;
+//				});
+//			});
+		</script>
 	</body>
 </html>
