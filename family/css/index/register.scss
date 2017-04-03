@@ -1,0 +1,140 @@
+@import "../base.css";
+@import "g:/sassCore/_function.scss";
+.body_contain{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    padding-top: 60px;
+    a{
+        display: inline-block;
+        margin-left: 100px;
+        vertical-align: middle;
+        
+    }
+    span{
+        display: inline-block;
+        height: 28px;
+        line-height: 28px;
+        font-size: 18px;
+        color: #737373;
+        border-left: 1px solid #e6e6e6;
+        padding-left: 30px;
+        margin-left: 30px;
+        vertical-align: middle;
+    }
+}
+article{
+        position: relative;
+    min-height: 600px;
+    form{
+        width: 823px;
+        padding:15px 35px 70px;
+
+        position: absolute;
+        top:75px;
+        left: 150px;
+        font-size: 14px;@include
+         box-shadow(0 0 20px #e6e6e6);
+        input{
+            width: 250px;
+            height: 33px;
+            border: 1px solid #ebebeb;
+            padding-left: 10px;
+            -webkit-box-sizing: border-box;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 14px;
+            color: #999;
+            vertical-align: middle;
+        }
+        a{
+        padding:8px 0 12px 0;
+        font-size: 12px;
+        display: inline-block;
+        color: #999;
+        }
+    }
+    
+}
+.confirm_submit{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffa130;
+    color: white;
+    text-align: center;
+    padding: 0;
+    font-size: 16px;
+    margin-left: 70px;
+}
+.find_pwd{
+    float: right;
+}
+.img_contain{
+        display: inline-block;
+    margin-top: 30px;
+    }
+#familyFooter{
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f0e4;
+    a{
+        font-size: 12px;
+        color: #4d4d4d;
+    }
+    p{
+        margin-top: 12px;
+    }
+    span{
+        color: black;
+        margin: 0 11px;
+    }
+}
+.to_login{
+    width: 424px;
+    height: 137px;
+    border-left: 1px solid #E6E6E6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    padding-top: 90px;
+    p{
+        line-height: 26px;
+        font-size: 14px;
+        color: #666;
+        text-align: center;
+        a{
+            color: #eb6623;
+            padding: 0;
+            font-size: 15px;
+        }
+    }
+}
+#sms{
+    width: 150px;
+    margin-right: 10px;
+}
+#get_sms{
+    width: 90px;
+    height: 31px;
+    padding: 0;
+    border: 1px solid #e6e6e6;
+    background-color: #f2f2f2;
+    line-height: 31px;
+    text-align: center;
+    display:inline-block;
+    color: #333;
+}

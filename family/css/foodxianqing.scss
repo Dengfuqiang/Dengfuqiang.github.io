@@ -1,5 +1,5 @@
 @import "base.css";
-@import "d:/sassCore/_function.scss";
+@import "g:/sassCore/_function.scss";
 %divWidthAuto{
     width: 1200px;
     margin: 0 auto;
@@ -294,35 +294,12 @@
  }
 .xiangxi{
     display: block;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin: 20px 20px 0 20px;
     @extend %clearfix;
     a{
         display: block;
-        width: 600px;
-        height: 450px;
+        width: 100%;
+        height: 475px;
         @extend %float;
-    }
-    span{
-        display: block;
-        overflow: hidden;
-        padding:0 76px 0 24px;
-        
-    }
-    h2{
-        color: #53a500;
-        font-size: 24px;
-        font-weight: bold;
-        line-height: 60px;
-        margin: 10px 0 24px 0;
-        border-bottom: 1px solid #f3f3f3;
-    }
-    h4{
-        font-size: 20px;
-        line-height: 40px;
-    }
-    p{
-        font-size: 12px;
-        line-height: 24px;
     }
 }

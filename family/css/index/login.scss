@@ -1,0 +1,112 @@
+@import "../base.css";
+@import "g:/sassCore/_function.scss";
+.body_contain{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    height: 100px;
+    padding-top: 60px;
+    a{
+        display: inline-block;
+        margin-left: 100px;
+        vertical-align: middle;
+        
+    }
+    span{
+        display: inline-block;
+        height: 28px;
+        line-height: 28px;
+        font-size: 18px;
+        color: #737373;
+        border-left: 1px solid #e6e6e6;
+        padding-left: 30px;
+        margin-left: 30px;
+        vertical-align: middle;
+    }
+}
+article{
+        position: relative;
+    min-height: 600px;
+    form{
+        width: 260px;
+        padding:15px 35px; 
+        @include box-shadow(0 0 20px #e6e6e6);
+        position: absolute;
+        top:75px;
+        right: 200px;
+        font-size: 14px;
+        input{
+            width: 100%;
+            height: 33px;
+            border: 1px solid #ebebeb;
+            padding-left: 44px;
+            -webkit-box-sizing: border-box;
+            vertical-align: middle;
+            box-sizing: border-box;
+        }
+        h1{
+            font-size: 16px;
+            color: #333;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        label{
+            display: block;
+            margin-bottom: 14px;
+            color: #999;
+            vertical-align: middle;
+        }
+        a{
+        padding:8px 0 12px 0;
+        font-size: 12px;
+        display: inline-block;
+        color: #999;
+        }
+    }
+    
+}
+.confirm_submit{
+    height: 40px;
+    line-height: 40px;
+    background-color: #ffa130;
+    color: white;
+    text-align: center;
+    margin-top: 74px;
+    padding: 0;
+    font-size: 16px;
+}
+.find_pwd{
+    float: right;
+}
+#auto_login{
+    width: 14px;
+    height: 14px;
+    padding: 0;
+}
+.img_contain{
+        display: inline-block;
+    margin-top: 30px;
+    }
+#familyFooter{
+    text-align: center;
+    padding: 40px 0;
+    background-color: #f9f0e4;
+    a{
+        font-size: 12px;
+        color: #4d4d4d;
+    }
+    p{
+        margin-top: 12px;
+    }
+    span{
+        color: black;
+        margin: 0 11px;
+    }
+}
+#mobile_phone{
+    background: url(../../img/common.png) no-repeat -275px 5px;
+}
+#pwd{
+    background: url(../../img/common.png) no-repeat -275px -45px;
+}

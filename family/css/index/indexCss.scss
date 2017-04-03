@@ -1,5 +1,5 @@
-@import "base.css";
-@import "d:/sassCore/_function.scss";
+@import "../base.css";
+@import "g:/sassCore/_function.scss";
 %divWidthAuto{
     width: 1200px;
     margin: 0 auto;
@@ -141,7 +141,7 @@
 .jiCaiShengHuo{
     width: 100%;
     height: 401px;
-    background:url("../img/lifepicture (5).jpg") no-repeat 0px 0px;
+    background:url("../../img/lifepicture (5).jpg") no-repeat 0px 0px;
     h3{
         font-size: 24px;
         font-weight: bold;
@@ -161,7 +161,7 @@
     margin-top: 40px;
     margin-left: 64px;
     position: relative;
-    background: url("../img/lifepicture (1).png") no-repeat 0px -347px;
+    background: url("../../img/lifepicture (1).png") no-repeat 0px -347px;
     a{
         display:block;
         position: absolute;
@@ -177,7 +177,7 @@
 
 .ShengHuoShiPing{
     @extend .jiCaiShengHuo;
-    background:url("../img/lifepicture (1).jpg") no-repeat 0px 0px;
+    background:url("../../img/lifepicture (1).jpg") no-repeat 0px 0px;
     h3{
         color: #2aad49;
     }
@@ -219,7 +219,7 @@
 }
 .ShengHuoYongPing{
     @extend .jiCaiShengHuo;
-    background:url("../img/lifepicture (6).jpg") no-repeat 0px 0px;
+    background:url("../../img/lifepicture (6).jpg") no-repeat 0px 0px;
     h3{
         color: #2ba6de;
     }
@@ -242,7 +242,7 @@
 }
 .ShengHuoJiaJu{
     @extend .jiCaiShengHuo;
-    background:url("../img/lifepicture (7).jpg") no-repeat 0px 0px;
+    background:url("../../img/lifepicture (7).jpg") no-repeat 0px 0px;
     h3{
         color: #f65b86;
     }
