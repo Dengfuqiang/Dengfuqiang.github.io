@@ -1,0 +1,132 @@
+@import "../base.css";
+@import "g:/sassCore/_function.scss";
+article{
+    width: 1200px;
+    margin: 0 auto;
+    @extend %box;
+    margin-top: 30px;
+}
+.nav_left{
+    width: 170px;
+    margin-right: 25px;
+    border: 1px solid $bc;
+    height: 400px;
+    border-top: 3px solid $or;
+    a{
+        display: block;
+        line-height: 50px;
+        font-size: 14px;
+        color:#666;
+        text-align: center;
+        &:hover{
+            background-color: $or;
+            color: white;
+        }
+    }
+}
+.info_right{
+    @extend %item;
+}
+h2{
+    border:  1px solid $bc;
+    span{
+        display: inline-block;
+        height: 43px;
+        line-height: 43px;
+        font-size: 18px;
+        width: 100px;
+        color:#4c4c4c ;
+        text-align: center;
+        border-right: 1px solid $bc;
+    }
+}
+.person_info{
+    padding: 15px;
+        border: 1px solid $bc;
+        border-top: none;
+    label{
+        font-size: 14px;
+        color: #999;
+        display: block;
+        margin-top: 30px;
+
+    }
+    span{
+        display: inline-block;
+        width: 80px;
+    }
+    input{
+        border: 1px solid $bc;
+        width: 265px;
+        padding-left: 10px;
+        height: 45px;
+    }
+    i{
+        color: #999;
+        display: inline-block;
+        margin-left: 80px;
+        margin-top: 8px;
+    }
+}
+.change_pwd{
+    border: 1px solid $bc;
+    border-top: none;
+    padding: 15px 24px;
+    margin-bottom: 70px;
+    p{
+        margin-bottom: 15px;
+        line-height: 35px;
+    }
+    span{
+        color: #4c4c4c;
+        font-size: 14px;
+        display: inline-block;
+        width: 110px;
+    }
+    i{
+        font-size: 12px;
+        color: #737373;
+    }
+    a{
+        display: inline-block;
+        border: none;
+    outline: none;
+    width: 80px;
+    height: 35px;
+    padding: 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 35px;
+    background-color: #26c08a;
+    color: white;
+    cursor: pointer;
+    }
+}
+.header_pic{
+    display: inline-block;
+    vertical-align: top;
+    img{
+        width: 90px;
+        height: 90px;
+        -webkit-border-radius: 50%;
+    vertical-align: top;
+        border-radius: 50%;
+    }
+}
+#save_person_info{
+     border: none;
+    outline: none;
+    width: 80px;
+    height: 35px;
+    padding: 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 35px;
+    background-color: $or;
+    color: white;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-bottom: 110px;
+}

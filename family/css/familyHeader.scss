@@ -1,7 +1,11 @@
 @import "base.css";
-@import "d:/sassCore/_function.scss";
+@import "g:/sassCore/_function.scss";
 a{
     color:#838383;
+}
+article{
+    width: 1200px;
+    margin: 0 auto;
 }
 #familyAndContain{
     width: 1600px;

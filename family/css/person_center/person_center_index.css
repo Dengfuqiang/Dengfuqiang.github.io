@@ -1,0 +1,214 @@
+@import url(../base.css);
+article, .user_info, .info_money_ct, .commodity_info, .my_favour ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
+.info_right, .user_info, .info, .commodity_info div, .my_favour li {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+
+article {
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.nav_left {
+  width: 170px;
+  margin-right: 25px;
+  border: 1px solid #e6e6e6;
+  height: 400px;
+  border-top: 3px solid #ffa130; }
+  .nav_left a {
+    display: block;
+    line-height: 50px;
+    font-size: 14px;
+    color: #666;
+    text-align: center; }
+    .nav_left a:hover {
+      background-color: #ffa130;
+      color: white; }
+
+.user_info {
+  border: 1px solid #e6e6e6; }
+
+.info h2 {
+  margin-top: 50px;
+  color: #1a1a1a;
+  font-size: 18px;
+  margin-bottom: 15px; }
+.info p {
+  color: #666;
+  font-size: 12px; }
+
+.cash {
+  width: 173px;
+  padding-left: 125px;
+  height: 148px;
+  border: 1px solid #e6e6e6;
+  background-color: #faf8f4;
+  margin-left: 30px;
+  background: url(../../img/common.png) no-repeat 45px 45px; }
+  .cash p {
+    color: black;
+    font-weight: bold;
+    font-size: 20px; }
+  .cash .my_price {
+    margin-top: 50px;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #808080; }
+
+.pic_ct {
+  display: block;
+  width: 90px;
+  height: 90px;
+  margin: 30px; }
+  .pic_ct img {
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    height: 100%; }
+
+h3 {
+  line-height: 20px;
+  font-size: 12px;
+  border-left: 3px solid #f66061;
+  margin: 18px 0;
+  color: #1a1a1a;
+  padding-left: 10px; }
+
+h4 {
+  background: #f5f5f5;
+  color: #1a1a1a;
+  line-height: 43px;
+  border: 1px solid #e6e6e6;
+  padding-left: 10px; }
+
+.commodity_info {
+  border: 1px solid #e6e6e6;
+  border-top: none; }
+
+.info_ct, .cmd_status {
+  position: relative; }
+  .info_ct:after, .cmd_status:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 1px;
+    height: 80%;
+    background-color: #e6e6e6; }
+
+.info_ct {
+  -webkit-box-flex: 4;
+  -webkit-flex: 4;
+  -ms-flex: 4;
+  flex: 4;
+  font-size: 0; }
+  .info_ct span {
+    font-size: 14px;
+    color: #4c4c4c;
+    display: inline-block;
+    vertical-align: middle; }
+
+.cmd_pic_ct {
+  margin: 10px 20px; }
+  .cmd_pic_ct img {
+    width: 100px;
+    height: 100px; }
+
+.cmd_title {
+  width: 195px; }
+
+.cmd_num {
+  width: 145px;
+  text-align: center; }
+
+.pay_way {
+  width: 185px;
+  text-align: center; }
+  .pay_way p {
+    color: #ffa130; }
+  .pay_way span {
+    font-size: 12px;
+    color: #999999; }
+
+.cmd_status {
+  text-align: center; }
+  .cmd_status p {
+    text-align: center;
+    margin-bottom: 5px; }
+  .cmd_status a:hover {
+    text-decoration: underline;
+    font-size: 13px;
+    color: #666666; }
+  .cmd_status .status {
+    margin-top: 40px; }
+
+.operation a {
+  display: block;
+  width: 98px;
+  height: 34px;
+  border: 1px solid #e6e6e6;
+  background: #f5f5f5;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 34px; }
+  .operation a:hover {
+    color: white;
+    background: #ffa130; }
+
+.my_favour ul {
+  margin-bottom: 80px; }
+.my_favour li {
+  padding: 20px 30px;
+  border: 1px solid #e6e6e6; }
+.my_favour a {
+  display: block; }
+.my_favour img {
+  width: 190px;
+  height: 190px; }
+.my_favour .price {
+  color: #ffa130;
+  font-size: 18px; }
+.my_favour del {
+  float: right;
+  color: #ccc;
+  margin-top: 5px; }
+.my_favour h5 {
+  color: #4c4c4c;
+  line-height: 24px;
+  font-size: 14px;
+  margin-top: 5px; }
+.my_favour .add_shopping_car {
+  display: block;
+  width: 70px;
+  height: 28px;
+  padding-left: 27px;
+  background: #f5f5f5;
+  margin: 20px auto;
+  text-align: center;
+  line-height: 28px;
+  position: relative;
+  text-align: left; }
+  .my_favour .add_shopping_car:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 25px;
+    height: 25px;
+    content: '';
+    display: block;
+    background: url(../../img/common.png) no-repeat -278px -278px; }
+  .my_favour .add_shopping_car:hover {
+    color: white;
+    background-color: #ffa130; }
+
+/*# sourceMappingURL=person_center_index.css.map */

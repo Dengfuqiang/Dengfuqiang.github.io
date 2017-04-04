@@ -1,0 +1,259 @@
+@import "../base.css";
+@import "g:/sassCore/_function.scss";
+article{
+    width: 1200px;
+    margin: 0 auto;
+    @extend %box;
+    margin-top: 30px;
+}
+.nav_left{
+    width: 170px;
+    margin-right: 25px;
+    border: 1px solid $bc;
+    height: 400px;
+    border-top: 3px solid $or;
+    a{
+        display: block;
+        line-height: 50px;
+        font-size: 14px;
+        color:#666;
+        text-align: center;
+        &:hover{
+            background-color: $or;
+            color: white;
+        }
+    }
+}
+.info_right{
+    @extend %item;
+}
+.user_info{
+    @extend %box;
+    border: 1px solid $bc;
+    @extend %item;
+}
+.info_money_ct{
+    @extend %box;
+}
+.info{
+    @extend %item;
+    h2{
+        margin-top: 50px;
+        color: #1a1a1a;
+        font-size: 18px;
+        margin-bottom: 15px;
+    }
+    p{
+        color: #666;
+        font-size: 12px;
+    }
+}
+.cash{
+   width: 173px;
+   padding-left: 125px;
+   height: 148px;
+   border: 1px solid $bc;
+   background-color: #faf8f4;
+    margin-left: 30px;
+    background: url(../../img/common.png) no-repeat 45px 45px;
+    p{
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .my_price{
+    margin-top: 50px;
+    line-height: 26px;
+    font-weight: 400;
+    font-size: 12px;
+    color: #808080;
+}
+}
+.pic_ct{
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 30px;
+    img{
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+        height: 100%;
+    }
+}
+h3{
+    line-height: 20px;
+    font-size: 12px;
+    border-left: 3px solid #f66061;
+    margin: 18px 0;
+    color: #1a1a1a;
+    padding-left: 10px;
+}
+h4{
+    background: #f5f5f5;
+    color: #1a1a1a;
+    line-height: 43px;
+    border: 1px solid $bc;
+    padding-left: 10px;
+}
+.commodity_info{
+    @extend %box;
+    div{
+        @extend %item;
+    }
+    border:1px solid $bc;
+    border-top: none;
+}
+
+%common_after{
+        position: relative;
+    &:after{
+        content: '';
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 1px;
+        height: 80%;
+        background-color: $bc;
+        
+    }
+}
+.info_ct{
+    @extend %common_after;
+        -webkit-box-flex:4;
+    -webkit-flex: 4;
+    -ms-flex: 4;
+    flex:4;
+    font-size: 0;
+    span{
+        font-size: 14px;
+        color: #4c4c4c;
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
+
+.cmd_pic_ct{
+    margin: 10px 20px;
+    img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+.cmd_title{
+    width: 195px;
+}
+.cmd_num{
+    width: 145px;
+    text-align: center;
+}
+.pay_way{
+    width: 185px;
+    text-align: center;
+    p{
+        color: $or;
+        
+    }
+    span{
+        font-size: 12px;
+        color: #999999;
+    }
+}
+.cmd_status{
+    @extend %common_after;
+    text-align: center;
+    p{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    a{
+      &:hover{
+          text-decoration: underline;
+          font-size: 13px;
+          color: #666666;
+      }  
+    }
+    .status{
+        margin-top: 40px;
+    }
+}
+.operation{
+    a{
+    display: block;
+    width: 98px;
+    height: 34px;
+    border: 1px solid $bc;
+    background: #f5f5f5;
+    margin: 30px auto;
+    text-align: center;
+    line-height: 34px;
+        &:hover{
+            color: white;
+            background: $or;
+        }
+    }
+}
+.my_favour{
+    ul{
+        @extend %box;
+        margin-bottom: 80px;
+    }
+    li{
+        @extend %item;
+        padding: 20px 30px;
+        border: 1px solid $bc;
+    }
+    a{
+        display: block;
+        
+    }
+    img{
+        width: 190px;
+        height: 190px;
+    }
+    .price{
+        color: $or;
+        font-size: 18px;
+    }
+    del{
+        float: right;
+        color: #ccc;
+        margin-top: 5px;
+    }
+    h5{
+        color: #4c4c4c;
+        line-height: 24px;
+        font-size: 14px;
+        margin-top: 5px;
+    }
+    .add_shopping_car{
+            display: block;
+    width: 70px;
+    height: 28px;
+    padding-left: 27px;
+    background: #f5f5f5;
+    margin: 20px auto;
+    text-align: center;
+    line-height: 28px;
+        position: relative;
+    text-align: left;
+    &:after{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 25px;
+        height: 25px;
+        content: '';
+        display: block;
+        background: url(../../img/common.png) no-repeat -278px -278px;
+    }
+
+    &:hover{
+        color: white;
+        background-color: $or;
+    }
+    }
+}

@@ -1,0 +1,47 @@
+@import "../base.css";
+@import "g:/sassCore/_function.scss";
+article{
+    width: 1200px;
+    margin: 0 auto;
+}
+#pay_success{
+    position: relative;
+    border: 1px solid $bc;
+    margin-top: 53px;
+    margin-bottom: 75px;
+    height: 450px;
+    
+}
+.pay_status{
+    width: 310px;
+    height: 55px;
+    margin: 75px auto 35px;
+    padding-left: 155px;
+     color: #1a1a1a;
+     background: url(../img/common.png) no-repeat -170px -103px;
+    h2{
+        font-size: 24px;
+    }
+    p{
+        font-size: 13px;
+    }
+}
+.pay_way{
+    width: 350px;
+    height: 105px;
+    background-color: #f7f7f7;
+    margin: 0 auto;
+    color: #4c4c4c;
+    font-size: 14px;
+    padding-left: 110px;
+    line-height: 34px;
+    padding-top: 30px;
+}
+.auto_goback{
+    text-align: center;
+    margin-top: 60px;
+    color: #838383;
+    span{
+        color: #26c08a;
+    }
+}
