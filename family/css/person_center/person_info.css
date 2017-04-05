@@ -1,17 +1,17 @@
 @import url(../base.css);
-article {
+.person_info_arctile {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
 
-.info_right {
+.info_right, .change_pwd, .change_purse {
   -webkit-box-flex: 1;
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1; }
 
-article {
+.person_info_arctile {
   width: 1200px;
   margin: 0 auto;
   margin-top: 30px; }
@@ -39,10 +39,27 @@ h2 {
     height: 43px;
     line-height: 43px;
     font-size: 18px;
-    width: 100px;
+    padding: 0 15px;
+    width: auto !important;
     color: #4c4c4c;
     text-align: center;
     border-right: 1px solid #e6e6e6; }
+
+.person_info .save, .change_pwd .save, .change_purse .save {
+  border: none;
+  outline: none;
+  width: 80px;
+  height: 35px;
+  padding: 0;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 35px;
+  background-color: #ffa130;
+  color: white;
+  cursor: pointer;
+  margin-left: 70px;
+  margin-bottom: 110px; }
 
 .person_info {
   padding: 15px;
@@ -55,7 +72,9 @@ h2 {
     margin-top: 30px; }
   .person_info span {
     display: inline-block;
-    width: 80px; }
+    text-align: right;
+    width: 60px;
+    padding-right: 10px; }
   .person_info input {
     border: 1px solid #e6e6e6;
     width: 265px;
@@ -64,26 +83,26 @@ h2 {
   .person_info i {
     color: #999;
     display: inline-block;
-    margin-left: 80px;
+    margin-left: 70px;
     margin-top: 8px; }
 
-.change_pwd {
+.change_info {
   border: 1px solid #e6e6e6;
   border-top: none;
   padding: 15px 24px;
   margin-bottom: 70px; }
-  .change_pwd p {
+  .change_info p {
     margin-bottom: 15px;
     line-height: 35px; }
-  .change_pwd span {
+  .change_info span {
     color: #4c4c4c;
     font-size: 14px;
     display: inline-block;
     width: 110px; }
-  .change_pwd i {
+  .change_info i {
     font-size: 12px;
     color: #737373; }
-  .change_pwd a {
+  .change_info a {
     display: inline-block;
     border: none;
     outline: none;
@@ -108,20 +127,75 @@ h2 {
     vertical-align: top;
     border-radius: 50%; }
 
-#save_person_info {
-  border: none;
-  outline: none;
+.change_pwd, .change_purse {
+  margin-bottom: 30px; }
+  .change_pwd form, .change_purse form {
+    padding: 15px;
+    border: 1px solid #e6e6e6;
+    border-top: none; }
+  .change_pwd label, .change_purse label {
+    font-size: 14px;
+    color: #999;
+    display: block;
+    margin-top: 30px; }
+  .change_pwd i, .change_purse i {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 12px;
+    padding-left: 70px;
+    color: #999; }
+  .change_pwd span, .change_purse span {
+    display: inline-block;
+    text-align: right;
+    width: 60px;
+    padding-right: 10px; }
+  .change_pwd input, .change_purse input {
+    border: 1px solid #e6e6e6;
+    width: 265px;
+    padding-left: 10px;
+    height: 35px; }
+  .change_pwd .save, .change_purse .save {
+    margin-top: 50px;
+    display: block; }
+
+#sms {
+  width: 173px;
+  vertical-align: middle; }
+
+#sms_bt {
+  display: inline-block;
   width: 80px;
-  height: 35px;
+  height: 36px;
   padding: 0;
-  -webkit-border-radius: 3px;
-  border-radius: 3px;
   text-align: center;
-  line-height: 35px;
-  background-color: #ffa130;
+  line-height: 36px;
+  background-color: #26c08a;
   color: white;
   cursor: pointer;
-  margin-left: 80px;
-  margin-bottom: 110px; }
+  vertical-align: middle;
+  padding: 0 6px; }
+
+.pay_success {
+  border: 1px solid #e6e6e6;
+  position: relative;
+  height: 448px;
+  margin: 30px auto; }
+  .pay_success .pay_status {
+    width: 310px;
+    height: 55px;
+    margin: 90px auto 35px;
+    padding-left: 155px;
+    color: #1a1a1a;
+    background: url(../../img/common.png) no-repeat -170px -103px; }
+    .pay_success .pay_status h3 {
+      font-size: 24px; }
+    .pay_success .pay_status p {
+      font-size: 13px; }
+  .pay_success .auto_goback {
+    text-align: center;
+    margin-top: 45px;
+    color: #838383; }
+    .pay_success .auto_goback span {
+      color: #26c08a; }
 
 /*# sourceMappingURL=person_info.css.map */

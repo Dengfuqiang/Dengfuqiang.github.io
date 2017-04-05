@@ -46,7 +46,7 @@
 					</div>
 				</div>
 			</header>
-			<article>
+			<article class="person_info_arctile" style="display: none;">
 				<section class="nav_left">
 					<ul>
 						<li><a href="">基本资料</a></li>
@@ -59,13 +59,13 @@
 						<li><a href="">意见反馈</a></li>
 					</ul>
 				</section>
-				<section class="info_right">
+				<section class="info_right" style="display: none" >
 					<h2>
 						<span >
 							个人资料
 						</span>
 					</h2>
-					<form action="" method="post" class="person_info">
+					<form action="" method="post" class="person_info" >
 						<label><span>头像：</span><div class="header_pic">
 								<a href="">
 									<img src="../img/120_120-(3)_02.png"/>
@@ -76,9 +76,9 @@
 						<p ><i>昵称长度不能超过8个字</i></p>
 						<label><span>联系方式:</span><input type="text" name="" id="" value="" placeholder="骑着蜗牛狂飙"/></label>
 						<label for=""></label>
-						<input type="submit" name="" id="save_person_info" value="保存" />
+						<input type="submit" name="" class="save" value="保存" />
 					</form>
-					<div class="change_pwd">
+					<div class="change_info">
 						<p>
 							<span>修改密码：</span>
 							<i>经常的更换您的账号密码，并且不要和其他账号共用同一个密码</i>
@@ -91,6 +91,45 @@
 						</p>
 					</div>
 				</section>
+				<section class="change_pwd" style="display: none">
+					<h2>
+						<span >
+							修改密码
+						</span>
+					</h2>
+					<form action="" method="post">
+						
+						<label><span>当前密码:</span><input type="text" name="" id="" value="" placeholder="请输入密码"/></label>
+						<label><span>新密码:</span><input type="text" name="" id="" value="" placeholder="请输入新密码"/></label>
+						<label><span>确认密码:</span><input type="text" name="" id="" value="" placeholder="请再次输入密码"/></label>
+						<i>注意：密码不得填空格，可由英文字母和数字组成</i>
+						<input type="submit" value="保存" class="save"/>
+					</form>
+				</section>
+				<section class="change_purse">
+					<h2>
+						<span >
+							修改钱包密码
+						</span>
+					</h2>
+					<form action="" method="post">
+						
+
+						<label><span>新密码:</span><input type="text" name="" id="" value="" placeholder="请输入新密码"/></label>
+						<label><span>确认密码:</span><input type="text" name="" id="" value="" placeholder="请再次输入密码"/></label>
+						<label><span>手机号码:</span><input type="text" name="" id="" value="" placeholder="请输入手机号码"/></label>
+						<label><span>验证码:</span><input type="text" name="" id="sms" value="" placeholder="请输入验证码"/><a href="" id="sms_bt">获取验证码</a></label>
+						<i>注意：密码不得填空格，可由英文字母和数字组成</i>
+						<input type="submit" value="保存" class="save"/>
+					</form>
+				</section>
+			</article>
+			<article class="pay_success">
+				<div class="pay_status">
+						<h3>恭喜您已成功支付</h3>
+						<p> 您可以在个人中心 > 我的订单中查询。</p>
+				</div>
+				<p class="auto_goback"><span>5</span>秒后 <a href="">自动返回>></a></p>
 			</article>
 			<footer id="familyFooter">
 				<a href="index.html">首页</a><span>|</span>
