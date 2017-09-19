@@ -1,0 +1,1 @@
+cnpm install --global vue-cli
